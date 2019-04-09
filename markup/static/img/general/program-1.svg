@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="57" fill="none">
+  <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M29.1 56.14c1.99 0 3.44-1.74 3.35-3.56l-.33-10.7V16.85l.33-10.8A3.35 3.35 0 0 0 29.1 2.6a3.42 3.42 0 0 0-3.36 3.56l.33 10.7v25.04l-.33 10.8a3.35 3.35 0 0 0 3.36 3.45z" clip-rule="evenodd"/>
+  <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M29.1 36.7a3.02 3.02 0 0 0 3.02-3.02v-8.63a3.02 3.02 0 0 0-3.03-3.03 3.02 3.02 0 0 0-3.03 3.03v8.63a3.02 3.02 0 0 0 3.03 3.02z" clip-rule="evenodd"/>
+  <path stroke="#000" d="M32.12 25.9h-6.06"/>
+  <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M26.06 30.23a3.02 3.02 0 0 0 3.03 3.02 3.02 3.02 0 0 0 3.03-3.02"/>
+  <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M15.9 56.14c2 0 3.45-1.74 3.36-3.56l-.33-10.7V16.85l.33-10.8a3.35 3.35 0 0 0-3.35-3.45 3.42 3.42 0 0 0-3.36 3.56l.33 10.7v25.04l-.33 10.8a3.35 3.35 0 0 0 3.36 3.45z" clip-rule="evenodd"/>
+  <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M15.9 36.7a3.02 3.02 0 0 0 3.03-3.02v-8.63a3.02 3.02 0 0 0-3.02-3.03 3.02 3.02 0 0 0-3.03 3.03v8.63a3.02 3.02 0 0 0 3.03 3.02z" clip-rule="evenodd"/>
+  <path stroke="#000" d="M18.93 25.9h-6.05"/>
+  <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M12.88 30.23a3.02 3.02 0 0 0 3.03 3.02 3.02 3.02 0 0 0 3.02-3.02M2.16 56.12V17c0-.94.22-1.87.64-2.72l.22-.44M.88 53.11h2.57M42.84 56.12V17a6.1 6.1 0 0 0-.64-2.72l-.22-.44M44.12 53.11h-2.57"/>
+</svg>

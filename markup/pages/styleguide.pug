@@ -1,0 +1,131 @@
+extends _base-template-for-styleguide
+block main
+  .container.pt-5
+    .row
+      .col-xl-3.text-right
+        strong.
+          H1 Promo:
+          Главная/Смена
+      .col-xl-9
+        h1.promo__title Больше, чем просто лагерь
+      .col-xl-3.text-right
+        strong.
+          H1
+      .col-xl-9
+        h1.h1 Как выбрать направление для ребенка?
+      .col-xl-3.text-right
+        strong.
+          H2
+      .col-xl-9
+        h2.h2 Спортивные
+      .col-xl-3.text-right
+        strong.
+          H3
+      .col-xl-9
+        h3.h3 Детский зимний лагерь 2018
+      .col-xl-3.text-right
+        strong.
+          H4
+      .col-xl-9
+        h4.h4 Индивидуальный эмоциональный портрет ребенка
+      .col-xl-3.text-right
+        strong.
+          Lead
+      .col-xl-9
+        p.lead Предлагаем интересные сезонные программы для детей
+        .w-100.mt-3
+
+      .col-xl-3.text-right
+        strong.
+          Body
+      .col-xl-9
+        p.
+          Мы&nbsp;понимаем, что каждый ребенок уникален и&nbsp;чтобы помочь Вам выбрать направление мы&nbsp;подготовили онлайн-тест. Пройдя его&nbsp;Вы сможете определиться с&nbsp;наиболее интересными для Вас вариантами.
+        p.
+          Также, Вы&nbsp;всегда можете обратиться к&nbsp;нашему менеджеру для помощи в&nbsp;выборе.
+        a(href="#").header__callback-link.border-link.border-link--green Перезвонить Вам?
+        .w-100.mt-3
+        a(href="#").header__callback-link.border-link.border-link--blue Перезвонить Вам?
+        .w-100.mt-3
+        .show-more
+          h2(data-hideshow-prefix-class="animated").show-more__btn.js-expandmore
+            span Как правильно сфотографировать документы?
+          .js-to_expand
+            .show-more__content
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor enim fugiat, libero maxime natus nisi voluptates. Asperiores, enim, saepe.
+        .w-100.mt-3
+        label(for="field-example").label.required Отчество
+        input(placeholder="Отчество").field#field-example
+        .w-100.mt-3
+        label(for="field-tel").label.required Номер телефона
+        input(type="tel" placeholder="+7(___)___ -__-__").field#field-tel
+        .w-100.mt-3
+        .custom-select
+          label
+            select(multiple).js-custom-multi-select
+              option Часто бываю в лагерях
+              option Был несколько раз
+              option Никогда не был в лагере
+        ul.tags
+        .w-100.mt-3
+        label(for="defaul-select").label Желамые даты каникул
+        .custom-select
+          select.js-custom-select#defaul-select
+            option Часто бываю в лагерях
+            option Был несколько раз
+            option Никогда не был в лагере
+        .w-100.mt-3
+          label.radio-button
+            input(type="radio" name="radio" checked).radio-button__input.visually-hidden
+            span.radio-button__circle
+            | Нет
+          label.radio-button
+            input(type="radio" name="radio").radio-button__input.visually-hidden
+            span.radio-button__circle
+            | Да
+        .w-100.mt-3
+        button(type="button").button.button--primary Выбрать смену
+        button(type="button").button.button--primary.button--has-arrow Выбрать смену
+        button(type="button").button.button--has-arrow.button--blue Программа
+        button(type="button").button.button--outline Выбрать смену
+        .w-100.mt-3
+        button(type="button").button.button--outline.button--medium Выбрать смену
+        button(type="button").button.button--outline.button--small Выбрать смену
+        button(type="button").button.button--outline.button--small.button--no-hover Выбрать смену
+
+        .w-100.mt-3
+        button(type="button" title="Предыдущий слайд").nav-arrow.nav-arrow--primary.nav-arrow--prev
+        button(type="button" title="Следующий слайд").nav-arrow.nav-arrow--primary.nav-arrow--next
+        button(type="button" title="Предыдущий слайд").nav-arrow.nav-arrow--secondary.nav-arrow--prev
+        button(type="button" title="Следующий слайд").nav-arrow.nav-arrow--secondary.nav-arrow--next
+        .w-100.mt-3
+        .js-accordion(data-accordion-prefix-classes='b' data-accordion-multiselectable="none")
+          h2(data-accordion-opened="true").js-accordion__header Какой уровень катания на сноуборде требуется?
+          .js-accordion__panel
+            .b-accordion__content
+              p.
+                Если он не умеет - научим.<br>
+                Если он уже умеет, то научим особым трюкам. Ему скучно не будет!
+          h2.js-accordion__header Если ребенок устанет, может ли пропустить занятие на склоне?
+          .js-accordion__panel
+            .b-accordion__content
+              p.
+                Если он не умеет - научим.<br>
+                Если он уже умеет, то научим особым трюкам. Ему скучно не будет!
+          h2.js-accordion__header Какую экипировку дают? Нужно ли брать свое?
+          .js-accordion__panel
+            .b-accordion__content
+              p.
+                Если он не умеет - научим.<br>
+                Если он уже умеет, то научим особым трюкам. Ему скучно не будет!
+        .w-100.mt-3
+        button(type="button" data-modal-prefix-class='simple-animatedtransform' data-modal-content-id='modal' data-modal-describedby-id='modal_description'  data-modal-close-text='Закрыть это').button.button--primary.js-modal Открыть модалку
+        .modal#modal.hidden
+          p.modal__title.h4 Дополнительная информация
+          .modal__content
+            p.
+              Стратегический рыночный план пока плохо специфицирует департамент маркетинга и&nbsp;продаж, отвоевывая рыночный сегмент. Пул лояльных изданий индуцирует пак-шот. Баннерная реклама программирует конвергентный побочный PR-эффект. Еще Траут показал, что раскрутка детерминирует обществвенный социальный статус. Позиционирование на&nbsp;рынке, в&nbsp;рамках сегодняшних воззрений, конструктивно. Охват аудитории детерминирует конструктивный медиабизнес, не&nbsp;считаясь с&nbsp;затратами.
+            img(src="__static__img/content/skiing.jpg" width=585 height=343 alt="как это было зимой 2017")
+            p.
+              Согласно предыдущему, управление брендом усиливает медиамикс. Узнавание бренда допускает комплексный анализ ситуации. Эффективность действий, на&nbsp;первый взгляд, программирует PR. Оценка эффективности кампании наиболее полно нейтрализует сублимированный портрет потребителя. Сегмент рынка, не&nbsp;меняя концепции, изложенной выше, тормозит медийный канал.
+          button(type="button" aria-label="Закрыть").modal__btn-close.button.button--primary.js-modal-close Закрыть

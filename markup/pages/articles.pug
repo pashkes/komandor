@@ -1,0 +1,12 @@
+extends _content-layout
+block main
+  include ../components/useful-articles/useful-articles
+  main.content
+    .container
+      .content__header
+        +breadcrumbs(breadcrumb.articles).breadcrumb--green
+        h1.content__title.h1 Полезные статьи
+        p.content__subtitle.
+          Интеллигенция, в&nbsp;том числе, продолжает деструктивный этикет. Хорал монотонно начинает базовый тип личности, таким образом, сходные законы контрастирующего развития характерны и&nbsp;для процессов в&nbsp;психике.
+      .content__body
+        +useful-articles()

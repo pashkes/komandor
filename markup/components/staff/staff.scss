@@ -1,0 +1,80 @@
+.staff {
+  background-color: $primary;
+  &__wrapper {
+    background-color: #fff;
+  }
+  &__inner {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: $primary;
+    @include media-breakpoint-up(xl) {
+      padding-top: 52px;
+      padding-bottom: 48px;
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 72px;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    @include media-breakpoint-up(sm) {
+      width: auto;
+      max-width: 300px;
+    }
+    img {
+      margin-bottom: 10px;
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__slider {
+    position: relative;
+  }
+  &__prev, &__next {
+    position: absolute;
+    top: 110px;
+    z-index: 2;
+    @include media-breakpoint-up(sm) {
+      top: 74px;
+    }
+    @include media-breakpoint-up(md) {
+      top: 114px;
+    }
+    @include media-breakpoint-up(lg) {
+      top: 142px;
+    }
+
+  }
+  &__prev {
+    left: 10px;
+    @include media-breakpoint-up(sm) {
+      transform: translateX(-50%);
+      left: 0;
+    }
+    @include media-breakpoint-up(xl) {
+      display: block;
+    }
+
+  }
+  &__next {
+    right: 0;
+    @include media-breakpoint-up(sm) {
+      transform: translateX(50%);
+    }
+  }
+  &__name {
+    color: #232b2d;
+  }
+  .wave-bottom {
+    position: relative;
+  }
+  .wave-bottom {
+    bottom: 1px;
+  }
+}

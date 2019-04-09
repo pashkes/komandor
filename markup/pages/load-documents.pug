@@ -1,0 +1,32 @@
+extends _content-layout
+block main
+  include ../components/useful-articles/useful-articles
+  include ../components/documents/documents
+
+  main.content
+    .container
+      .content__header
+        +breadcrumbs(breadcrumb.loadDocuments).breadcrumb--green
+        h1.content__title.h1 Загрузите документы
+        p.content__subtitle.
+          Для оформления документов и&nbsp;путевого листа нам необходим пакет документов ниже.
+          Вы&nbsp;можете отсканировать документы или просто сфотографировать&nbsp;их.
+        .content__additional-info
+          .show-more
+            div(data-hideshow-prefix-class="animated").show-more__btn.js-expandmore
+              span Как правильно сфотографировать документы?
+            .js-to_expand
+              .show-more__content
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor enim fugiat, libero maxime natus nisi voluptates. Asperiores, enim, saepe.
+          .show-more
+            div(data-hideshow-prefix-class="animated").show-more__btn.js-expandmore
+              span В каком формате можно загружать документы?
+            .js-to_expand
+              .show-more__content
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor enim fugiat, libero maxime natus nisi voluptates. Asperiores, enim, saepe.
+
+      .row
+        .col-lg-4
+          +steps()
+        .col-lg
+          +documents()

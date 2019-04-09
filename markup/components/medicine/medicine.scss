@@ -1,0 +1,97 @@
+.medicine {
+  padding-top: 12px;
+  @include media-breakpoint-up(xl) {
+    padding-top: 60px;
+    padding-bottom: 66px;
+  }
+  &__lead {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 30px;
+    }
+  }
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 38px;
+    }
+  }
+  &__list {
+    margin-bottom: 10px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 34px;
+    }
+  }
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    @include media-breakpoint-up(xl) {
+      flex-direction: column-reverse;
+    }
+  }
+  &__special-offer {
+    margin-bottom: 30px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+    }
+  }
+  &__important {
+    margin-bottom: 9px;
+    @include media-breakpoint-up(xl) {
+      max-width: 585px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 112px;
+      text-align: center;
+    }
+    strong {
+      display: block;
+      margin-bottom: 18px;
+      color: #232b2d;
+      font-weight: 700;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.special {
+  padding: 20px 10px 20px 10px;
+  background-color: $light-pink;
+  @include media-breakpoint-up(xl) {
+    padding: 28px 30px 30px 30px;
+  }
+  &__header {
+    display: flex;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      align-items: center;
+    }
+  }
+  &__img {
+    display: block;
+    flex: none;
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+  }
+  &__title {
+    @include media-breakpoint-up(xl) {
+      font-size: 36px;
+      line-height: 1;
+    }
+  }
+  &__desc {
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      max-width: 800px;
+    }
+  }
+  &__book {
+    min-width: 250px;
+  }
+}

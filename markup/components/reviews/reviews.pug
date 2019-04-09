@@ -1,0 +1,94 @@
+mixin reviews(data)
+  .sec-for-bubble
+    .container
+      .sec-for-bubble__inner
+        section.reviews
+          h2.reviews__title.h1 Отзывы детей о лагере
+          a(href="#").reviews__show-all.button.button--medium.button--outline Посмотреть все
+          div(role="list").row
+            div(role="listitem").col-md-6
+              .reviews__item
+                .reviews__video
+                  .video.js-video
+                    a.video__link(href='https://www.youtube.com/watch?v=H1iboKia3AQ' data-id="H1iboKia3AQ")
+                      picture
+                        img.video__media(src='__static__img/content/video-review-1.jpg' srcset="__static__img/content/video-review-1@2x.jpg 2x" width="498" height="343" alt="Дмитрий Потапенко, 1")
+                    button.video__button(type='button', aria-label='Запустить видео').button-play
+                      +icon('play', 11, 13)
+                .reviews__caption
+                  span.reviews__name-old Дмитрий Потапенко, 12 лет
+                  span.reviews__place Конный лагерь, лето 2018
+            div(role="listitem").col-md-6
+              .reviews__item
+                .reviews__video
+                  .video.js-video
+                    a.video__link(href='https://www.youtube.com/watch?v=H1iboKia3AQ' data-id="H1iboKia3AQ")
+                      picture
+                        img.video__media(src='__static__img/content/video-review-2.jpg' srcset="__static__img/content/video-review-2@2x.jpg 2x" width="498" height="343" alt="Ольга Иванова, 9 лет")
+                    button.video__button(type='button', aria-label='Запустить видео').button-play
+                      +icon('play', 11, 13)
+                .reviews__caption
+                  span.reviews__name-old Ольга Иванова, 9 лет
+                  span.reviews__place Конный лагерь, лето 2018
+
+        section.shifts#book
+          h2.shifts__title.h1 Смены 2018
+          .shifts__additional-text.show-more
+            div(data-hideshow-prefix-class="animated").show-more__btn.js-expandmore
+              span Что включено в стоимость смены?
+            .js-to_expand
+              .show-more__content
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor enim fugiat, libero maxime natus nisi voluptates. Asperiores, enim, saepe.
+          .shifts__table-wrapper
+            table.shifts__table
+              thead
+                tr
+                  th.shifts__name-col.shifts__name-col--arrival
+                    span Дата заезда
+                  th.shifts__name-col.shifts__name-col--depart
+                    span Дата выезда
+                  th.shifts__name-col.shifts__name-col--duration
+                    span Продолжительность
+                  th.shifts__name-col.shifts__name-col--status
+                    span Статус
+                  th.shifts__name-col.shifts__name-col--count-lessons
+                    span Кол-во проф. занятий
+                  th.shifts__name-col.shifts__name-col--cost
+                    span Стоимость
+                  th.shifts__name-col.shifts__name-col--empty
+              tbody
+                tr
+                  td 29 декабря
+                  td 10 января
+                  td 12 дней
+                  td Идет набор
+                  td 8 занятий
+                  td 30 000 руб.
+                  td
+                    a(href="#").shifts__book.button.button--outline.button--medium Забронировать
+                tr
+                  td 15 января
+                  td 25 января
+                  td 10 дней
+                  td Идет набор
+                  td 6 занятий
+                  td 25 000 руб.
+                  td
+                    a(href="#").shifts__book.button.button--outline.button--medium Забронировать
+                tr
+                  td 1 февраля
+                  td 15 февраля
+                  td 14 дней
+                  td Набор закрыт
+                  td 12 занятий
+                  td 50 000 руб.
+                  td
+                tr
+                  td 2 февраля
+                  td 12 февраля
+                  td 10 дней
+                  td Идет набор
+                  td 8 занятий
+                  td 30 000 руб.
+                  td
+                    a(href="#").shifts__book.button.button--outline.button--medium Забронировать

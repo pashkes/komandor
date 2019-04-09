@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36">
+  <defs>
+    <path id="a" d="M550 11443.96a7.42 7.42 0 1 1 7.43-7.42 7.43 7.43 0 0 1-7.42 7.42zm0-16.2a8.78 8.78 0 1 0 8.78 8.77 8.78 8.78 0 0 0-8.78-8.77z"/>
+    <path id="b" d="M550 11425.07a.68.68 0 0 0 .68-.68v-5.4a.68.68 0 0 0-1.35 0v5.4c0 .38.3.68.67.68z"/>
+    <path id="c" d="M541.68 11427.67a.68.68 0 1 0 1.03-.87l-3.47-4.14a.68.68 0 0 0-1.03.87z"/>
+    <path id="d" d="M538.04 11435.1a.68.68 0 0 0 .12-1.35l-5.32-.93a.69.69 0 1 0-.23 1.35l5.32.93z"/>
+    <path id="e" d="M539.15 11442.01l-4.67 2.7a.68.68 0 0 0 .67 1.19l4.68-2.7a.68.68 0 1 0-.68-1.17z"/>
+    <path id="f" d="M546.08 11447.3a.68.68 0 0 0-.87.4l-1.84 5.08a.68.68 0 0 0 .63.9c.29 0 .54-.18.64-.44l1.84-5.09a.68.68 0 0 0-.4-.85z"/>
+    <path id="g" d="M554.79 11447.7a.68.68 0 1 0-1.27.45l1.84 5.07a.68.68 0 0 0 .87.4.68.68 0 0 0 .4-.86z"/>
+    <path id="h" d="M565.53 11444.71l-4.68-2.7a.68.68 0 0 0-.67 1.17l4.67 2.72a.68.68 0 0 0 .68-1.17z"/>
+    <path id="i" d="M567.94 11433.37a.68.68 0 0 0-.78-.55l-5.32.93a.68.68 0 0 0 .12 1.35h.11l5.32-.94a.68.68 0 0 0 .55-.8z"/>
+    <path id="j" d="M557.8 11427.9a.68.68 0 0 0 .52-.24l3.47-4.14a.68.68 0 1 0-1.04-.87l-3.47 4.14a.67.67 0 0 0 .52 1.1z"/>
+  </defs>
+  <use fill="#e28316" transform="translate(-532 -11418)" xlink:href="#a"/>
+  <use fill="#e28316" transform="translate(-532 -11418)" xlink:href="#b"/>
+  <use fill="#e28316" transform="translate(-532 -11418)" xlink:href="#c"/>
+  <use fill="#e28316" transform="translate(-532 -11418)" xlink:href="#d"/>
+  <use fill="#e28316" transform="translate(-532 -11418)" xlink:href="#e"/>
+  <use fill="#e28316" transform="translate(-532 -11418)" xlink:href="#f"/>
+  <use fill="#e28316" transform="translate(-532 -11418)" xlink:href="#g"/>
+  <use fill="#e28316" transform="translate(-532 -11418)" xlink:href="#h"/>
+  <use fill="#e28316" transform="translate(-532 -11418)" xlink:href="#i"/>
+  <use fill="#e28316" transform="translate(-532 -11418)" xlink:href="#j"/>
+</svg>

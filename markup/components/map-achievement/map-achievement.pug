@@ -1,0 +1,26 @@
+mixin map-achievement(data)
+  section.map-achievement
+    .container
+      .row
+        .col-lg.col-xl-5
+          h2.map-achievement__title.h1 Карта достижений
+          .map-achievement__text
+            p.map-achievement__subtitle.
+              У&nbsp;нас есть своя разработанная система мотивации по&nbsp;достижению целей.
+            p.
+              В&nbsp;каждой нашей программе лагеря Командор, вы&nbsp;можете увидеть карту достижений.
+            p.
+              С&nbsp;этой картой мы&nbsp;работаем на&nbsp;протяжении всей смены, ежедневно пишем о&nbsp;своих успехах и&nbsp;впечатлениях о&nbsp;прожитом дне.
+        .col-lg-7
+          .map-achievement__slider
+            button(type="button" title="Следующий слайд").map-achievement__next-slider.nav-arrow.nav-arrow--secondary.nav-arrow--next.js-next-slider-map
+            .js-map-achievement-slider
+              div
+                a(href="__static__img/content/map-achievement@2x.jpg" data-lightbox="roadtrip").map-achievement__slide
+                  img(src="__static__img/content/map-achievement.jpg" srcset="__static__img/content/map-achievement@2x.jpg 2x" width="690" height="420" alt="фото-1")
+              div
+                a(href="__static__img/content/map-achievement@2x.jpg" data-lightbox="roadtrip").map-achievement__slide
+                  img(src="__static__img/content/map-achievement.jpg" srcset="__static__img/content/map-achievement@2x.jpg 2x" width="690" height="420" alt="фото-2")
+
+
+

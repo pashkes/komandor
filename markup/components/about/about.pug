@@ -1,0 +1,52 @@
+mixin about(data)
+  section.about
+    .container
+      .about__inner
+        h2.about__title.h1 Детский лагерь для детей и&nbsp;подростков от&nbsp;5&nbsp;до&nbsp;18&nbsp;лет
+        .row
+          .col-xl-5.offset-xl-1
+            .about__text
+              p.
+                Детские лагеря &laquo;Отдых и&nbsp;учеба с&nbsp;радостью&raquo;
+              p.
+                Образовательный проект &laquo;Отдых и&nbsp;учеба с&nbsp;радостью&raquo;&nbsp;&mdash; это научно-приключенческие программы, которые мы&nbsp;проводим на&nbsp;базе лучших детских лагерей России.
+              p.
+                Мы&nbsp;даем возможность ребенку познакомиться с&nbsp;природой; показать, насколько красочен и&nbsp;разнообразен окружающий мир. За&nbsp;21&nbsp;день летней смены дети развиваются, учатся быть самостоятельными и&nbsp;ответственными, принимать серьезные решения, отвечать за&nbsp;свои поступки.
+          .col-xl-5.offset-xl-1
+            .about__text
+              .about__hided-text.show-more
+                div(data-hideshow-prefix-class="animated").show-more__btn.js-expandmore
+                  span Читать подробнее
+                .js-to_expand
+                  .show-more__content
+                    p.
+                      Современные дети активны, энергичны, целеустремлены. Им&nbsp;не&nbsp;интересен пассивный отдых на&nbsp;пляже. Для того чтобы у&nbsp;ребят остались яркие впечатления и&nbsp;воспоминания о&nbsp;проведенных каникулах, необходимо дать такую нагрузку, которая будет наполнена разнообразными интересными занятиями. Дети нуждаются в&nbsp;том, чтобы вокруг кипела жизнь, происходили захватывающие приключения, их&nbsp;ждали невероятные путешествия и&nbsp;каждый день был наполнен радостными открытиями.
+                    p.
+                      Именно поэтому наши детские лагеря насыщены научно-образовательными и&nbsp;увлекательными мероприятиями, которые осуществляются по&nbsp;ежедневному расписанию. Каждый день ребята посещают 4&nbsp;полноценнных занятия, а&nbsp;вечером&nbsp;&mdash; тематическое мероприятие (бал, ярмарка, вечер талантов и&nbsp;другие).
+        .about__photos
+          .row
+            .col-lg
+              .row
+                .col-6.col-lg-7.col-xl-auto
+                  .about__photo
+                    img(src="__static__img/content/about-photo-1.jpg" srcset="__static__img/content/about-photo-1@2x.jpg 2x" width="375" height="352" alt="фото-1" loading="lazy")
+                .col-6.col-lg-5.col-xl
+                  .about__photo.about__photo--pt-1.stregth
+                    img(src="__static__img/content/about-photo-2.jpg" srcset="__static__img/content/about-photo-2@2x.jpg 2x" width="270" height="180" alt="фото-2" loading="lazy")
+                  .about__photo.stregth
+                    img(src="__static__img/content/about-photo-3.jpg" srcset="__static__img/content/about-photo-3@2x.jpg 2x" width="270" height="180" alt="фото-3" loading="lazy")
+                  .about__photo.d-none.d-lg-block
+                    img(src="__static__img/content/about-photo-4.jpg" srcset="__static__img/content/about-photo-4@2x.jpg 2x" width="270" height="180" alt="фото-4" loading="lazy")
+
+
+            .col-lg-5
+              .row
+                .col-6.col-lg-12
+                  .about__photo.about__photo--pt-2.d-none.d-lg-block
+                    img(src="__static__img/content/about-photo-5.jpg" srcset="__static__img/content/about-photo-5@2x.jpg 2x" width="487" height="244" alt="фото-5" loading="lazy")
+                  .about__photo.stregth.d-lg-none
+                    img(src="__static__img/content/about-photo-4.jpg" srcset="__static__img/content/about-photo-4@2x.jpg 2x" width="270" height="180" alt="фото-4" loading="lazy")
+                .col-6.col-lg-12
+                  .about__photo
+                    img(src="__static__img/content/about-photo-6.jpg" srcset="__static__img/content/about-photo-6@2x.jpg 2x" width="486" height="324" alt="фото-6" loading="lazy")
+

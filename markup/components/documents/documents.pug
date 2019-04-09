@@ -1,0 +1,68 @@
+mixin documents(data)
+  form.documents
+    fieldset.documents__item
+      legend.documents__name 1. Паспорт РФ&nbsp;одного из&nbsp;родителей
+      .row
+        .col-lg-6
+          .documents__col.is-uploaded
+            span.documents__side Основной разворот
+            .documents__loading-container
+              img(src="__static__img/general/document-1.png" alt="")
+              button(type="button" title="удалить документ").documents__remove.js-remove-document
+            label.documents__upload.button.button--outline.button--small.button--no-hover + загрузить файл…
+              input(type="file" accept=".jpg, .jpeg, .png").visually-hidden.js-load-document.upload
+
+        .col-lg-6
+          .documents__col
+            span.documents__side Разворот с&nbsp;действующей пропиской
+            .documents__loading-container
+              img(src="" alt="")
+              button(type="button" title="удалить документ").documents__remove.js-remove-document
+            label.documents__upload.button.button--outline.button--small.button--no-hover + загрузить файл…
+              input(type="file" accept=".jpg, .jpeg, .png").visually-hidden.js-load-document
+    fieldset.documents__item#pasport
+      legend.documents__name 2. Документы ребенка
+      .row
+        .col-lg-6
+          .documents__col.is-uploaded
+            span.documents__side Свидетельство о&nbsp;рождении
+            .documents__loading-container
+              img(src="__static__img/general/document-2.png" alt="")
+              button(type="button" title="удалить документ").documents__remove.js-remove-document
+            label.documents__upload.button.button--outline.button--small.button--no-hover + загрузить файл…
+              input(type="file" accept=".jpg, .jpeg, .png").visually-hidden.js-load-document
+
+        .col-lg-6
+          .documents__col
+            span.documents__side Паспорт&nbsp;РФ (от&nbsp;14&nbsp;лет)
+            .documents__loading-container
+              img(src="" alt="")
+              button(type="button" title="удалить документ").documents__remove.js-remove-document
+            label.documents__upload.button.button--outline.button--small.button--no-hover + загрузить файл…
+              input(type="file" accept=".jpg, .jpeg, .png").visually-hidden.js-load-document
+
+    fieldset.documents__item
+      legend.documents__name 3. Страховой медицинский полис на&nbsp;ребенка
+      .row
+        .col-lg-6
+          .documents__col
+            span.documents__side Свидетельство о&nbsp;рождении
+            .documents__loading-container
+              img(src="" alt="")
+              button(type="button" title="удалить документ").documents__remove.js-remove-document
+            label.documents__upload.button.button--outline.button--small.button--no-hover + загрузить файл…
+              input(type="file" accept=".jpg, .jpeg, .png").visually-hidden.js-load-document
+
+    fieldset.documents__item
+      legend.documents__name 4. Фотография ребенка
+      .row
+        .col-lg-6
+          .documents__col.is-uploaded
+            span.documents__side На&nbsp;фотографии должно быть видно лицо ребенка
+            .documents__loading-container
+              img(src="__static__img/general/document-3.jpg" alt="")
+              button(type="button" title="удалить документ").documents__remove.js-remove-document
+            label.documents__upload.button.button--outline.button--small.button--no-hover + загрузить файл…
+              input(type="file" accept=".jpg, .jpeg, .png").visually-hidden.js-load-document
+
+    button.documents__submit.button.button--has-arrow-right.button--primary Далее

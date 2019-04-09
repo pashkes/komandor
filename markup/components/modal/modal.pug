@@ -1,0 +1,14 @@
+mixin modal(data)
+  //- button(data-modal-prefix-class='simple-animatedtransform' data-modal-content-id='modal' data-modal-describedby-id='modal_description'  data-modal-close-text='Закрыть это').button.button--primary.js-modal Открыть модалку
+  div(class="modal fade" tabindex="-1" role="dialog" aria-labelledby="ModalLongTitle" aria-hidden="true")#modal
+    div(class="modal-dialog modal-dialog-centered" role="document")
+      .modal-content.modal
+        button(type="button" title="Закрыть это окно" data-dismiss="modal").modal-close
+        p.modal__title.h4#ModalLongTitle Дополнительная информация
+        .modal__content
+          p.
+            Стратегический рыночный план пока плохо специфицирует департамент маркетинга и&nbsp;продаж, отвоевывая рыночный сегмент. Пул лояльных изданий индуцирует пак-шот. Баннерная реклама программирует конвергентный побочный PR-эффект. Еще Траут показал, что раскрутка детерминирует обществвенный социальный статус. Позиционирование на&nbsp;рынке, в&nbsp;рамках сегодняшних воззрений, конструктивно. Охват аудитории детерминирует конструктивный медиабизнес, не&nbsp;считаясь с&nbsp;затратами.
+          img(src="__static__img/content/modal-image.jpg" srcset="__static__img/content/modal-image@2x.jpg 2x" alt="фото" width="300" height="176")
+          p.
+            Согласно предыдущему, управление брендом усиливает медиамикс. Узнавание бренда допускает комплексный анализ ситуации. Эффективность действий, на&nbsp;первый взгляд, программирует PR. Оценка эффективности кампании наиболее полно нейтрализует сублимированный портрет потребителя. Сегмент рынка, не&nbsp;меняя концепции, изложенной выше, тормозит медийный канал.
+        button(type="button" title="Закрыть это" data-dismiss="modal").modal__btn-close.button.button--primary Закрыть

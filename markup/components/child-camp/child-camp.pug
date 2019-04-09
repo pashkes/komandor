@@ -1,0 +1,25 @@
+mixin child-camp(data)
+  include ../child-card/child-card
+
+  section.child-camp.child-camp--winter#select-change
+    .container
+      img(src="__static__img/general/snowflake-color.svg" width=26 height=30 alt="" aria-hidden="true").child-camp__icon
+      h2.child-camp__title.h3 Детский зимний лагерь 2018
+    .child-camp__slider
+      .container
+        button(type="button" title="Следующий слайд").child-camp__arrow-right.nav-arrow.nav-arrow--primary.nav-arrow--next.js-next-slider-camp
+        .row.js-slider-camp
+          each item in data.childCamps1
+            .col-xl-3
+              +child-card(item).child-camp__item
+  section.child-camp.child-camp--summer
+    .container
+      img(src="__static__img/general/sun-color.svg" width=30 height=30 alt="" aria-hidden="true").child-camp__icon
+      h2.child-camp__title.h3 Детский летний лагерь 2019
+    .child-camp__slider
+      .container
+        button(type="button" title="Следующий слайд").child-camp__arrow-right.nav-arrow.nav-arrow--primary.nav-arrow--next.js-next-slider-camp
+        .row.js-slider-camp
+          each item in data.childCamps2
+            .col-xl
+              +child-card(item).child-camp__item

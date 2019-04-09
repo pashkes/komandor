@@ -1,0 +1,182 @@
+.why-like {
+  &__inner {
+    padding-top: 35px;
+    padding-bottom: 10px;
+    @include media-breakpoint-up(xl) {
+      padding-top: 82px;
+      padding-bottom: 80px;
+    }
+  }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include media-breakpoint-up(xl) {
+      align-items: center;
+    }
+  }
+  &__title {
+    margin-bottom: 18px;
+    @include media-breakpoint-up(xl) {
+      text-align: center;
+      max-width: 585px;
+      margin-bottom: 30px;
+    }
+  }
+  &__button {
+    margin-bottom: 30px;
+    min-width: 262px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+    }
+  }
+  &__list-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    @include media-breakpoint-up(xl) {
+      max-width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 70px;
+      padding-bottom: 20px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+    z-index: 1;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    width: calc(100% / 2 - 10px);
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      width: auto;
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+    &--1 {
+      @include media-breakpoint-up(xl) {
+        top: 170px;
+        left: 0;
+      }
+      .why-like__circle {
+        @include media-breakpoint-up(xl) {
+          width: 221px;
+          height: 221px;
+        }
+      }
+    }
+    &--2 {
+      @include media-breakpoint-up(xl) {
+        top: 0;
+        left: 210px;
+      }
+      .why-like__circle {
+        @include media-breakpoint-up(xl) {
+          width: 219px;
+          height: 219px;
+        }
+      }
+    }
+    &--3 {
+      @include media-breakpoint-up(xl) {
+        left: 164px;
+        bottom: 0;
+      }
+      .why-like__circle {
+        @include media-breakpoint-up(xl) {
+          width: 267px;
+          height: 267px;
+        }
+      }
+    }
+    &--4 {
+      @include media-breakpoint-up(xl) {
+        top: 0;
+        right: 140px;
+      }
+      .why-like__circle {
+        @include media-breakpoint-up(xl) {
+          width: 174px;
+          height: 174px;
+        }
+      }
+    }
+    &--5 {
+      @include media-breakpoint-up(xl) {
+        bottom: 166px;
+        right: 0;
+      }
+      .why-like__circle {
+        @include media-breakpoint-up(xl) {
+          width: 267px;
+          height: 267px;
+        }
+      }
+    }
+    &--6 {
+      @include media-breakpoint-up(xl) {
+        bottom: 30px;
+        right: 217px;
+      }
+      .why-like__circle {
+        @include media-breakpoint-up(xl) {
+          width: 202px;
+          height: 202px;
+        }
+      }
+    }
+  }
+  &__img {
+    position: relative;
+    z-index: 1;
+    @include media-breakpoint-up(xl) {
+      width: 454px;
+      height: 530px;
+    }
+  }
+  &__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    padding: 10px;
+    border-radius: 50%;
+    line-height: 1.25;
+    font-size: 16px;
+    text-align: center;
+    @include media-breakpoint-up(xl) {
+      font-size: 20px;
+      line-height: 1.2;
+      padding: 18px;
+    }
+    &.yellow {
+      background-color: $light-orange;
+    }
+    &.pink {
+      background-color: $light-pink;
+    }
+    &.green {
+      background-color: $light-green;
+    }
+  }
+
+}
+.wave {
+  position: relative;
+  bottom: -1px;
+}

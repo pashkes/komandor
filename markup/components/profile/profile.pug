@@ -1,0 +1,144 @@
+mixin profile(data)
+  form.profile#profile
+    fieldset.profile__item
+      legend.profile__name Личные данные
+      .profile__row
+        .profile__fio-item
+          label(for="profile-last-name").label.required Фамилия
+          input(value="Фролова" placeholder="Фамилия" required pattern="[А-Яа-я]{1,32}" maxlength="32" minlength="2").profile__field.field#profile-last-name
+        .profile__fio-item
+          label(for="profile-first-name").label.required Имя
+          input(value="Анна5" placeholder="Имя" required pattern="[А-Яа-я]{1,32}" maxlength="32" minlength="2").profile__field.field#profile-first-name
+        .profile__fio-item
+          label(for="profile-patronymic").label Отчество
+          input(placeholder="Отчество").profile__field.field#profile-patronymic
+      .profile__row.profile__row--tel
+        .profile__col
+          label(for="field-tel").label.required Номер телефона
+          input(type="tel" placeholder="+7(___)___ -__-__").profile__field.field#field-tel
+          .profile__additional-text.show-more.show-more--small-text
+            div(data-hideshow-prefix-class="animated").show-more__btn.js-expandmore
+              span Зачем нужна эта информация?
+            .js-to_expand
+              .show-more__content
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor enim fugiat, libero maxime natus nisi voluptates. Asperiores, enim, saepe.
+      .profile__row.profile__row--document
+        .profile__document
+          .profile__select
+            label(for="profile-doc").label Документ ребенка
+            .custom-select
+              select.js-custom-select#profile-doc
+                option(selected) Свидетельство о рождении
+        .profile__document
+          label(for="profile-num-doc").label Номер документа
+          input(type="text" value="05430-3400-5600-3").profile__field.field#profile-num-doc
+    fieldset.profile__item
+      legend.profile__name Индивидуальный эмоциональный портрет ребенка
+      .profile__question-item
+        span.profile__question 1. Сколько раз был в&nbsp;детском лагере (с&nbsp;продолжительностью от&nbsp;7&nbsp;лет)
+        label.radio-button
+          input(type="radio" name="was-camp").radio-button__input.visually-hidden
+          span.radio-button__circle
+          | Ни разу
+        label.radio-button
+          input(type="radio" name="was-camp" checked).radio-button__input.visually-hidden
+          span.radio-button__circle
+          | 1 раз
+        label.radio-button
+          input(type="radio" name="was-camp").radio-button__input.visually-hidden
+          span.radio-button__circle
+          | 2 раза
+        label.radio-button
+          input(type="radio" name="was-camp").radio-button__input.visually-hidden
+          span.radio-button__circle
+          | 3 и более раз
+      .profile__question-item
+        label(for="profile-sports").profile__question 2. Каким видом спорта занимался/занимается
+        .profile__multiselect
+          .custom-select
+            select(multiple).js-custom-multi-select#profile-sports
+              option(selected) Плавание
+              option Борьба
+              option Бег на короткие дистанции
+          ul.tags
+            li.tags__item
+              | Плавание
+              button(type="button" class="tags__remove" title="удалить тег")
+      .profile__question-item
+        span.profile__question 3. Бывал&nbsp;ли ранее в&nbsp;нашем лагере
+        .profile__additional-text.show-more.show-more--small-text
+          div(data-hideshow-prefix-class="animated").show-more__btn.js-expandmore
+            span Зачем нужна эта информация?
+          .js-to_expand
+            .show-more__content
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor enim fugiat, libero maxime natus nisi voluptates. Asperiores, enim, saepe.
+        label.radio-button
+          input(type="radio" name="was-our-camp").radio-button__input.visually-hidden
+          span.radio-button__circle
+          | Ни разу
+        label.radio-button
+          input(type="radio" name="was-our-camp" checked).radio-button__input.visually-hidden
+          span.radio-button__circle
+          | 1 раз
+        label.radio-button
+          input(type="radio" name="was-our-camp").radio-button__input.visually-hidden
+          span.radio-button__circle
+          | 2 раза
+        label.radio-button
+          input(type="radio" name="was-our-camp").radio-button__input.visually-hidden
+          span.radio-button__circle
+          | 3 и более раз
+      .profile__question-item
+        span.profile__question 4. Есть&nbsp;ли опыт походов
+        .profile__additional-text.show-more.show-more--small-text
+          div(data-hideshow-prefix-class="animated").show-more__btn.js-expandmore
+            span Зачем нужна эта информация?
+          .js-to_expand
+            .show-more__content
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor enim fugiat, libero maxime natus nisi voluptates. Asperiores, enim, saepe.
+        label.radio-button
+          input(type="radio" name="had-experience").radio-button__input.visually-hidden
+          .radio-button__circle
+          | Нет
+        label.radio-button
+          input(type="radio" name="had-experience" checked).radio-button__input.visually-hidden
+          span.radio-button__circle
+          | Да
+      .profile__question-item
+        label(for="profile-class").profile__question 5. Класс
+        .profile__select.profile__select--class
+          .custom-select
+            select.js-custom-select#profile-class
+              option 4
+              option 5
+              option 6
+              option(selected) 7
+              option 8
+
+      .profile__question-item
+        label(for="profile-post-index").profile__question 6. Почтовый индекс
+        input(type="number" value="101345").profile__field.profile__field--index.field#profile-post-index
+      .profile__question-item
+        label(for="profile-address").profile__question 7. Адрес проживания
+        input(type="text" value="г. Москва, ул. Ленина 35, кв. 56").profile__field.profile__field--address.field#profile-address
+    fieldset.profile__item
+      legend.profile__name Физические способности
+      .profile__multiselect
+        .custom-select
+          label(for="profile-physical-ability").visually-hidden Выберете ваши физические способности
+          select(multiple).js-custom-multi-select#profile-physical-ability
+            option(selected) Борьба
+            option(selected) КМС по самбо
+            option(selected) Бег на короткие дистанции
+        ul.tags
+          li.tags__item
+            | Борьба
+            button(type="button" class="tags__remove" title="удалить тег")
+          li.tags__item
+            | КМС по самбо
+            button(type="button" class="tags__remove" title="удалить тег")
+          li.tags__item
+            | Бег на короткие дистанции
+            button(type="button" class="tags__remove" title="удалить тег")
+    .profile__footer
+      button.profile__submit.button.button--has-arrow-right.button--primary Далее

@@ -1,0 +1,39 @@
+mixin staff(data)
+  section.staff
+    .wave-top
+      | <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 1440 199.28">
+      |   <title>Path</title>
+      |   <path fill="#fff" d="M1054.94,60.42C808.3,60.42,635,200,368,200S0,130.21,0,130.21V.72H1440V138.9s-138.42-78.48-385.06-78.48Z" transform="translate(0 -0.72)"/>
+      | </svg>
+    .staff__wrapper
+      .staff__inner
+        .container
+          h2.staff__title.h1 Персонал KOMANDOR Camp
+          .staff__slider
+            button(type="button" title="Предыдущий слайд").staff__prev.nav-arrow.nav-arrow--primary.nav-arrow--prev.js-staff-prev-arrow
+            button(type="button" title="Следующий слайд").staff__next.nav-arrow.nav-arrow--primary.nav-arrow--next.js-staff-next-arrow
+            .row.js-staff-slider
+              .col-auto
+                .staff__item
+                  img(src="__static__img/content/staff-1.jpg" srcset="__static__img/content/staff-1@2x.jpg 2x" alt="Шахова Екатерина" width="270" height="343")
+                  span.staff__name Шахова Екатерина, вожатая
+              .col-auto
+                .staff__item
+                  img(src="__static__img/content/staff-2.jpg" srcset="__static__img/content/staff-2@2x.jpg 2x" alt="Иванов Иван" width="270" height="343")
+                  span.staff__name Иванов Иван, инструктор
+              .col-auto
+                .staff__item
+                  img(src="__static__img/content/staff-3.jpg" srcset="__static__img/content/staff-3@2x.jpg 2x" alt="Дмитрий Драмин" width="270" height="343")
+                  span.staff__name Дмитрий Драмин, вожатый
+              .col-auto
+                .staff__item
+                  img(src="__static__img/content/staff-4.jpg" srcset="__static__img/content/staff-4@2x.jpg 2x" alt="Ольга Бродская" width="270" height="343")
+                  span.staff__name Ольга Бродская, вожатая
+              .col-auto
+                .staff__item
+                  img(src="__static__img/content/staff-1.jpg" srcset="__static__img/content/staff-1@2x.jpg 2x" alt="Шахова Екатерина" width="270" height="343")
+                  span.staff__name Шахова Екатерина, вожатая
+      .wave-bottom
+        | <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" preserveAspectRatio="none"  viewBox="0 0 1440 200">
+        | <path fill="#ECF8E4" fill-rule="evenodd" d="M385.06 59.7c246.64 0 419.99 139.58 686.92 139.58 266.92 0 368.02-69.8 368.02-69.8V0H0v138.18S138.42 59.7 385.06 59.7z" clip-rule="evenodd"/>
+        | </svg>

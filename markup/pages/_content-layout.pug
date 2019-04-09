@@ -1,0 +1,21 @@
+doctype html
+html(lang="ru")
+  include ../components/breadcrumbs/breadcrumbs
+  include ../components/head/head
+  include ../components/footer/footer
+  include ../components/header/header
+  include ../components/icon/icon
+  include ../components/steps/steps
+
+  head
+    +head(head.defaults)
+  body.page-content
+    | %=symbols=%
+    +header()
+    block main
+    +footer()
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main.js')

@@ -1,0 +1,39 @@
+mixin advices(data)
+  include ../child-card/child-card
+  .advices
+    .container
+      section.advices__inner
+        img(src="__static__img/general/piggy.svg" width="78" height="72" alt="" aria-hidden="true").advices__icon
+        h2.advices__title.h1 Как купить путевку дешевле?
+        .row
+          .col-md-6.col-xl-4
+            .advices__item
+              h3.advices__name 1. Компенсация
+              p.advices__desc.
+                Проверьте, возможно&nbsp;Вы подходите под программу компенсации от&nbsp;государства или компании
+              .show-more
+                div(data-hideshow-prefix-class="animated").show-more__btn.js-expandmore
+                  span Показать критерии
+                .js-to_expand
+                  .show-more__content
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor enim fugiat, libero maxime natus nisi voluptates. Asperiores, enim, saepe.
+          .col-md-6.col-xl-4.offset-xl-2
+            .advices__item
+              h3.advices__name 2. Специальные предложения
+              ul.advices__list
+                li
+                  a(href="#") С&nbsp;друзьями&nbsp;&mdash; дешевле!
+                li
+                  a(href="#") Раннее бронирование
+                li
+                  a(href="#") Скидка на&nbsp;покупку от&nbsp;трех смен
+      section.offers
+        h2.offers__title.h1 Другие летние смены
+        a(href="#").offers__show-all.button.button--outline.button--medium Посмотреть все
+        .offers__slider
+          .container
+            button(type="button" title="Следующий слайд").child-camp__arrow-right.nav-arrow.nav-arrow--primary.nav-arrow--next.js-next-slider-camp
+            .row.js-slider-camp
+              each item in data.childCamps1
+                .col-xl-3
+                  +child-card(item).child-camp__item

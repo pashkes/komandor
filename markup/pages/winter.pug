@@ -1,0 +1,31 @@
+extends _base-template
+block main
+  include ../components/promo-winter/promo-winter
+  include ../components/details/details
+  include ../components/include/include
+  include ../components/programs/programs
+  include ../components/questions/questions
+  include ../components/map-achievement/map-achievement
+  include ../components/articles/articles
+  include ../components/why-we/why-we
+  include ../components/medicine/medicine
+  include ../components/staff/staff
+  include ../components/timetable/timetable
+  include ../components/reviews/reviews
+  include ../components/advices/advices
+  include ../components/video-modal/video-modal
+
+  +promo-winter()
+  +details()
+  +include()
+  +programs()
+  +questions()
+  +map-achievement()
+  +articles()
+  +why-we()
+  +medicine()
+  +staff()
+  +timetable()
+  +reviews()
+  +advices(childCampscontainer2)
+  +video-modal()

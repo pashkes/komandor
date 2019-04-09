@@ -1,0 +1,24 @@
+extends _base-template
+block main
+  include ../components/promo-main/promo-main
+  include ../components/child-camp/child-camp
+  include ../components/way/way
+  include ../components/why-like/why-like
+  include ../components/videos-change/videos-change
+  include ../components/statistics/statistics
+  include ../components/permit/permit
+  include ../components/additional/additional
+  include ../components/about/about
+  include ../components/video-modal/video-modal
+  +promo-main()
+  main
+    +child-camp(childCampscontainer)
+    +way()
+    +why-like()
+    +videos-change()
+    +statistics()
+    +permit()
+    +additional()
+    //+about()
+    +video-modal()
+

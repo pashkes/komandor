@@ -1,0 +1,79 @@
+mixin timetable(data)
+  section.timetable
+    .container
+      .timetable__inner
+        h2.timetable__title.h1 Пример расписания дня
+        .row
+          .col-lg-4
+            .timetable__item
+              img(src="__static__img/general/sunrise.svg" width="50" height="36" alt="" aria-hidden="true").timetable__img
+              span.timetable__time-day 08:00
+              ul.timetable__list
+                li
+                  span.timetable__time-range 8:00 - 8:30
+                  span.timetable__desc Подъем&nbsp;/ Утренняя гигиена
+                li
+                  span.timetable__time-range 8:30 – 9:00
+                  span.timetable__desc Зарядка/Линейка/Построение
+                li
+                  span.timetable__time-range 9:00 – 9:30
+                  span.timetable__desc Завтрак
+                li
+                  span.timetable__time-range 9:30 – 10:00
+                  span.timetable__desc Общий сбор. Постановка целей на&nbsp;день
+                li
+                  span.timetable__time-range 10:00 – 11:00
+                  span.timetable__desc Теоретическое занятие
+                li
+                  span.timetable__time-range 11:00 – 12:00
+                  span.timetable__desc Практика
+                li
+                  span.timetable__time-range 12:00 – 13:00
+                  span.timetable__desc Мастер-классы
+          .col-lg-4
+            .timetable__item
+              img(src="__static__img/general/sun-noon.svg" width="36" height="36" alt="" aria-hidden="true").timetable__img
+              span.timetable__time-day 13:00
+              ul.timetable__list
+                li
+                  span.timetable__time-range 13:00 – 13:30
+                  span.timetable__desc Обед
+                li
+                  span.timetable__time-range 13:30 – 15:00
+                  span.timetable__desc.
+                    Тихий час&nbsp;/ общение в&nbsp;гостиной. Для младших детей сон, для старших альтернатива, общение в&nbsp;гостиной, настольные игры
+                li
+                  span.timetable__time-range 15:00 – 15:30
+                  span.timetable__desc Полдник
+          .col-lg-4
+            .timetable__item
+              img(src="__static__img/general/moon.svg" width="35" height="36" alt="" aria-hidden="true").timetable__img
+              span.timetable__time-day 22:00
+              ul.timetable__list
+                li
+                  span.timetable__time-range 15:30 – 16:30
+                  span.timetable__desc Практика
+                li
+                  span.timetable__time-range 16:30 – 17:30
+                  span.timetable__desc Спортивные игры, бассейн, активные игры
+                li
+                  span.timetable__time-range 17:30 – 18:30
+                  span.timetable__desc ART&nbsp;&mdash; классы&nbsp;/ подготовка к&nbsp;вечернему мероприятию
+                li
+                  span.timetable__time-range 18:30 – 19:00
+                  span.timetable__desc Ужин
+                li
+                  span.timetable__time-range 19:00 – 20:30
+                  span.timetable__desc Вечерние мероприятия /Дискотека, концерты.
+                li
+                  span.timetable__time-range 20:30 – 21:00
+                  span.timetable__desc Вечерний разговор, обратная связь. Шкала достижений
+                li
+                  span.timetable__time-range 21:00 – 21:20
+                  span.timetable__desc Вечерний кефир
+                li
+                  span.timetable__time-range 21:20 – 22:00
+                  span.timetable__desc Вечерняя гигиена
+                li
+                  span.timetable__time-range 22:00
+                  span.timetable__desc Отбой

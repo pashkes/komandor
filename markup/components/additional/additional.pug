@@ -1,0 +1,48 @@
+mixin additional(data)
+  include ../about/about
+
+  .additional
+    .container
+      .additional__inner
+        .row.justify-content-xl-center
+          .col-lg-5
+            section.additional__news.news
+              h2.news__title.h1 Новости
+              ul.news__list
+                li.news__item
+                  .news__preview
+                    img(src="__static__img/content/news-priview-1.jpg" srcset="__static__img/content/news-priview-1@2x.jpg 2x" alt="Стартуем!" width=70 height=70)
+                  .news__body
+                    h3.news__name Стартуем!
+                    p.news__desciption.
+                      Ура! Наконец-то каникулы и&nbsp;лагерь командор отправляется в&nbsp;путь! Подробная информация об&nbsp;отправлении смены с&nbsp;19&nbsp;октября по&nbsp;26&nbsp;октября
+                    a(href="#" title="Перейти к статье").news__show-more
+                      +icon('black-arrow-right', 20, 20)
+                li.news__item
+                  .news__preview
+                    img(src="__static__img/content/news-priview-2.jpg" srcset="__static__img/content/news-priview-2@2x.jpg 2x" alt="Новый творческий лагерь" width=70 height=70)
+                  .news__body
+                    h3.news__name Новый творческий лагерь
+                    p.news__desciption.
+                      Представляем вам новый, уже четырнадцатый вид, вид нашего лагеря! Блогер-лагерь, для самых амбициозных детей.
+                    a(href="#" title="Перейти к статье").news__show-more
+                      +icon('black-arrow-right', 20, 20)
+              a(href="#").news__all-news.button.button--outline.button--medium Все новости
+          .col-lg-6
+            section.licences
+              .licences__header
+                h2.licences__title.h1 Лицензии
+                a(href="#").licences__all.button.button--outline.button--medium Все лицензии
+              .licences__slider
+                button(type="button" title="Следующий слайд").licences__next-slider.nav-arrow.nav-arrow--primary.nav-arrow--next.js-next-slider-licence
+                .licences__list.js-licences-slider.pswp
+                  div
+                    a(href="__static__img/content/certificate-1@3x.jpg" data-lightbox="roadtrip").licences__item
+                      img(src="__static__img/content/certificate-1.jpg" srcset="__static__img/content/certificate-1@2x.jpg 2x" alt="Лицензия-1" width="270" height="374" loading="lazy")
+                  div
+                    a(href="__static__img/content/certificate-2@3x.jpg" data-lightbox="roadtrip").licences__item
+                      img(src="__static__img/content/certificate-2.jpg" srcset="__static__img/content/certificate-2@2x.jpg 2x" alt="Лицензия-2" width="270" height="374" loading="lazy")
+                  div
+                    a(href="__static__img/content/certificate-3@3x.jpg" data-lightbox="roadtrip").licences__item
+                      img(src="__static__img/content/certificate-3.jpg" srcset="__static__img/content/certificate-3@2x.jpg 2x" alt="Лицензия-3" width="270" height="374" loading="lazy")
+        +about()

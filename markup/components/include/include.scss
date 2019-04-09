@@ -1,0 +1,134 @@
+
+.include {
+  overflow: hidden;
+  &__inner {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 46px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 118px;
+      right: -426px;
+      display: none;
+      width: 716px;
+      height: 700px;
+      background: url(__static__general/bubble-light-yellow.svg) 0 0 no-repeat ;
+      z-index: -1;
+      @include media-breakpoint-up(xl) {
+        display: block;
+      }
+    }
+  }
+  &__title {
+    margin-bottom: 30px;
+    @include media-breakpoint-up(xl) {
+      max-width: 715px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 100px;
+      text-align: center;
+    }
+  }
+  &__left-column {
+    @include media-breakpoint-up(xl) {
+      padding-top: 37px;
+    }
+  }
+  &__group {
+    margin-bottom: 30px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+    }
+    &:not(:last-of-type) {
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 68px;
+      }
+    }
+  }
+  &__name {
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 30px;
+    }
+  }
+  &__list {
+    margin-bottom: 10px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 20px;
+    }
+  }
+  &__main-image {
+    @include media-breakpoint-up(xl) {
+      justify-content: center;
+      margin: 0 -60px;
+      margin-bottom: 10px;
+      padding: 8px 16px 14px;
+      text-align: right;
+      background-color: #efffff;
+    }
+    img {
+      @include media-breakpoint-up(xl) {
+        width: 444px;
+      }
+    }
+  }
+  .features {
+    margin-bottom: 10px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 20px;
+    }
+  }
+  .features__item {
+    margin-bottom: 10px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 18px;
+    }
+  }
+  .features__circle {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 20px;
+    }
+  }
+  &__wrapper {
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+    }
+  }
+  &__more {
+    font-size: 18px;
+  }
+  &__photos {
+    &--first {
+      @include media-breakpoint-up(xl) {
+        padding-top: 107px;
+      }
+    }
+  }
+  &__photo {
+    display: block;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 20px;
+    }
+  }
+  &__important {
+    padding-top: 4px;
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 300;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+    }
+    &.border-link::before {
+      bottom: 4px;
+    }
+  }
+  .wave {
+    position:relative;
+    bottom: -2px;
+  }
+}

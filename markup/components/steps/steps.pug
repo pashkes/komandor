@@ -1,0 +1,38 @@
+mixin steps(data)
+  aside.steps
+    .steps__wrapper
+      .steps__body
+        div(data-hideshow-prefix-class="animated").steps__title.js-expandmore
+          span Порядок оформления путевки
+        .js-to_expand.is-opened
+          ul.steps__list
+            li.steps__item
+              a(href="#").steps__link 1. Выбор программы и смены
+            li.steps__item
+              a(href="#").steps__link 2. Ознакомление с документами
+            li.steps__item.current
+              a(href="#").steps__link 3. Загрузка документов
+              ul.steps__sublist
+                li.steps__subitem.current
+                  a(href="#").steps__sublink Личные данные
+                li.steps__subitem
+                  a(href="#").steps__sublink Медицинские данные
+                li.steps__subitem
+                  a(href="#").steps__sublink Физические способности
+                li.steps__subitem
+                  a(href="#").steps__sublink Эмоциональный портрет
+                li.steps__subitem
+                  a(href="#").steps__sublink Предпочтения
+
+            li.steps__item
+              a(href="#").steps__link 4. Анкета ребенка
+            li.steps__item
+              a(href="#").steps__link 5. Оплата 50%
+            li.steps__item
+              a(href="#").steps__link 5. Сбор мед. справок
+            li.steps__item
+              a(href="#").steps__link 7. Оплата 50%
+      .steps__footer
+        a(href="#").steps__annul Аннулировать бронирование
+        a(href="#").steps__log-out Выйти из аккаунта
+    span.steps__additional-info До&nbsp;конца оформления бронирования осталось 72&nbsp;часа

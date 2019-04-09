@@ -1,0 +1,124 @@
+.advices {
+  padding-top: 78px;
+  overflow: hidden;
+  @include media-breakpoint-up(xl) {
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+  &__inner {
+    position:relative;
+    z-index: 1;
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 210px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: -220px;
+      top: 0;
+      width: 705px;
+      height: 688px;
+      background: url(__static__general/middle-green-bubble.svg) 0 0 no-repeat;
+      z-index: -1;
+      @include media-breakpoint-up(xl) {
+        top: -56px;
+      }
+    }
+  }
+  &__icon {
+    display: block;
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 60px;
+    }
+  }
+  &__item {
+    margin-bottom: 30px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+    }
+  }
+  &__name {
+    margin-bottom: 14px;
+    font-size: 24px;
+    font-weight: 700;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 32px;
+    }
+  }
+  &__desc {
+    margin-bottom: 8px;
+    padding-top: 16px;
+    @include media-breakpoint-up(xl) {
+      padding-top: 0;
+      margin-bottom: 28px;
+    }
+  }
+  &__list {
+    margin-bottom: 0;
+    li {
+      position: relative;
+      padding-left: 24px;
+      color: $green-dark;
+      line-height: 2;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4.5px 0 4.5px 5px;
+        border-color: transparent transparent transparent $green-dark;
+        transform: translateY(-50%);
+      }
+    }
+    a {
+      color: inherit;
+    }
+  }
+}
+.offers {
+  position:relative;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  z-index: 1;
+  @include media-breakpoint-up(xl) {
+    padding-top: 64px;
+    padding-bottom: 18px;
+  }
+  &__title {
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 30px;
+    }
+  }
+  &__show-all {
+    margin-bottom: 30px;
+    min-width: 160px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 50px;
+    }
+  }
+  &__slider {
+    position:relative;
+    margin-left: -10px;
+    margin-right: -10px;
+    @include media-breakpoint-up(xl) {
+      margin-left: -14px;
+      margin-right: -14px;
+    }
+  }
+  .child-camp__arrow-right {
+    @include media-breakpoint-up(md) {
+      right: 20px;
+    }
+  }
+  .slick-prev {
+    display: none !important;
+  }
+}

@@ -1,0 +1,23 @@
+mixin promo-winter(data)
+  div(style='background-image: url(__static__img/general/promo-back-bg.jpg)').promo.promo--winter
+    +header()
+    section.promo__wrapper
+      .container
+        .promo__inner
+          .promo__body
+            +breadcrumbs(breadcrumb.winter).breadcrumb--blue.promo__breadcrumb
+            h1.promo__title Горные лыжи и&nbsp;сноуборд
+            span.promo__hashtag #Спорт
+            .promo__previev-video
+              button(type="button" data-toggle="modal" data-target="#video-modal").promo__play.button-play
+                +icon('play', 11, 13)
+              picture
+                source(type="image/webp" srcset="__static__img/general/winter-promo-image.webp")
+                img(src="__static__img/general/winter-promo-image.png" srcset="__static__img/general/winter-promo-image@2x.png 2x" aria-hidden="true" alt="")
+            p.promo__lead.lead Для новичков и&nbsp;продолжающих. <br>Мастерство сноуборда дела для вашего ребенка
+            .promo__buttons
+              a(href="#program").promo__programs-button.button.button--blue.button--has-arrow.js-scrollTo Программа
+              a(href="#").promo__change-button.button.button--outline-blue-secondary Смены
+            .promo__old
+              img(src="__static__img/general/boy-and-girl.svg" width=38 height=36 alt="" aria-hidden="true")
+              span Для детей 8-14 лет

@@ -1,0 +1,13 @@
+mixin video-modal(data)
+  div(class="modal fade" tabindex="-1" role="dialog" aria-hidden="true")#video-modal
+    div(class="modal-dialog modal-dialog-centered" role="document")
+      .modal-content.modal
+        button(type="button" title="Закрыть это окно" data-dismiss="modal").modal-close
+        .js-video.video
+          a.video__link(href='https://www.youtube.com/watch?v=H1iboKia3AQ' data-id="H1iboKia3AQ")
+            picture
+              source(type="image/webp" srcset="__static__img/content/change-photo-1.webp")
+              img.video__media(src='__static__img/content/change-photo-1.jpg' srcset="__static__img/content/change-photo-1@2x.jpg 2x" width=480 height=359 alt="Осенняя встреча лагеря Командор - 2018")
+          button.video__button(type='button', aria-label='Запустить видео').button-play
+            +icon('play', 11, 13)
+

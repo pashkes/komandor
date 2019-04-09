@@ -1,0 +1,29 @@
+.social {
+  display: inline-flex;
+  padding: 0;
+  list-style-type: none;
+  &__item {
+    margin-right: 10px;
+    overflow: hidden;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: $light-pink;
+    transition: $transition-base;
+    &:hover {
+      background-color: $secondary;
+    }
+    .icon {
+      fill: black;
+      transition: $transition-base;
+    }
+  }
+}

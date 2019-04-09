@@ -1,0 +1,31 @@
+
+/* --------------- styles for expand -----------------------*/
+.animated-expandmore__button {
+  width: auto;
+  cursor: pointer;
+  background: transparent;
+  font: inherit;
+  border: 0;
+  padding-right: 0;
+  padding-left: 0;
+  text-align: left;
+  color: inherit;
+}
+/* This is the opened state */
+.animated-expandmore__to_expand {
+  display: block;
+  overflow: hidden;
+  opacity: 1;
+  transition: visibility 0s ease, max-height .5s ease, opacity .5s ease ;
+  max-height: 140em;
+  visibility: visible;
+  transition-delay: 0s;
+}
+/* This is the hidden state */
+[data-hidden=true].animated-expandmore__to_expand {
+  display: block;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: .5s, 0s, 0s;
+}

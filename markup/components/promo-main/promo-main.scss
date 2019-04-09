@@ -1,0 +1,202 @@
+.promo {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F5F5;
+  background-size: cover;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(#fff, .95);
+    z-index: 1;
+  }
+  &--winter {
+
+    &::before {
+      background-color: rgba(213, 236, 250, 0.93)
+    }
+    .promo__inner {
+      @include media-breakpoint-up(xl) {
+        padding-top: 0;
+      }
+    }
+    .promo__wrapper {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      @include media-breakpoint-up(xl) {
+        padding-top: 38px;
+        padding-bottom: 96px;
+      }
+    }
+    .promo__previev-video {
+      margin-bottom: 20px;
+      @include media-breakpoint-up(xl) {
+        width: 760px;
+      }
+    }
+    .promo__lead {
+      margin-bottom: 30px;
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 28px;
+      }
+    }
+  }
+  &__wrapper {
+    padding-top: 35px;
+    padding-bottom: 30px;
+    @include media-breakpoint-up(xl) {
+      padding-top: 20px;
+      padding-bottom: 46px;
+    }
+  }
+  &__inner {
+    position:relative;
+    z-index: 2;
+    @include media-breakpoint-up(xl) {
+      padding-top: 105px;
+    }
+  }
+  &__body {
+    max-width: 505px;
+  }
+  &__breadcrumb {
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 30px;
+    }
+  }
+  &__name {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 16px;
+    line-height: 1.12;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.083em;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 20px;
+      line-height: 1.16;
+      font-size: 24px;
+    }
+  }
+  &__title {
+    margin-bottom: 0;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 32px;
+    }
+  }
+  &__hashtag {
+    display: block;
+    margin-bottom: 19px;
+    padding-top: 15px;
+    color: $blue;
+    font-weight: 700;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 62px;
+      padding-top: 0;
+    }
+  }
+  &__lead {
+    display: none;
+    @include media-breakpoint-up(xl) {
+      display: block;
+      margin-bottom: 56px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 64px;
+    }
+  }
+  &__programs-button {
+    min-width: 183px;
+    margin-right: 6px;
+    font-size: 18px;
+    line-height: 2.27;
+    @include media-breakpoint-up(xl) {
+      min-width: 206px;
+      margin-right: 20px;
+      font-size: 20px;
+      line-height: 1.8;
+    }
+  }
+  &__change-button {
+    @include media-breakpoint-up(xl) {
+      min-width: 118px;
+    }
+  }
+  &__previev-video {
+    position: relative;
+    margin-bottom: 30px;
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 700px;
+    }
+    svg, img {
+      max-width: 530px;
+      width: 100%;
+      @include media-breakpoint-up(xl) {
+        max-width: 100%;
+      }
+    }
+  }
+  &__play {
+    position: absolute;
+    top: 050%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__button {
+    min-width: 250px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 74px;
+    }
+  }
+  &__scroll-down {
+    display: none;
+    @include media-breakpoint-up(xl) {
+      max-width: 250px;
+      display: block;
+      font-weight: 500;
+      line-height: 1.16;
+      font-size: 12px;
+      letter-spacing: 0.083em;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    span {
+      display: block;
+      margin-bottom: 7px;
+    }
+  }
+  &__mouse {
+    display: flex;
+    justify-content: center;
+    svg {
+      width: 22px;
+      height: 54px;
+    }
+  }
+  &__old {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 15px;
+    }
+    span {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+    }
+  }
+}

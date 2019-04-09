@@ -1,0 +1,88 @@
+
+
+/* overlay covers everything */
+
+.video-modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #000;
+  opacity: .6;
+  z-index: 666;
+  cursor: pointer;
+}
+.video-modal-overlay[data-background-click="disabled"]{
+  cursor: auto;
+}
+.video-modal-overlay {
+  animation: fadewhite ease .5s 1 normal ;
+}
+
+.video-modal {
+  position: fixed;
+  width: 100%;
+  top: 32px;
+  max-height: 100vh;
+  background-color : #fff;
+  border: 1px solid #FFFFFF;
+  z-index: 667;
+  padding: 32px 10px 30px;
+  right: auto;
+  overflow: auto;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+  @include media-breakpoint-up(md) {
+    top: 10%;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  @include media-breakpoint-up(lg) {
+    top: 3%;
+    left: calc(50% - (1000px / 2));
+    max-width: 1000px;
+    max-height: 80vh;
+  }
+
+}
+.video-modal-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 43px;
+  height: 43px;
+  color: #fff;
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 0;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' fill='none'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M7.92 6.5l4.79-4.8A1 1 0 0 0 11.29.3L6.5 5.07 1.7.3A1 1 0 0 0 .3 1.71L5.07 6.5.3 11.3a1 1 0 0 0 1.42 1.4L6.5 7.93l4.8 4.79a1 1 0 0 0 1.4-1.42L7.93 6.5z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video-modal {
+  animation: pop ease .5s 1 normal ;
+}
+
+.modal {
+  &__title {
+    margin-bottom: 32px;
+  }
+  &__btn-close {
+    min-width: 92px;
+    @include media-breakpoint-up(xl) {
+      min-width: 132px;
+    }
+  }
+
+  &__content {
+    padding-bottom: 10px;
+    img {
+      display: block;
+      margin-bottom: 22px;
+    }
+  }
+}

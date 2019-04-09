@@ -1,0 +1,49 @@
+mixin videos-change(data)
+  section.videos-change
+    .videos-change__inner
+      .container
+        .videos-change__header
+          .row.justify-content-xl-between.align-items-xl-end
+            .col-xl-6
+              img(src="__static__img/general/youtube-logo.png" srcset="__static__img/general/youtube-logo@2x.png 2x" width=56 height=39 alt="" aria-hidden="true" ).videos-change__icon
+              h2.videos-change__title.h1
+                span Видео
+                | с&nbsp;прошедших смен
+            .col-xl-auto
+              a(href="#").videos-change__button.button.button--outline.button--medium перейти на youtube-канал
+      .videos-change__slider
+        button(type="button" title="Следующий слайд").videos-change__arrow-right.nav-arrow.nav-arrow--primary.nav-arrow--next.js-next-slider-change
+        .js-slider-change
+          div
+            .videos-change__item
+              .video.js-video
+                a.video__link(href='https://www.youtube.com/watch?v=H1iboKia3AQ' data-id="H1iboKia3AQ")
+                  picture
+                    source(type="image/webp" srcset="__static__img/content/change-photo-1.webp")
+                    img.video__media(src='__static__img/content/change-photo-1.jpg' srcset="__static__img/content/change-photo-1@2x.jpg 2x" width=480 height=359 alt="Осенняя встреча лагеря Командор - 2018" loading="lazy")
+                button.video__button(type='button', aria-label='Запустить видео').button-play
+                  +icon('play', 11, 13)
+              span.videos-change__name Осенняя встреча лагеря Командор - 2018
+          div
+            .videos-change__item
+              .video.js-video
+                a.video__link(href='https://www.youtube.com/watch?v=H1iboKia3AQ' data-id="H1iboKia3AQ")
+                  picture
+                    source(type="image/webp" srcset="__static__img/content/change-photo-2.webp")
+                    img.video__media(src='__static__img/content/change-photo-2.jpg' srcset="__static__img/content/change-photo-2@2x.jpg 2x" width=480 height=359 alt="Нереальный картинг. Самая большая трасса в России." loading="lazy")
+                button.video__button(type='button', aria-label='Запустить видео').button-play
+                  +icon('play', 11, 13)
+              span.videos-change__name Нереальный картинг. Самая большая трасса в&nbsp;России.
+          div
+            .videos-change__item
+              .video.js-video
+                a.video__link(href='https://www.youtube.com/watch?v=H1iboKia3AQ' data-id="H1iboKia3AQ")
+                  picture
+                    source(type="image/webp" srcset="__static__img/content/change-photo-3.webp")
+                    img.video__media(src='__static__img/content/change-photo-3.jpg' width=480 height=359 alt="Мечта любого конника. Такие должны быть каникулы." loading="lazy")
+                button.video__button(type='button', aria-label='Запустить видео').button-play
+                  +icon('play', 11, 13)
+              span.videos-change__name Мечта любого конника. Такие должны быть каникулы.
+    | <svg viewBox="0 0 1440 200" fill="none" preserveAspectRatio="none"  xmlns="http://www.w3.org/2000/svg">
+    | <path fill-rule="evenodd" clip-rule="evenodd" d="M385.059 59.7026C631.697 59.7026 805.047 199.277 1071.98 199.277C1338.9 199.277 1440 129.489 1440 129.489V0H0V138.182C0 138.182 138.421 59.7026 385.059 59.7026Z" fill="#ECF8E4"/>
+    | </svg>

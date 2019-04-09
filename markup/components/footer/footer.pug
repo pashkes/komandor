@@ -1,0 +1,72 @@
+mixin footer(data)
+  include ../social/social.pug
+
+  footer.footer
+    .container
+      .footer__main
+        .row
+          .col-xl-2.d-none.d-xl-block
+            .footer__item
+              h3.footer__header Программы
+              ul.footer__list
+                li.footer__item
+                  a(href="#").footer__link Летний лагерь
+                li.footer__item
+                  a(href="#").footer__link Весенний лагерь
+                li.footer__item
+                  a(href="#").footer__link Зимний лагерь
+                li.footer__item
+                  a(href="#").footer__link Осенний лагерь
+          .col-xl-2.d-none.d-xl-block
+            .footer__item
+              h3.footer__header О нас
+              ul.footer__list
+                li.footer__item
+                  a(href="#").footer__link KomandorCamp клуб
+                li.footer__item
+                  a(href="#").footer__link Наша команда
+                li.footer__item
+                  a(href="#").footer__link Видео-отзывы
+                li.footer__item
+                  a(href="#").footer__link Акции
+                li.footer__item
+                  a(href="#").footer__link Контакты
+          .col-xl-2.d-none.d-xl-block
+            .footer__item
+              h3.footer__header Для родителей
+              ul.footer__list
+                li.footer__item
+                  a(href="#").footer__link Правило оформления путевки
+                li.footer__item
+                  a(href="#").footer__link Подобрать направление для ребенка
+                li.footer__item
+                  a(href="#").footer__link Правила лагеря
+                li.footer__item
+                  a(href="#").footer__link Государственная компенсация
+                li.footer__item
+                  a(href="#").footer__link Полезные статьи
+          .col-xl-3.d-none.d-xl-block
+            .footer__item
+              h3.footer__header Контакты
+              address.footer__address
+                span Адрес офиса:
+                span г. Москва, ул. Свободы, дом 35
+              a(href="#").footer__how-get.footer__link Как добраться?
+              a(href="mailto:info@komandorcamp.ru").footer__link info@komandorcamp.ru
+          .col-xl-3
+            .footer__contacts
+              a(href="tel:+74951202159").footer__tel 7 (495) 120-21-59
+              span.footer__time-work ежедневно с 9.00 до 21.00
+            +social(social).footer__social-links
+      .footer__additional-info
+        .row.justify-content-xl-between
+          .col-xl-6
+            .footer__add-info
+              a(href="#").footer__licence.footer__link АНО КОМАНДОР&nbsp;&mdash; лицензия на&nbsp;учебную деятельность 56085895 от&nbsp;21.10.2016
+              a(href="#").footer__link Политика конфиденциальности
+          .col-xl-3
+            .footer__copyright
+              span Дизайн сайта&nbsp;&mdash;&nbsp;
+                a(href="#").footer__link ДзенДизайн
+              span Разработка&nbsp;&mdash;&nbsp;
+                a(href="#").footer__link Unlim Company

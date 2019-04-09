@@ -1,0 +1,17 @@
+extends _content-layout
+block main
+  include ../components/direction/direction
+  include ../components/interesting/interesting
+
+  main.content.overflow-hidden
+    .container
+      .content__header
+        +breadcrumbs(breadcrumb.parents).breadcrumb--green
+        h1.content__title.h1 Как правильно выбрать программу для ребенка?
+        p.content__subtitle.
+          Мы&nbsp;понимаем, что это важный шаг, особенно если ребенок едет впервые. Поэтому мы&nbsp;предлагаем 3&nbsp;решения для этого вопроса.
+        .content__read-full
+          a(href="#").border-link.border-link--green Читать статью полностью
+      .content__body
+        +direction(childCampscontainer2)
+        +interesting()

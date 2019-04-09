@@ -1,0 +1,438 @@
+.menu-is-opened,
+.no-js {
+  .header {
+    z-index: 3;
+  }
+  .header__body {
+    display: flex;
+  }
+}
+
+.menu-is-opened {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  @include media-breakpoint-up(xl) {
+    position:static;
+    overflow: initial;
+  }
+}
+
+.no-js {
+  .header__body {
+    position: static;
+    width: 100%;
+  }
+  .header__navigation {
+    position: static;
+  }
+  .header__close {
+    display: none;
+  }
+}
+
+.header {
+  position: relative;
+  z-index: 4;
+  &--pass-through {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.047894);
+
+    // После добавление класса при скоролле делать любому тегу следующему сразу после шапки верхний отступ
+    // дабы не было резкого скачка при добавлении fixed
+    + * {
+      // Высота мобильной шапки в обычном состоянии
+      margin-top: 59.63px;
+      @include media-breakpoint-up(lg) {
+        // Высота декстоп шапки в обычном состоянии
+        margin-top: 147px;
+      }
+    }
+    .header__inner {
+      @include media-breakpoint-up(xl) {
+        padding-top: 6px;
+        padding-bottom: 6px;
+      }
+    }
+    .header__logo {
+      flex: none;
+      @include media-breakpoint-up(xl) {
+        margin-right: 38px;
+      }
+      img {
+        @include media-breakpoint-up(xl) {
+          width: 122px;
+        }
+      }
+    }
+
+    .header__body {
+      @include media-breakpoint-up(xl) {
+        margin-left: 0;
+      }
+    }
+    .header__menu {
+      @include media-breakpoint-up(xl) {
+        margin-top: 0;
+        padding-bottom: 0;
+      }
+    }
+    .header__item {
+      a.header__link {
+        @include media-breakpoint-up(xl) {
+          background-image: none;
+          padding: 13px 12px;
+        }
+      }
+    }
+
+    .header__user-bar {
+      @include media-breakpoint-up(xl) {
+        margin-left: auto;
+        align-items: center;
+      }
+    }
+    .header__number {
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 0;
+        line-height: 1;
+      }
+    }
+    .header__contacts {
+      @include media-breakpoint-up(xl) {
+        align-items: flex-end;
+      }
+    }
+    .header__book {
+      padding-top: 0.95em;
+      padding-bottom: 0.95em;
+      @include media-breakpoint-up(xl) {
+        margin-right: 30px;
+      }
+    }
+    .header__callback-link {
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        line-height: 2;
+      }
+    }
+  }
+  &__inner {
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    transition: $transition-base;
+
+    @include media-breakpoint-up(xl) {
+      flex-wrap: nowrap;
+      padding-top: 36px;
+      padding-bottom: 36px;
+    }
+  }
+  &__logo {
+    img {
+      @include media-breakpoint-up(xl) {
+        width: 192px;
+      }
+    }
+  }
+  &__burger {
+    position: absolute;
+    right: -10px;
+    background-color: transparent;
+    border: none;
+    width: 44px;
+    height: 44px;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 24px;
+      height: 12px;
+      background: repeating-linear-gradient(black, black 2px, transparent 2px, transparent 5px);
+      transform: translate(-50%, -50%);
+    }
+    @include media-breakpoint-up(xl) {
+      display: none;
+    }
+  }
+  &__body {
+    flex-grow: 1;
+    margin-left: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    background-color: #fff;
+    z-index: 10;
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      position: static;
+      overflow-y: visible;
+      background-color: transparent;
+    }
+  }
+  &__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 52px;
+    height: 52px;
+    border: none;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18.38 18.38'%3E%3Cpath d='M1.41 0L0 1.41l17 17L18.38 17z'/%3E%3Cpath d='M1.41 18.38l17-17L17 0 0 17z'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    @include media-breakpoint-up(xl) {
+      display: none;
+    }
+  }
+  &__navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 11;
+    @include media-breakpoint-up(xl) {
+      position: static;
+      align-items: flex-start;
+    }
+  }
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 375px;
+    padding-top: 48px;
+    padding-bottom: 1rem;
+    @include media-breakpoint-up(xl) {
+      flex-grow: 1;
+      flex-direction: row;
+      max-width: 100%;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+  }
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      align-items: flex-end;
+      margin-bottom: 0;
+      margin-right: 12px;
+      padding-right: 0;
+    }
+  }
+  &__item {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 8px;
+    }
+    &:hover {
+      @include media-breakpoint-up(xl) {
+        .header__submenu {
+          display: block;
+        }
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      width: auto;
+    }
+    &--season {
+      width: 50%;
+      margin-bottom: 41px;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      @include media-breakpoint-up(xl) {
+        width: auto;
+        margin-bottom: 0;
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .header__link {
+        padding: 41px 0 3px;
+        background-position: center 0;
+        background-repeat: no-repeat;
+        @include media-breakpoint-up(xl) {
+          padding-right: 12px;
+          padding-left: 12px;
+        }
+        span {
+          border-bottom-width: 1px;
+          border-bottom-style: solid;
+        }
+      }
+    }
+    &--summer {
+      .header__link {
+        background-image: url(__static__general/sun.svg);
+        span {
+          border-bottom-color: #69955A;
+        }
+      }
+    }
+    &--authumn {
+      .header__link {
+        background-image: url(__static__general/leaf.svg);
+        span {
+          border-bottom-color: #FFA53F;
+        }
+      }
+    }
+    &--winter {
+      .header__link {
+        background-image: url(__static__general/snowflake.svg);
+        span {
+          border-bottom-color: #56AEF3;
+        }
+      }
+    }
+    &--spring {
+      .header__link {
+        background-image: url(__static__general/rowan-leaf.svg);
+        span {
+          border-bottom-color: #F196A5;
+        }
+      }
+    }
+    &:nth-child(5) {
+      .header__link {
+        padding-top: 5px;
+        @include media-breakpoint-up(xl) {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  &__link {
+    display: inline-flex;
+    padding: 10px 12px;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 400;
+    &:focus + .header__submenu {
+      @include media-breakpoint-up(xl) {
+        display: block;
+      }
+    }
+    span {
+      flex-grow: 1;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 3px;
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+  }
+  &__submenu {
+    display: none;
+    position: absolute;
+    padding-top: 0;
+    left: 0;
+    top: 100%;
+    background-color: #fff;
+    min-width: 12em;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0968637);
+  }
+  &__sublink {
+    display: block;
+    padding: 15px 16px;
+    text-align: left;
+    color: #000;
+    white-space: nowrap;
+    transition: $transition-base;
+    &:hover {
+      background-color: #ecf8e4;
+      color: #000;
+    }
+  }
+  &__user-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    @include media-breakpoint-up(xl) {
+      flex-direction: row-reverse;
+      align-items: flex-end;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-breakpoint-up(xl) {
+      align-items: flex-start;
+    }
+  }
+  &__number {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.27;
+    color: #000;
+    &:hover {
+      color: #000;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 11px;
+      font-size: 24px;
+      line-height: 1.29;
+    }
+  }
+  &__callback-link {
+    margin-bottom: 16px;
+    &::before {
+      bottom: 2px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 11px;
+    }
+  }
+  &__book {
+    width: auto;
+    min-width: 164px;
+    @include media-breakpoint-up(xl) {
+      margin-right: 25px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+mixin video(data)
+  .video.js-video
+    a.video__link(href='https://www.youtube.com/watch?v=H1iboKia3AQ' data-id="H1iboKia3AQ")
+      picture
+        source(type="image/webp" srcset="__static__img/general/video-preview.webp")
+        img.video__media(src='__static__img/general/video-preview.jpg' srcset="__static__img/general/video-preview@2x.jpg 2x" width height)
+    button.video__button(type='button', aria-label='Запустить видео').button-play
+      +icon('play', 11, 13)

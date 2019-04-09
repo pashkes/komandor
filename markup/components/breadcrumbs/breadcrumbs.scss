@@ -1,0 +1,39 @@
+
+.breadcrumb {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  &--blue {
+    .breadcrumb__link {
+      color: $blue
+    }
+  }
+  &--green {
+    .breadcrumb__link {
+      color: $green-dark;
+    }
+  }
+  &__item {
+    position: relative;
+    padding-right: 16px;
+    &:last-child {
+      padding-right: 0;
+    }
+    &::after {
+      content: '/';
+      position: relative;
+      top: 1px;
+      left: 8px;
+      font-size: 18px;
+    }
+    &:last-child::after {
+      display: none;
+    }
+  }
+  &__link {
+    font-size: inherit;
+  }
+}

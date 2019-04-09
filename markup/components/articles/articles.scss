@@ -1,0 +1,81 @@
+.articles {
+  background-color: $primary;
+  &__body {
+    background-color: #fff;
+  }
+  &__wrapper {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: $primary;
+  }
+  &__title {
+    margin-bottom: 50px;
+    max-width: 938px;
+    @include media-breakpoint-up(xl) {
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+    }
+  }
+  &__section {
+    padding-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 40px;
+    }
+    &:last-of-type {
+      @include media-breakpoint-up(xl) {
+        padding-bottom: 0;
+      }
+    }
+  }
+  &__item {
+    margin-bottom: 30px;
+  }
+  &__preview {
+    display: block;
+    margin-bottom: 10px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 20px;
+    }
+  }
+  &__name {
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 30px;
+    }
+    a {
+      display: block;
+      color: inherit;
+    }
+  }
+  &__description {
+    margin-bottom: 0;
+  }
+  &__important {
+    position: relative;
+    z-index: 2;
+    max-width: 585px;
+    @include media-breakpoint-up(xl) {
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: -30px;
+      padding-top: 50px;
+      text-align: center;
+    }
+    strong {
+      display: block;
+      margin-bottom: 18px;
+      color: #232b2d;
+      font-weight: 700;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .wave-bottom {
+    position:relative;
+  }
+  .wave-bottom {
+    bottom: 2px;
+  }
+}

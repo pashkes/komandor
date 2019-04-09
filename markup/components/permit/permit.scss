@@ -1,0 +1,96 @@
+.permit {
+  overflow: hidden;
+  &__inner {
+    padding-top: 30px;
+    padding-bottom: 12px;
+    background-color: $primary;
+    @include media-breakpoint-up(xl) {
+      padding-top: 84px;
+      padding-bottom: 7px;
+    }
+  }
+  &__wrapper {
+    position:relative;
+    z-index: 1;
+    &::before {
+      content: '';
+      position: absolute;
+      right: -690px;
+      bottom: 87px;
+      width: 839px;
+      height: 600px;
+      background: url(__static__general/white-buble.svg) 0 0 no-repeat;
+      z-index: -1;
+      @include media-breakpoint-up(xl) {
+        right: -240px;
+        bottom: 78px;
+      }
+    }
+  }
+  &__title {
+    margin-bottom: 30px;
+    @include media-breakpoint-up(xl) {
+      max-width: 590px;
+      margin-bottom: 52px;
+    }
+  }
+  &__categories {
+    margin-bottom: 18px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: flex-end;
+    min-height: 60px;
+    margin-bottom: 20px;
+  }
+  &__name-categories {
+    margin-bottom: 30px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 50px;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+    &:hover {
+      .permit__circle {
+        background-color: #fff;
+      }
+      .permit__name {
+        color: #000;
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+  }
+  &__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    background-color: $orange;
+    border-radius: 50%;
+    transition: $transition-base;
+    @include media-breakpoint-up(xl) {
+      flex: none;
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
+  }
+  &__name {
+    font-size: 22px;
+    line-height: 1.09;
+    color: #0f2169;
+    transition: $transition-base;
+  }
+}

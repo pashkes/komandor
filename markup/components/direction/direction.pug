@@ -1,0 +1,64 @@
+mixin direction(data)
+  include ../child-card/child-card
+
+  .direction
+    .direction__selection
+      .row
+        .col-lg-6.col-xl-5
+          .direction__item
+            h2.direction__name
+              span.direction__number 1&nbsp;
+              | Онлайн-тестирование
+            p.direction__desc.
+              Мы&nbsp;понимаем, что каждый ребенок уникален
+              и&nbsp;чтобы помочь Вам выбрать направление мы&nbsp;подготовили онлайн-тест.
+            a(href="#test").direction__btn.direction__go-test.button.button--primary.button--has-arrow.js-scrollTo Пройти тест за 3 минуты
+
+        .col-lg-6.col-xl-4.offset-xl-2
+          form.direction__item.direction__item--help#helping
+            h2.direction__name
+              span.direction__number 2&nbsp;
+              | Помощь специалиста
+            p.direction__desc.
+              Мы&nbsp;перезвоним Вам и&nbsp;обсудим возможные варианты по&nbsp;телефону
+            .direction__fields
+              label(for="helping-name").label Ваше имя
+              input.direction__field.field#helping-name
+              label(for="field-tel").label.required Номер телефона
+              input(type="tel" placeholder="+7(___)___ -__-__" required).direction__field.field#field-tel
+            button.direction__btn.direction__callback.button.button--primary Перезвоните мне
+
+        .col-lg-6.offset-xl-1
+          form.direction__item.direction__item--test#test
+            h2.direction__name
+              span.direction__number 3&nbsp;
+              | Подбор по&nbsp;дате и&nbsp;возрасту ребенка
+            .direction__selects
+              .direction__selects-item
+                label(for="test-old").label Возраст ребенка
+                .direction__select.direction__select--old.custom-select
+                  select.js-custom-select#test-old
+                    option 8 лет
+                    option 9 лет
+                    option 10 лет
+                    option 11 лет
+                    option 12 лет
+                    option 13 лет
+                    option(selected) 14 лет
+              .direction__selects-item
+                label(for="test-dates").label Желамые даты каникул
+                .direction__select.direction__select--dates.custom-select
+                  select.js-custom-select#test-dates
+                    option 10 дек. 2018 - 10 янв. 2019
+                    option 10 дек. 2018 - 10 янв. 2019
+                    option 10 дек. 2018 - 10 янв. 2019
+            button.direction__btn.direction__show-results.button.button--primary Показать доступные лагери
+
+    .results
+      span.results__title.h4 Результат подбора:
+      .offers__slider
+        button(type="button" title="Следующий слайд").child-camp__arrow-right.nav-arrow.nav-arrow--primary.nav-arrow--next.js-next-slider-camp
+        .row.js-slider-camp
+          each item in data.childCamps1
+            .col-xl-3
+              +child-card(item).child-camp__item

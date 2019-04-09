@@ -1,0 +1,175 @@
+.sec-for-bubble {
+  overflow: hidden;
+  &__inner {
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: '';
+      position: absolute;
+      right: -590px;
+      bottom: 178px;
+      width: 839px;
+      height: 600px;
+      background: url(__static__general/Oval-yellow-large.svg) 0 0 no-repeat;
+      @include media-breakpoint-up(xl) {
+        top: 116px;
+        bottom: initial;
+        right: -278px;
+      }
+    }
+  }
+}
+
+.reviews {
+  padding-bottom: 10px;
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 84px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 30px;
+    }
+  }
+  &__show-all {
+    min-width: 160px;
+    margin-bottom: 30px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 50px;
+    }
+  }
+  &__item {
+    margin-bottom: 22px;
+  }
+  &__caption {
+    display: flex;
+    flex-direction: column;
+  }
+  &__video {
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 30px;
+    }
+  }
+  &__name-old {
+    color: #232b2d;
+  }
+  &__place {
+    color: #9b9b9b;
+  }
+}
+
+.shifts {
+  position: relative;
+  padding-top: 16px;
+  z-index: 1;
+  @include media-breakpoint-up(xl) {
+    padding-top: 84px;
+    padding-bottom: 60px;
+  }
+  &__title {
+    margin-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 10px;
+    }
+  }
+  &__table-wrapper {
+    overflow-x: auto;
+    margin-right: -10px;
+    padding-bottom: 9px;
+    @include media-breakpoint-up(xl) {
+      margin-right: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+  }
+  &__additional-text {
+    margin-bottom: 16px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 46px;
+    }
+  }
+
+  &__table {
+    width: 100%;
+    tr {
+      &:hover {
+        .shifts__book {
+          background-color: $green;
+          border-color: $green;
+          color: white;
+        }
+      }
+      &:nth-child(even) {
+        background-color: #eff0f0;
+      }
+      &:nth-child(odd) {
+        background-color: #f7f8fa;
+      }
+    }
+    td {
+      height: 60px;
+      padding: 8px 20px 7px 0;
+      line-height: 1.55;
+      white-space: nowrap;
+      &:first-child {
+        padding-left: 20px;
+      }
+    }
+  }
+  &__name-col {
+    background-color: $green;
+    color: white;
+    font-weight: 500;
+    line-height: 1.55;
+    span {
+      display: block;
+      padding: 15px 20px 15px 0;
+    }
+    &:first-child {
+      span {
+        padding-left: 20px;
+      }
+    }
+    &--arrival {
+      span {
+        min-width: 166px;
+      }
+    }
+    &--depart {
+      span {
+        min-width: 146px;
+      }
+    }
+    &--duration {
+      span {
+        min-width: 202px;
+      }
+    }
+    &--status {
+      span {
+        min-width: 130px;
+      }
+    }
+    &--count-lessons {
+      span {
+        min-width: 236px;
+      }
+    }
+    &--cost {
+      span {
+        min-width: 140px;
+      }
+    }
+    &--empty {
+      span {
+        min-width: 162px;
+      }
+    }
+  }
+  &__book {
+    min-width: 140px;
+    padding: 1.25em 1em;
+  }
+}

@@ -1,0 +1,47 @@
+mixin header(data)
+  //-.header--pass-through
+  header.header&attributes(attributes)
+    .container
+      .header__inner
+        a(href="#").header__logo
+          img(src="__static__img/general/logo.svg" width=120 height=36 alt="Логотип Командор")
+        button(type="button" aria-expanded="false" aria-haspopup="true" aria-controls="menu" aria-label="Открыть меню").header__burger.js-show-menu
+        div.header__body#menu
+          nav.header__navigation
+            .header__wrapper
+              button(type="button" aria-label="закрыть").header__close.js-close-menu
+              ul.header__menu
+                li.header__item.header__item--season.header__item--summer
+                  a(href="#").header__link
+                    span Лето
+                  ul.header__submenu
+                    li
+                      a(href="#").header__sublink Горнолыжный. Сочи
+                    li
+                      a(href="#").header__sublink Конный лагерь г. Сочи
+                    li
+                      a(href="#").header__sublink Горнолыжный. Рязань
+
+                li.header__item.header__item--season.header__item--authumn
+                  a(href="#").header__link
+                    span Осень
+                li.header__item.header__item--season.header__item--winter
+                  a(href="#").header__link
+                    span Зима
+                li.header__item.header__item--season.header__item--spring
+                  a(href="#").header__link
+                    span Весна
+                li.header__item
+                  a(href="#").header__link
+                    span О нас
+                li.header__item
+                  a(href="#").header__link
+                    span Для родителей
+                li.header__item
+                  a(href="#").header__link
+                    span Контакты
+              .header__user-bar
+                .header__contacts
+                  a(href="tel:+74951202159").header__number 7 (495) 120-21-59
+                  a(href="tel:+74951202159").header__callback-link.border-link.border-link--green Перезвонить Вам?
+                button(type="button").header__book.button.button--outline-primary.button--large Забронировать

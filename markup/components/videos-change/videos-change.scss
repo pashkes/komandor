@@ -1,0 +1,114 @@
+.videos-change {
+  &__inner {
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: $primary;
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 77px;
+    }
+  }
+  &__header {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 50px;
+    }
+  }
+  &__icon {
+    display: block;
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 14px;
+    @include media-breakpoint-up(xl) {
+      max-width: 585px;
+      margin-bottom: 0;
+    }
+    span {
+      display: block;
+    }
+  }
+  &__button {
+    min-width: 262px;
+    margin-bottom: 30px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 14px;
+    }
+  }
+  &__slider {
+    position: relative;
+    font-size: 0;
+    padding-left: 10px;
+    background-color: $primary;
+    @include media-breakpoint-up(sm) {
+      margin-left: calc((100vw - 540px) / 2);
+    }
+    @include media-breakpoint-up(md) {
+      margin-left: calc((100vw - 720px) / 2);
+    }
+    @include media-breakpoint-up(lg) {
+      margin-left: calc((100vw - 960px) / 2);
+    }
+    @include media-breakpoint-up(xl) {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1246px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .slick-prev.slick-arrow {
+      display: none !important;
+    }
+
+  }
+  &__arrow-right {
+    position: absolute;
+    right: 10px;
+    top: 32px;
+    z-index: 2;
+    @include media-breakpoint-up(sm) {
+      top: 82px;
+    }
+    @include media-breakpoint-up(md) {
+      top: 105px;
+    }
+    @include media-breakpoint-up(xl) {
+      right: -15px;
+    }
+  }
+  .slick-list, .slick-slide div {
+    font-size: 0;
+    vertical-align: top;
+  }
+  &__item {
+    width: 220px;
+    margin-right: 10px;
+    @include media-breakpoint-up(sm) {
+      width: 397px;
+    }
+    @include media-breakpoint-up(md) {
+      width: 480px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-right: 44px;
+    }
+    .video {
+      margin-bottom: 10px;
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  img {
+    font-size: 0;
+    vertical-align: top;
+  }
+  &__name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222;
+    @include media-breakpoint-up(xl) {
+      font-size: 24px;
+      line-height: 1.16;
+    }
+  }
+}

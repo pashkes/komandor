@@ -1,0 +1,20 @@
+mixin interesting(data)
+  .interesting
+    span.interesting__title Вам может быть также интересно:
+    .row
+      .col-md-6
+        a(href="#").interesting__item
+          .interesting__img
+            picture
+              source(media="(min-width: 768px)" srcset="__static__img/content/interesting-1.jpg, __static__img/content/interesting-1@2x.jpg 2x")
+              img(src="__static__img/content/interesting-1-m@2x.jpg" alt="Правила оформления и оплаты" width="585" height="280")
+          h2.interesting__name.h4 Правила оформления и&nbsp;оплаты
+
+      .col-md-6
+        a(href="#").interesting__item
+          .interesting__img
+            picture
+              source(media="(min-width: 768px)" srcset="__static__img/content/interesting-2.jpg, __static__img/content/interesting-2@2x.jpg 2x")
+              img(src="__static__img/content/interesting-2-m@2x.jpg"  alt="Лагери для спортивных детей" width="585" height="280")
+          h2.interesting__name.h4 Лагери для спортивных детей
+
