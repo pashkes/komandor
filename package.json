@@ -9,6 +9,11 @@
     "linux",
     "win32"
   ],
+    "keywords": [
+    "Sass",
+    "pug",
+    "JS"
+  ],
   "description": "Лагерь для детй",
   "main": "gulpfile.js",
   "dependencies": {
