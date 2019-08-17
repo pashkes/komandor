@@ -1,4 +1,12 @@
 ## Komandor
+**List of pages:** 
+ 1. [Home](https://pashkes.github.io/komandor)
+ 2. [Articles](https://pashkes.github.io/komandor/articles)
+ 3. [Load documents](https://pashkes.github.io/komandor/load-documents)
+ 4. [For parents](https://pashkes.github.io/komandor/parents)
+ 5. [Profile](https://pashkes.github.io/komandor/profile)
+ 6. [Winter mode](https://pashkes.github.io/komandor/winter)
+
 **How to start dev server:**
     `npm i`
     `npm run start`
