@@ -19,7 +19,7 @@ module.exports = () => {
             [
                 `${imagesFolderPath}/**/*.{png,jpg,svg}`,
                 `!${imagesFolderPath}/minified-svg/*.svg`,
-                `!${imagesFolderPath}/**/svg-symbols.svg`
+                `!${imagesFolderPath}/**/svg-symbols${tars.options.build.hash}.svg`
             ],
             /* eslint-enable indent */
             { base: process.cwd() + '/' }

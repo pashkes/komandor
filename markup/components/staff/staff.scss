@@ -1,8 +1,10 @@
 .staff {
   background-color: $primary;
+
   &__wrapper {
     background-color: #fff;
   }
+
   &__inner {
     padding-top: 30px;
     padding-bottom: 20px;
@@ -12,12 +14,14 @@
       padding-bottom: 48px;
     }
   }
+
   &__title {
     margin-bottom: 20px;
     @include media-breakpoint-up(xl) {
       margin-bottom: 72px;
     }
   }
+
   &__item {
     display: flex;
     flex-direction: column;
@@ -26,6 +30,7 @@
       width: auto;
       max-width: 300px;
     }
+
     img {
       margin-bottom: 10px;
       @include media-breakpoint-up(xl) {
@@ -33,9 +38,11 @@
       }
     }
   }
+
   &__slider {
     position: relative;
   }
+
   &__prev, &__next {
     position: absolute;
     top: 110px;
@@ -51,6 +58,7 @@
     }
 
   }
+
   &__prev {
     left: 10px;
     @include media-breakpoint-up(sm) {
@@ -62,18 +70,22 @@
     }
 
   }
+
   &__next {
     right: 0;
     @include media-breakpoint-up(sm) {
       transform: translateX(50%);
     }
   }
+
   &__name {
     color: #232b2d;
   }
+
   .wave-bottom {
     position: relative;
   }
+
   .wave-bottom {
     bottom: 1px;
   }

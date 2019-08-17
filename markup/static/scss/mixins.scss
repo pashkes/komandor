@@ -1,33 +1,34 @@
 // Mixins.
 
 @mixin nl {
-    margin: 0;
-    padding: 0;
-    text-indent: 0;
-    list-style: none;
-    list-style-position: outside;
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style: none;
+  list-style-position: outside;
 }
 
 @mixin cf {
-    &:before,
-    &:after {
-        display: table;
-        content: "";
-    }
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
 
-    &:after {
-        clear: both;
-    }
+  &:after {
+    clear: both;
+  }
 
-    .lt-ie8 & {
-        zoom: 1;
-    }
+  .lt-ie8 & {
+    zoom: 1;
+  }
 }
 
 @mixin blocks-justify {
-    text-align: justify;
-    text-justify: newspaper;
+  text-align: justify;
+  text-justify: newspaper;
 }
+
 @mixin placeholder {
   &::-webkit-input-placeholder {
     @content;
@@ -45,4 +46,5 @@
     @content;
   }
 }
+
 // You can add your own mixins here:

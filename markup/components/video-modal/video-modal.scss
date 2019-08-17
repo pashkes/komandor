@@ -1,5 +1,3 @@
-
-
 /* overlay covers everything */
 
 .video-modal-overlay {
@@ -13,11 +11,13 @@
   z-index: 666;
   cursor: pointer;
 }
-.video-modal-overlay[data-background-click="disabled"]{
+
+.video-modal-overlay[data-background-click="disabled"] {
   cursor: auto;
 }
+
 .video-modal-overlay {
-  animation: fadewhite ease .5s 1 normal ;
+  animation: fadewhite ease .5s 1 normal;
 }
 
 .video-modal {
@@ -25,7 +25,7 @@
   width: 100%;
   top: 32px;
   max-height: 100vh;
-  background-color : #fff;
+  background-color: #fff;
   border: 1px solid #FFFFFF;
   z-index: 667;
   padding: 32px 10px 30px;
@@ -45,6 +45,7 @@
   }
 
 }
+
 .video-modal-close {
   position: absolute;
   right: 0;
@@ -64,13 +65,14 @@
 }
 
 .video-modal {
-  animation: pop ease .5s 1 normal ;
+  animation: pop ease .5s 1 normal;
 }
 
 .modal {
   &__title {
     margin-bottom: 32px;
   }
+
   &__btn-close {
     min-width: 92px;
     @include media-breakpoint-up(xl) {
@@ -80,6 +82,7 @@
 
   &__content {
     padding-bottom: 10px;
+
     img {
       display: block;
       margin-bottom: 22px;

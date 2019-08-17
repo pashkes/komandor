@@ -1,7 +1,7 @@
 const data = {
   head: {
     defaults: {
-      title: 'default title',
+      title: 'Komandor',
       useSocialMetaTags: false
     }
   }

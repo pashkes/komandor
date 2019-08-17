@@ -3,6 +3,7 @@
   @include media-breakpoint-up(xl) {
     padding-bottom: 75px;
   }
+
   &__header {
     display: flex;
     flex-direction: column;
@@ -13,6 +14,7 @@
       align-items: center;
     }
   }
+
   &__title {
     margin-bottom: 20px;
     @include media-breakpoint-up(xl) {
@@ -21,6 +23,7 @@
       text-align: center;
     }
   }
+
   &__show-all {
     min-width: 262px;
   }

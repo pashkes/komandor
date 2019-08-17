@@ -7,22 +7,27 @@
   justify-content: space-between;
   color: inherit;
   overflow: hidden;
+
   &:hover {
     color: inherit;
+
     svg {
       fill: $primary;
     }
   }
+
   @include media-breakpoint-up(xl) {
     height: 392px;
     max-width: 275px;
   }
+
   &__mask {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+
     svg {
       width: 101%;
       height: 102%;
@@ -30,6 +35,7 @@
       transition: $transition-base;
     }
   }
+
   &__header {
     padding-top: 9px;
     padding-right: 10px;
@@ -39,6 +45,7 @@
       padding-top: 14px;
     }
   }
+
   &__range-old {
     display: block;
     margin-bottom: 11px;
@@ -46,6 +53,7 @@
     line-height: 1;
     font-size: 12px;
   }
+
   &__title {
     margin-bottom: 0;
     font-weight: 300;

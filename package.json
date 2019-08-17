@@ -9,7 +9,7 @@
     "linux",
     "win32"
   ],
-  "description": "Powerfull markup builder",
+  "description": "Лагерь для детй",
   "main": "gulpfile.js",
   "dependencies": {
     "@babel/core": "^7.1.2",
@@ -31,7 +31,8 @@
     "download": "4.4.3",
     "eslint": "^5.7.0",
     "eslint-loader": "^2.1.1",
-    "gulp": "^3.9.1",
+    "gh-pages": "^2.1.1",
+    "gulp": "3.9.1",
     "gulp-babel": "^8.0.0",
     "gulp-cached": "^1.1.1",
     "gulp-changed": "^3.2.0",
@@ -86,21 +87,13 @@
     "install": "node ./tars/helpers/install-additional-deps.js",
     "lint": "eslint webpack.config.js tars/*.js tars/tasks/**/*.js tars/watchers/**/*.js tars/helpers/**/*.js gulpfile.js --rule 'valid-jsdoc: [0, {}]'",
     "start": "gulp dev --lr",
-    "build": "gulp build -m"
+    "build": "gulp build",
+    "deploy": "gulp build && gh-pages -d builds"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tars/tars.git"
+    "url": "https://github.com/pashkes/komandor.git"
   },
-  "author": "Artem Malko",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/tars/tars/issues"
-  },
-  "homepage": "https://github.com/tars/tars",
-  "keywords": [
-    "gulp",
-    "makeup",
-    "markup"
-  ]
+  "author": "Pavlo Tarasenko",
+  "license": "MIT"
 }

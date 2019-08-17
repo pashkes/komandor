@@ -5,12 +5,14 @@
     padding-top: 0;
     padding-bottom: 60px;
   }
+
   &__item {
     margin-bottom: 10px;
     @include media-breakpoint-up(lg) {
       margin-bottom: 20px;
     }
   }
+
   &__name {
     display: block;
     margin-bottom: 20px;
@@ -21,6 +23,7 @@
       margin-bottom: 32px;
     }
   }
+
   &__row {
     display: flex;
     flex-direction: column;
@@ -32,6 +35,7 @@
       margin-right: -10px;
       margin-left: -10px;
     }
+
     &--document {
       @include media-breakpoint-up(lg) {
         margin-right: -20px;
@@ -39,6 +43,7 @@
       }
     }
   }
+
   &__fio-item {
     display: flex;
     flex-direction: column;
@@ -51,6 +56,7 @@
       width: calc(100% / 3 - 20px);
     }
   }
+
   &__col {
     @include media-breakpoint-up(lg) {
       margin-right: 10px;
@@ -58,21 +64,26 @@
       max-width: 320px;
     }
   }
+
   &__field {
     max-width: 100%;
     width: 100%;
+
     + .profile__additional-text {
       margin-top: -6px;
     }
+
     &--index {
       max-width: 210px;
     }
+
     &--address {
       @include media-breakpoint-up(lg) {
         max-width: 690px;
       }
     }
   }
+
   &__document {
     @include media-breakpoint-up(lg) {
       margin-right: 20px;
@@ -80,36 +91,46 @@
       width: calc(100% / 2 - 40px);
     }
   }
+
   &__additional-text {
     margin-bottom: 19px;
   }
+
   div.SumoSelect {
     width: 100%;
   }
+
   &__select {
     margin-bottom: 21px;
+
     &--class {
       max-width: 88px;
     }
   }
+
   &__question-item {
     padding-bottom: 15px;
+
     &:last-of-type {
       padding-bottom: 0;
     }
   }
+
   &__question {
     display: block;
     padding-bottom: 15px;
     color: #232b2d;
     font-weight: 500;
+
     + .profile__additional-text {
       margin-top: -11px;
     }
+
     .custom-select {
       margin-bottom: 15px;
     }
   }
+
   &__footer {
     padding-top: 10px;
     @include media-breakpoint-up(xl) {
@@ -117,11 +138,13 @@
       padding-top: 20px;
     }
   }
+
   .radio-button {
     &:last-of-type {
       margin-bottom: 17px;
     }
   }
+
   &__multiselect {
     .SumoSelect {
       @include media-breakpoint-up(lg) {

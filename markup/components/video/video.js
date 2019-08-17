@@ -19,7 +19,7 @@
       link.remove();
       button.remove();
       video.appendChild(iframe);
-      video.classList.add('playing')
+      video.classList.add('playing');
     });
 
     link.removeAttribute('href');
@@ -51,7 +51,6 @@
   }
 
   videos.length && findVideos();
-
 
 
   const videoModal = document.querySelector('.js-modal-video');

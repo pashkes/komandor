@@ -30,10 +30,10 @@
           }
         }
       ]
-    })
+    });
   };
   sliderLicences.length && initLicenceseSlider();
   lightbox.option({
     'resizeDuration': 200
-  })
+  });
 })();

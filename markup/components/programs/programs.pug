@@ -1,59 +1,59 @@
 mixin programs(data)
-    section.programs#program
-      .programs__wrapper
-        .container
-          h2.programs__title.h1 Программа обучения
-          .programs__list
-            div(role="list").row
-              div(role="listitem").col-lg-6
-                article.programs__item
-                  .programs__circle
-                    img(src="__static__img/general/program-1.svg" width="45" height="57" aria-hidden="true" alt="")
-                  h3.programs__name.h2 Теория по&nbsp;системе ISIA
-                  p.programs__description.
-                    Мы&nbsp;подготовили для вас нескучные и&nbsp;увлекательные лекции, где можно узнать о&nbsp;истории возникновения зимних видов спорта, разновидностях стилей катания и&nbsp;конечно&nbsp;же правила FIS.
-              div(role="listitem").col-lg-6
-                article.programs__item
-                  .programs__circle
-                    img(src="__static__img/general/program-2.svg" width="54" height="52" aria-hidden="true" alt="")
-                  h3.programs__name.h2 Практический блок
-                  p.programs__description.
-                    Наш курс рассчитан на&nbsp;любой уровень сложности. С&nbsp;новичками нам предстоит начать с&nbsp;самых азов. С&nbsp;продолжающим уровнем мы&nbsp;попробуем такие стили как FREESTYLE и&nbsp;даже JIBBING
-              div(role="listitem").col-lg-6
-                article.programs__item
-                  .programs__circle
-                    img(src="__static__img/general/program-3.svg" width="55" height="47" aria-hidden="true" alt="")
-                  h3.programs__name.h2 Вольное катание Freestyle
-                  p.programs__description.
-                    Для того, чтобы совершенствоваться в&nbsp;любом мастерстве, необходима практика. В&nbsp;каждой нашей программе курса предусмотрены часы для свободного обучения.
-              div(role="listitem").col-lg-6
-                article.programs__item
-                  .programs__circle
-                    img(src="__static__img/general/program-4.svg" width="47" height="47" aria-hidden="true" alt="")
-                  h3.programs__name.h2 Видео-разбор
-                  p.programs__description.
-                    Невозможно чему-то научиться, не&nbsp;посмотрев на&nbsp;себя со&nbsp;стороны. Поэтому каждый день мы&nbsp;уделяем особое время на&nbsp;вечерний разбор ошибок.
-          .programs__videos
-            .row
-              .col-lg-6
-                .programs__video
-                  .video.js-video
-                    a.video__link(href='https://www.youtube.com/watch?v=H1iboKia3AQ' data-id="H1iboKia3AQ")
-                      picture
-                        img.video__media(src='__static__img/content/program-preview-1.jpg' srcset="__static__img/content/program-preview-1@2x.jpg 2x" width="586" height="330" alt="как это было зимой 2018")
-                    button.video__button(type='button', aria-label='Запустить видео').button-play
-                      +icon('play', 11, 13)
-                  span.programs__caption как это было зимой 2018
-              .col-lg-6
-                .programs__video
-                  .video.js-video
-                    a.video__link(href='https://www.youtube.com/watch?v=H1iboKia3AQ' data-id="H1iboKia3AQ")
-                      picture
-                        img.video__media(src='__static__img/content/program-preview-2.jpg' srcset="__static__img/content/program-preview-2@2x.jpg 2x" width="586" height="330" alt="как это было зимой 2017")
-                    button.video__button(type='button', aria-label='Запустить видео').button-play
-                      +icon('play', 11, 13)
-                  span.programs__caption как это было зимой 2017
-      .wave
-        | <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true" fill="none" viewBox="0 0 1440 143">
-        |   <path fill="#ECF8E4" fill-rule="evenodd" d="M607.48 9.85c32.54-3.6 74.15.57 108.7 7.62 33.99 7.04 102.09 33.78 144.71 51.32 109.14 46.3 192.51 63.98 277.32 71.46 33.98 3.02 70.12 5.03 148.88-3.6 78.76-8.62 152.91-36.8 152.91-36.8V.5H0v43.56s103.67 46.87 228.07 43.86c56.45-1.01 133.62-9.64 192.94-32.21 30.53-11.65 75.16-26.17 114.76-34.8 39.16-9.05 56.88-9.63 71.7-11.06z" clip-rule="evenodd"/>
-        | </svg>
+  section.programs#program
+    .programs__wrapper
+      .container
+        h2.programs__title.h1 Программа обучения
+        .programs__list
+          div(role="list").row
+            div(role="listitem").col-lg-6
+              article.programs__item
+                .programs__circle
+                  img(src="__static__img/general/program-1.svg" width="45" height="57" aria-hidden="true" alt="")
+                h3.programs__name.h2 Теория по&nbsp;системе ISIA
+                p.programs__description.
+                  Мы&nbsp;подготовили для вас нескучные и&nbsp;увлекательные лекции, где можно узнать о&nbsp;истории возникновения зимних видов спорта, разновидностях стилей катания и&nbsp;конечно&nbsp;же правила FIS.
+            div(role="listitem").col-lg-6
+              article.programs__item
+                .programs__circle
+                  img(src="__static__img/general/program-2.svg" width="54" height="52" aria-hidden="true" alt="")
+                h3.programs__name.h2 Практический блок
+                p.programs__description.
+                  Наш курс рассчитан на&nbsp;любой уровень сложности. С&nbsp;новичками нам предстоит начать с&nbsp;самых азов. С&nbsp;продолжающим уровнем мы&nbsp;попробуем такие стили как FREESTYLE и&nbsp;даже JIBBING
+            div(role="listitem").col-lg-6
+              article.programs__item
+                .programs__circle
+                  img(src="__static__img/general/program-3.svg" width="55" height="47" aria-hidden="true" alt="")
+                h3.programs__name.h2 Вольное катание Freestyle
+                p.programs__description.
+                  Для того, чтобы совершенствоваться в&nbsp;любом мастерстве, необходима практика. В&nbsp;каждой нашей программе курса предусмотрены часы для свободного обучения.
+            div(role="listitem").col-lg-6
+              article.programs__item
+                .programs__circle
+                  img(src="__static__img/general/program-4.svg" width="47" height="47" aria-hidden="true" alt="")
+                h3.programs__name.h2 Видео-разбор
+                p.programs__description.
+                  Невозможно чему-то научиться, не&nbsp;посмотрев на&nbsp;себя со&nbsp;стороны. Поэтому каждый день мы&nbsp;уделяем особое время на&nbsp;вечерний разбор ошибок.
+        .programs__videos
+          .row
+            .col-lg-6
+              .programs__video
+                .video.js-video
+                  a.video__link(href='https://www.youtube.com/watch?v=H1iboKia3AQ' data-id="H1iboKia3AQ")
+                    picture
+                      img.video__media(src='__static__img/content/program-preview-1.jpg' srcset="__static__img/content/program-preview-1@2x.jpg 2x" width="586" height="330" alt="как это было зимой 2018")
+                  button.video__button(type='button', aria-label='Запустить видео').button-play
+                    +icon('play', 11, 13)
+                span.programs__caption как это было зимой 2018
+            .col-lg-6
+              .programs__video
+                .video.js-video
+                  a.video__link(href='https://www.youtube.com/watch?v=H1iboKia3AQ' data-id="H1iboKia3AQ")
+                    picture
+                      img.video__media(src='__static__img/content/program-preview-2.jpg' srcset="__static__img/content/program-preview-2@2x.jpg 2x" width="586" height="330" alt="как это было зимой 2017")
+                  button.video__button(type='button', aria-label='Запустить видео').button-play
+                    +icon('play', 11, 13)
+                span.programs__caption как это было зимой 2017
+    .wave
+      | <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true" fill="none" viewBox="0 0 1440 143">
+      |   <path fill="#ECF8E4" fill-rule="evenodd" d="M607.48 9.85c32.54-3.6 74.15.57 108.7 7.62 33.99 7.04 102.09 33.78 144.71 51.32 109.14 46.3 192.51 63.98 277.32 71.46 33.98 3.02 70.12 5.03 148.88-3.6 78.76-8.62 152.91-36.8 152.91-36.8V.5H0v43.56s103.67 46.87 228.07 43.86c56.45-1.01 133.62-9.64 192.94-32.21 30.53-11.65 75.16-26.17 114.76-34.8 39.16-9.05 56.88-9.63 71.7-11.06z" clip-rule="evenodd"/>
+      | </svg>

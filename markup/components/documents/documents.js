@@ -15,9 +15,9 @@
 
       if (file) {
         reader.readAsDataURL(file); //reads the data as a URL
-        container.classList.add('is-uploaded')
+        container.classList.add('is-uploaded');
       } else {
-        preview.src = "";
+        preview.src = '';
       }
     });
   };
@@ -29,7 +29,7 @@
         target.classList.remove('is-uploaded');
         (target.querySelector('img')).src = '';
         (target.querySelector('input')).value = '';
-      })
+      });
     });
   };
 

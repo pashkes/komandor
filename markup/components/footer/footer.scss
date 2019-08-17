@@ -6,11 +6,13 @@
     padding-top: 40px;
     padding-bottom: 50px;
   }
+
   &__additional-info {
     @include media-breakpoint-up(xl) {
       padding-top: 28px;
     }
   }
+
   &__header {
     margin-bottom: 1rem;
     font-size: 14px;
@@ -22,20 +24,24 @@
   &__item {
     margin-bottom: 5px;
   }
+
   &__address {
     margin-bottom: 5px;
     font-size: 16px;
     line-height: 1.5;
   }
+
   &__how-get {
     margin-bottom: 5px;
   }
+
   &__contacts {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 17px;
   }
+
   &__tel {
     margin-bottom: 7px;
     font-size: 24px;
@@ -43,40 +49,50 @@
     color: black;
     font-weight: 500;
   }
+
   &__time-work {
     font-size: 16px;
   }
+
   &__social-links {
     margin-bottom: 33px;
   }
+
   &__link {
     display: block;
     color: #0F2169;
     font-size: 16px;
     line-height: 1.5;
+
     &:hover {
       text-decoration: underline;
     }
   }
+
   &__add-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 30px;
   }
+
   &__licence {
     margin-bottom: 5px;
   }
+
   &__copyright {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
     a {
       display: inline-block;
       vertical-align: top;
     }
+
     span {
       margin-bottom: 5px;
+
       &:last-child {
         margin-bottom: 0;
       }

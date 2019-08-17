@@ -16,7 +16,7 @@ mixin additional(data)
                     h3.news__name Стартуем!
                     p.news__desciption.
                       Ура! Наконец-то каникулы и&nbsp;лагерь командор отправляется в&nbsp;путь! Подробная информация об&nbsp;отправлении смены с&nbsp;19&nbsp;октября по&nbsp;26&nbsp;октября
-                    a(href="#" title="Перейти к статье").news__show-more
+                    a(href="#" aria-label="Перейти к статье").news__show-more
                       +icon('black-arrow-right', 20, 20)
                 li.news__item
                   .news__preview
@@ -25,7 +25,7 @@ mixin additional(data)
                     h3.news__name Новый творческий лагерь
                     p.news__desciption.
                       Представляем вам новый, уже четырнадцатый вид, вид нашего лагеря! Блогер-лагерь, для самых амбициозных детей.
-                    a(href="#" title="Перейти к статье").news__show-more
+                    a(href="#" aria-label="Перейти к статье").news__show-more
                       +icon('black-arrow-right', 20, 20)
               a(href="#").news__all-news.button.button--outline.button--medium Все новости
           .col-lg-6

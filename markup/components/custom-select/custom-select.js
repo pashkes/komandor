@@ -17,7 +17,7 @@
       const arrSelected = [];
       const tagList = (event.target.closest('.custom-select')).nextElementSibling;
       $(event.target).find('option:selected').each(function () {
-        arrSelected.push($(this).text())
+        arrSelected.push($(this).text());
       });
       tagList.innerHTML = '';
       const tagTemplate = arrSelected.map(function (item) {
@@ -44,7 +44,7 @@
 
       $(evt.target).parent().remove();
       selectHashTags[targetIndex].sumo.reload();
-    })
+    });
   };
 
   selectHashTags.length && initCustomMultiSelect();

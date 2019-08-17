@@ -1,4 +1,3 @@
-
 (function () {
   const DESKTOP_SCREEN = 1245;
   const langSlider = $('.js-slider-camp');
@@ -16,7 +15,7 @@
         return $(this).slick(
           {
             arrows: true,
-             mobileFirst: true,
+            mobileFirst: true,
             variableWidth: true,
             nextArrow: nextSlider[index]
           }

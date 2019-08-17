@@ -108,7 +108,7 @@ if (
                 /* eslint-disable no-unused-vars */
 
                 try {
-                    return fs.readFileSync(`${tars.config.devPath}temp/svg-symbols.svg`, 'utf8');
+                    return fs.readFileSync(`${tars.config.devPath}temp/svg-symbols${tars.options.build.hash}.svg`, 'utf8');
                 } catch (error) {
                     return '';
                 }

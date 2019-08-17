@@ -26,7 +26,7 @@
           }
         }
       ]
-    })
+    });
   };
   slider.length && initStaffSlider();
 })();

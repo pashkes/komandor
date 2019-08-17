@@ -1,10 +1,11 @@
 .about {
   &__inner {
-    position:relative;
+    position: relative;
     z-index: 1;
     @include media-breakpoint-up(xl) {
       padding-top: 182px;
     }
+
     &::after {
       content: '';
       position: absolute;
@@ -20,6 +21,7 @@
       }
     }
   }
+
   &__title {
     margin-bottom: 30px;
     @include media-breakpoint-up(xl) {
@@ -27,37 +29,45 @@
       margin-bottom: 50px;
     }
   }
+
   &__text {
     padding-bottom: 12px;
     @include media-breakpoint-up(lg) {
       padding-bottom: 30px;
     }
+
     p {
       &:not(:last-child) {
         margin-bottom: 1.3rem;
       }
+
       &:last-child {
         margin-bottom: 0;
       }
     }
   }
+
   &__photos {
     @include media-breakpoint-up(xl) {
       margin-top: -20px;
     }
   }
+
   &__photo {
     margin-bottom: 24px;
+
     &--pt-1 {
       @include media-breakpoint-up(xl) {
         padding-top: 50px;
       }
     }
+
     &--pt-2 {
       @include media-breakpoint-up(xl) {
         padding-top: 98px;
       }
     }
+
     &.stregth {
       @include media-breakpoint-up(md) {
         img {
@@ -71,6 +81,7 @@
       }
     }
   }
+
   .animated-expandmore__to_expand {
     @include media-breakpoint-up(lg) {
       display: block;
@@ -80,12 +91,14 @@
       visibility: visible;
     }
   }
+
   .show-more__btn {
     margin-bottom: 10px;
     @include media-breakpoint-up(lg) {
       display: none !important;
     }
   }
+
   .show-more__content {
     @include media-breakpoint-up(lg) {
       padding-bottom: 0;

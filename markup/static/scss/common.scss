@@ -90,6 +90,7 @@ p:only-child {
 
 a {
   transition: $transition-base;
+
   &:hover {
     text-decoration: none;
   }
@@ -106,6 +107,7 @@ img {
       margin-right: -22px;
       margin-left: -22px;
     }
+
     > [class*="col-"] {
       @include media-breakpoint-up(xl) {
         padding-right: 22px;
@@ -159,10 +161,12 @@ ul {
   padding-top: 21px;
   padding-bottom: 9px;
   margin: -5px;
+
   &:empty {
     padding: 0;
     margin: 0;
   }
+
   &__item {
     display: inline-flex;
     position: relative;
@@ -171,6 +175,7 @@ ul {
     background-color: #eef3fa;
     border-radius: 4px;
   }
+
   &__remove {
     position: absolute;
     right: 0;
@@ -208,21 +213,26 @@ ul {
   @include media-breakpoint-up(xl) {
     padding-top: 42px;
   }
+
   &__header {
     margin-bottom: 28px;
   }
+
   .breadcrumb {
     margin-bottom: 18px;
   }
+
   &__additional-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 20px;
+
     .show-more__btn {
       margin-bottom: 12px;
     }
   }
+
   &__title {
     max-width: 748px;
     margin-bottom: 30px;
@@ -230,17 +240,21 @@ ul {
       margin-bottom: 52px;
     }
   }
+
   &__subtitle {
     max-width: 800px;
     margin-bottom: 0;
   }
+
   &__read-full {
     padding-top: 30px;
+
     a {
       text-transform: none;
       font-size: 18px;
       font-weight: 300;
       letter-spacing: 0;
+
       &::before {
         bottom: -2px;
       }

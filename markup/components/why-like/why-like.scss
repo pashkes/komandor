@@ -7,6 +7,7 @@
       padding-bottom: 80px;
     }
   }
+
   &__header {
     display: flex;
     flex-direction: column;
@@ -15,6 +16,7 @@
       align-items: center;
     }
   }
+
   &__title {
     margin-bottom: 18px;
     @include media-breakpoint-up(xl) {
@@ -23,6 +25,7 @@
       margin-bottom: 30px;
     }
   }
+
   &__button {
     margin-bottom: 30px;
     min-width: 262px;
@@ -30,6 +33,7 @@
       margin-bottom: 0;
     }
   }
+
   &__list-wrapper {
     position: relative;
     display: flex;
@@ -46,6 +50,7 @@
       padding-bottom: 20px;
     }
   }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -53,6 +58,7 @@
     margin-left: -5px;
     z-index: 1;
   }
+
   &__item {
     display: flex;
     justify-content: center;
@@ -67,11 +73,13 @@
       margin-left: 0;
       margin-bottom: 0;
     }
+
     &--1 {
       @include media-breakpoint-up(xl) {
         top: 170px;
         left: 0;
       }
+
       .why-like__circle {
         @include media-breakpoint-up(xl) {
           width: 221px;
@@ -79,11 +87,13 @@
         }
       }
     }
+
     &--2 {
       @include media-breakpoint-up(xl) {
         top: 0;
         left: 210px;
       }
+
       .why-like__circle {
         @include media-breakpoint-up(xl) {
           width: 219px;
@@ -91,11 +101,13 @@
         }
       }
     }
+
     &--3 {
       @include media-breakpoint-up(xl) {
         left: 164px;
         bottom: 0;
       }
+
       .why-like__circle {
         @include media-breakpoint-up(xl) {
           width: 267px;
@@ -103,11 +115,13 @@
         }
       }
     }
+
     &--4 {
       @include media-breakpoint-up(xl) {
         top: 0;
         right: 140px;
       }
+
       .why-like__circle {
         @include media-breakpoint-up(xl) {
           width: 174px;
@@ -115,11 +129,13 @@
         }
       }
     }
+
     &--5 {
       @include media-breakpoint-up(xl) {
         bottom: 166px;
         right: 0;
       }
+
       .why-like__circle {
         @include media-breakpoint-up(xl) {
           width: 267px;
@@ -127,11 +143,13 @@
         }
       }
     }
+
     &--6 {
       @include media-breakpoint-up(xl) {
         bottom: 30px;
         right: 217px;
       }
+
       .why-like__circle {
         @include media-breakpoint-up(xl) {
           width: 202px;
@@ -140,6 +158,7 @@
       }
     }
   }
+
   &__img {
     position: relative;
     z-index: 1;
@@ -148,6 +167,7 @@
       height: 530px;
     }
   }
+
   &__circle {
     display: flex;
     justify-content: center;
@@ -164,18 +184,22 @@
       line-height: 1.2;
       padding: 18px;
     }
+
     &.yellow {
       background-color: $light-orange;
     }
+
     &.pink {
       background-color: $light-pink;
     }
+
     &.green {
       background-color: $light-green;
     }
   }
 
 }
+
 .wave {
   position: relative;
   bottom: -1px;

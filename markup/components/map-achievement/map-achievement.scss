@@ -5,25 +5,30 @@
     padding-top: 75px;
     padding-bottom: 70px;
   }
+
   &__title {
     margin-bottom: 30px;
   }
+
   &__text {
     margin-bottom: 6px;
     @include media-breakpoint-up(xl) {
       max-width: 400px;
     }
+
     p {
       margin-bottom: 1.3rem;
     }
   }
+
   &__slider {
-    position:relative;
+    position: relative;
     font-size: 0;
     @include media-breakpoint-up(sm) {
       margin-right: 0;
     }
   }
+
   &__next-slider {
     position: absolute;
     top: 50%;
@@ -35,20 +40,25 @@
       right: 0;
     }
   }
+
   .slick-slide {
     margin-right: 10px;
     margin-left: 10px;
   }
+
   .slick-list {
     margin-right: -10px;
     margin-left: -10px;
   }
+
   &__slide {
     display: block;
+
     img {
       width: 100%;
     }
   }
+
   .slick-prev {
     display: none !important;
   }

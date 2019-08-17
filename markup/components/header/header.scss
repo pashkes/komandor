@@ -3,6 +3,7 @@
   .header {
     z-index: 3;
   }
+
   .header__body {
     display: flex;
   }
@@ -16,7 +17,7 @@
   left: 0;
   overflow: hidden;
   @include media-breakpoint-up(xl) {
-    position:static;
+    position: static;
     overflow: initial;
   }
 }
@@ -26,9 +27,11 @@
     position: static;
     width: 100%;
   }
+
   .header__navigation {
     position: static;
   }
+
   .header__close {
     display: none;
   }
@@ -37,6 +40,7 @@
 .header {
   position: relative;
   z-index: 4;
+
   &--pass-through {
     position: fixed;
     right: 0;
@@ -55,17 +59,20 @@
         margin-top: 147px;
       }
     }
+
     .header__inner {
       @include media-breakpoint-up(xl) {
         padding-top: 6px;
         padding-bottom: 6px;
       }
     }
+
     .header__logo {
       flex: none;
       @include media-breakpoint-up(xl) {
         margin-right: 38px;
       }
+
       img {
         @include media-breakpoint-up(xl) {
           width: 122px;
@@ -78,12 +85,14 @@
         margin-left: 0;
       }
     }
+
     .header__menu {
       @include media-breakpoint-up(xl) {
         margin-top: 0;
         padding-bottom: 0;
       }
     }
+
     .header__item {
       a.header__link {
         @include media-breakpoint-up(xl) {
@@ -99,17 +108,20 @@
         align-items: center;
       }
     }
+
     .header__number {
       @include media-breakpoint-up(xl) {
         margin-bottom: 0;
         line-height: 1;
       }
     }
+
     .header__contacts {
       @include media-breakpoint-up(xl) {
         align-items: flex-end;
       }
     }
+
     .header__book {
       padding-top: 0.95em;
       padding-bottom: 0.95em;
@@ -117,6 +129,7 @@
         margin-right: 30px;
       }
     }
+
     .header__callback-link {
       @include media-breakpoint-up(xl) {
         margin-bottom: 0;
@@ -126,8 +139,9 @@
       }
     }
   }
+
   &__inner {
-    position:relative;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -141,6 +155,7 @@
       padding-bottom: 36px;
     }
   }
+
   &__logo {
     img {
       @include media-breakpoint-up(xl) {
@@ -148,6 +163,7 @@
       }
     }
   }
+
   &__burger {
     position: absolute;
     right: -10px;
@@ -158,6 +174,7 @@
     z-index: 1;
     top: 50%;
     transform: translateY(-50%);
+
     &::before {
       content: '';
       position: absolute;
@@ -168,10 +185,12 @@
       background: repeating-linear-gradient(black, black 2px, transparent 2px, transparent 5px);
       transform: translate(-50%, -50%);
     }
+
     @include media-breakpoint-up(xl) {
       display: none;
     }
   }
+
   &__body {
     flex-grow: 1;
     margin-left: auto;
@@ -193,6 +212,7 @@
       background-color: transparent;
     }
   }
+
   &__close {
     position: absolute;
     right: 0;
@@ -209,6 +229,7 @@
       display: none;
     }
   }
+
   &__navigation {
     position: absolute;
     top: 0;
@@ -224,6 +245,7 @@
       align-items: flex-start;
     }
   }
+
   &__wrapper {
     position: relative;
     display: flex;
@@ -243,6 +265,7 @@
     }
 
   }
+
   &__menu {
     display: flex;
     flex-wrap: wrap;
@@ -254,6 +277,7 @@
       padding-right: 0;
     }
   }
+
   &__item {
     position: relative;
     text-align: center;
@@ -261,6 +285,7 @@
     @include media-breakpoint-up(xl) {
       padding-bottom: 8px;
     }
+
     &:hover {
       @include media-breakpoint-up(xl) {
         .header__submenu {
@@ -268,9 +293,11 @@
         }
       }
     }
+
     @include media-breakpoint-up(xl) {
       width: auto;
     }
+
     &--season {
       width: 50%;
       margin-bottom: 41px;
@@ -282,6 +309,7 @@
         padding-right: 0;
         padding-left: 0;
       }
+
       .header__link {
         padding: 41px 0 3px;
         background-position: center 0;
@@ -290,44 +318,54 @@
           padding-right: 12px;
           padding-left: 12px;
         }
+
         span {
           border-bottom-width: 1px;
           border-bottom-style: solid;
         }
       }
     }
+
     &--summer {
       .header__link {
         background-image: url(__static__general/sun.svg);
+
         span {
           border-bottom-color: #69955A;
         }
       }
     }
+
     &--authumn {
       .header__link {
         background-image: url(__static__general/leaf.svg);
+
         span {
           border-bottom-color: #FFA53F;
         }
       }
     }
+
     &--winter {
       .header__link {
         background-image: url(__static__general/snowflake.svg);
+
         span {
           border-bottom-color: #56AEF3;
         }
       }
     }
+
     &--spring {
       .header__link {
         background-image: url(__static__general/rowan-leaf.svg);
+
         span {
           border-bottom-color: #F196A5;
         }
       }
     }
+
     &:nth-child(5) {
       .header__link {
         padding-top: 5px;
@@ -337,6 +375,7 @@
       }
     }
   }
+
   &__link {
     display: inline-flex;
     padding: 10px 12px;
@@ -346,20 +385,24 @@
     text-transform: uppercase;
     color: #000;
     font-weight: 400;
+
     &:focus + .header__submenu {
       @include media-breakpoint-up(xl) {
         display: block;
       }
     }
+
     span {
       flex-grow: 1;
     }
+
     @include media-breakpoint-up(xl) {
       padding-bottom: 3px;
       padding-right: 12px;
       padding-left: 12px;
     }
   }
+
   &__submenu {
     display: none;
     position: absolute;
@@ -371,6 +414,7 @@
     z-index: 10;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0968637);
   }
+
   &__sublink {
     display: block;
     padding: 15px 16px;
@@ -378,11 +422,13 @@
     color: #000;
     white-space: nowrap;
     transition: $transition-base;
+
     &:hover {
       background-color: #ecf8e4;
       color: #000;
     }
   }
+
   &__user-bar {
     display: flex;
     flex-direction: column;
@@ -396,6 +442,7 @@
       padding-left: 0;
     }
   }
+
   &__contacts {
     display: flex;
     flex-direction: column;
@@ -404,30 +451,37 @@
       align-items: flex-start;
     }
   }
+
   &__number {
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 22px;
     line-height: 1.27;
     color: #000;
+
     &:hover {
       color: #000;
     }
+
     @include media-breakpoint-up(xl) {
       margin-bottom: 11px;
       font-size: 24px;
       line-height: 1.29;
     }
   }
+
   &__callback-link {
     margin-bottom: 16px;
+
     &::before {
       bottom: 2px;
     }
+
     @include media-breakpoint-up(xl) {
       margin-bottom: 11px;
     }
   }
+
   &__book {
     width: auto;
     min-width: 164px;

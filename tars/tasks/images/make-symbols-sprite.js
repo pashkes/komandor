@@ -44,7 +44,11 @@ module.exports = () => {
                         }
                     }
                 ))
-
+                .pipe(
+                    gulpif(/[.]svg$/, rename(spritePath => {
+                        spritePath.basename += tars.options.build.hash;
+                    }))
+                )
                 .pipe(
                     gulpif(/[.]svg$/, gulp.dest(readySymbolSpritePath))
                 )

@@ -1,5 +1,6 @@
 .permit {
   overflow: hidden;
+
   &__inner {
     padding-top: 30px;
     padding-bottom: 12px;
@@ -9,9 +10,11 @@
       padding-bottom: 7px;
     }
   }
+
   &__wrapper {
-    position:relative;
+    position: relative;
     z-index: 1;
+
     &::before {
       content: '';
       position: absolute;
@@ -27,6 +30,7 @@
       }
     }
   }
+
   &__title {
     margin-bottom: 30px;
     @include media-breakpoint-up(xl) {
@@ -34,6 +38,7 @@
       margin-bottom: 52px;
     }
   }
+
   &__categories {
     margin-bottom: 18px;
     @include media-breakpoint-up(xl) {
@@ -47,30 +52,32 @@
     min-height: 60px;
     margin-bottom: 20px;
   }
+
   &__name-categories {
     margin-bottom: 30px;
     @include media-breakpoint-up(xl) {
       margin-bottom: 50px;
     }
   }
+
   &__item {
     display: flex;
     flex-direction: column;
     margin-bottom: 18px;
+
     &:hover {
-      .permit__circle {
-        background-color: #fff;
-      }
       .permit__name {
         color: #000;
       }
     }
+
     @include media-breakpoint-up(xl) {
       flex-direction: row;
       align-items: center;
       margin-bottom: 40px;
     }
   }
+
   &__circle {
     display: flex;
     justify-content: center;
@@ -78,7 +85,7 @@
     width: 60px;
     height: 60px;
     margin-bottom: 10px;
-    background-color: $orange;
+    background-color: #fff;
     border-radius: 50%;
     transition: $transition-base;
     @include media-breakpoint-up(xl) {
@@ -87,6 +94,7 @@
       margin-right: 15px;
     }
   }
+
   &__name {
     font-size: 22px;
     line-height: 1.09;

@@ -43,6 +43,7 @@ function base() {
     return streamCombiner(
         gulpif(tars.config.js.useBabel, tars.require('gulp-babel')()),
         concat({cwd: cwd, path: 'main.js'}),
+        rename({ suffix: tars.options.build.hash }),
         gulpif(generateSourceMaps, sourcemaps.write(sourceMapsDest)),
         gulp.dest(destFolder)
     );

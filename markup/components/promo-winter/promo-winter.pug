@@ -9,7 +9,7 @@ mixin promo-winter(data)
             h1.promo__title Горные лыжи и&nbsp;сноуборд
             span.promo__hashtag #Спорт
             .promo__previev-video
-              button(type="button" data-toggle="modal" data-target="#video-modal").promo__play.button-play
+              button(type="button" data-toggle="modal" data-target="#video-modal" aria-label="play").promo__play.button-play
                 +icon('play', 11, 13)
               picture
                 source(type="image/webp" srcset="__static__img/general/winter-promo-image.webp")

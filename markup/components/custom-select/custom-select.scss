@@ -2,14 +2,17 @@
   box-shadow: 0 0 2px #7799D0;
   border-color: #232B2D;
 }
+
 .SumoSelect > .CaptionCont {
   border-radius: 2px;
   border: 1px solid #EBEBEB;
   font-size: 24px;
   font-weight: 400;
 }
+
 p.SelectBox {
 }
+
 div.SumoSelect > .CaptionCont {
   font-size: 20px;
   padding-left: 15px;
@@ -20,11 +23,13 @@ div.SumoSelect > .CaptionCont {
     padding: 0.9em 56px 0.9em .6em;
   }
 }
+
 .SumoSelect > .CaptionCont > span {
   @include media-breakpoint-up(xl) {
     padding-right: 0;
   }
 }
+
 div.SumoSelect > .CaptionCont > label > i {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none'%3E%3Cpath fill='%23635F60' fill-rule='evenodd' d='M4.18 5.73L.25 1.57a.96.96 0 0 1 0-1.3.83.83 0 0 1 1.23 0L5 4 8.52.27a.83.83 0 0 1 1.23 0c.33.36.33.94 0 1.3L5.82 5.73a.83.83 0 0 1-.82.24c-.29.08-.6 0-.82-.24z' clip-rule='evenodd'/%3E%3C/svg%3E");
   width: 16px;
@@ -33,63 +38,79 @@ div.SumoSelect > .CaptionCont > label > i {
   opacity: 1;
   transition: $transition-base;
 }
+
 div.SumoSelect.open > .CaptionCont > label > i {
   transform: rotate(180deg);
 }
+
 .SumoSelect > .CaptionCont > label {
   margin-bottom: 0;
 }
+
 div.SumoSelect > .CaptionCont > span.placeholder {
   color: #232B2D;
   font-style: normal;
 }
+
 div.SumoSelect > .CaptionCont {
   font-weight: 300;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: $transition-base;
 }
+
 div.SumoSelect > .CaptionCont > label {
   width: 56px;
 }
+
 div.SumoSelect.open > .optWrapper {
   top: 100%;
   z-index: 1;
 }
+
 div.SumoSelect {
   width: auto;
 }
+
 div.SumoSelect.open > .CaptionCont, div.SumoSelect:focus > .CaptionCont, div.SumoSelect:hover > .CaptionCont {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0968637);
   border-color: #D1CCCC;
 }
+
 div.SumoSelect.open > .CaptionCont {
   z-index: 2;
 
 }
+
 div.SumoSelect.open > .CaptionCont {
   border-color: #EBEBEB;
 }
+
 div.SumoSelect > .optWrapper {
   border-radius: 0 0 3px 3px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0968637);
   border: 1px solid #EBEBEB;
   border-top: none;
 }
+
 div.SumoSelect > .optWrapper > .options li.opt {
   font-size: 20px;
 }
+
 div.SumoSelect .select-all > span, div.SumoSelect > .optWrapper.multiple > .options li.opt span {
   display: none;
 }
+
 div.SumoSelect > .optWrapper > .options li.opt {
   padding: 0.7em 0.78em;
   border-bottom: 1px solid #f5f5f5;
 }
+
 div.SumoSelect > .optWrapper.multiple > .options li.opt {
   padding-left: 0.78em;
   transition: $transition-base;
 }
-div.SumoSelect > .optWrapper > .options li.opt:hover, div.SumoSelect > .optWrapper.multiple > .options li.opt.selected  {
+
+div.SumoSelect > .optWrapper > .options li.opt:hover, div.SumoSelect > .optWrapper.multiple > .options li.opt.selected {
   background-color: $primary;
 }
 

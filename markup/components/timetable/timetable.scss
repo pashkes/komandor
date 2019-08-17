@@ -5,9 +5,11 @@
   @include media-breakpoint-up(xl) {
     padding: 16px;
   }
+
   &__inner {
     position: relative;
     z-index: 1;
+
     &::before {
       content: '';
       position: absolute;
@@ -24,22 +26,26 @@
       }
     }
   }
+
   &__title {
     margin-bottom: 10px;
     @include media-breakpoint-up(xl) {
       margin-bottom: 30px;
     }
   }
+
   &__item {
     padding-bottom: 10px;
     @include media-breakpoint-up(xl) {
       padding-bottom: 0;
     }
   }
+
   &__img {
     display: block;
     margin-bottom: 10px;
   }
+
   &__time-day {
     display: block;
     margin-bottom: 30px;
@@ -47,14 +53,17 @@
     font-weight: 700;
     line-height: 1.16;
   }
+
   &__list {
     margin-bottom: 0;
+
     li {
       display: flex;
       flex-direction: column;
       margin-bottom: 20px;
     }
   }
+
   &__time-range {
     margin-bottom: 5px;
     color: #232b2d;
