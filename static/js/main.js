@@ -1693,6 +1693,8 @@ postIndex && initMask();
 
 
 
+
+
 (function () {
   var videos = document.querySelectorAll('.js-video');
 
@@ -1751,8 +1753,6 @@ postIndex && initMask();
   const videoModal = document.querySelector('.js-modal-video');
 
 })();
-
-
 
 
 (function () {
