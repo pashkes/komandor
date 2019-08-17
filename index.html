@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default title</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="HandheldFriendly" content="true">
+        <link href="static/css/main.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+
+    <body>
+        <div class="promo" style="background-image: url(static/img/general/promo-back-bg.jpg)">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <a class="header__logo" href="#">
+                            <img src="static/img/general/logo.svg" width="120" height="36" alt="Логотип Командор">
+                        </a>
+                        <button class="header__burger js-show-menu" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="menu" aria-label="Открыть меню"></button>
+                        <div class="header__body" id="menu">
+                            <nav class="header__navigation">
+                                <div class="header__wrapper">
+                                    <button class="header__close js-close-menu" type="button" aria-label="закрыть"></button>
+                                    <ul class="header__menu">
+                                        <li class="header__item header__item--season header__item--summer"><a class="header__link" href="#"><span>Лето</span></a>
+                                            <ul class="header__submenu">
+                                                <li><a class="header__sublink" href="#">Горнолыжный. Сочи</a>
+                                                </li>
+                                                <li><a class="header__sublink" href="#">Конный лагерь г. Сочи</a>
+                                                </li>
+                                                <li><a class="header__sublink" href="#">Горнолыжный. Рязань</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__item header__item--season header__item--authumn"><a class="header__link" href="#"><span>Осень</span></a>
+                                        </li>
+                                        <li class="header__item header__item--season header__item--winter"><a class="header__link" href="#"><span>Зима</span></a>
+                                        </li>
+                                        <li class="header__item header__item--season header__item--spring"><a class="header__link" href="#"><span>Весна</span></a>
+                                        </li>
+                                        <li class="header__item"><a class="header__link" href="#"><span>О нас</span></a>
+                                        </li>
+                                        <li class="header__item"><a class="header__link" href="#"><span>Для родителей</span></a>
+                                        </li>
+                                        <li class="header__item"><a class="header__link" href="#"><span>Контакты</span></a>
+                                        </li>
+                                    </ul>
+                                    <div class="header__user-bar">
+                                        <div class="header__contacts"><a class="header__number" href="tel:+74951202159">7 (495) 120-21-59</a><a class="header__callback-link border-link border-link--green" href="tel:+74951202159">Перезвонить Вам?</a>
+                                        </div>
+                                        <button class="header__book button button--outline-primary button--large" type="button">Забронировать</button>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="promo__wrapper">
+                <div class="container">
+                    <div class="promo__inner">
+                        <div class="promo__body"><span class="promo__name">Командор</span>
+                            <h1 class="promo__title">Больше, чем просто лагерь</h1>
+                            <p class="promo__lead lead">Предлагаем интересные сезонные программы для детей</p>
+                            <div class="promo__previev-video">
+                                <button class="promo__play button-play" type="button" data-toggle="modal" data-target="#video-modal">
+                                    <svg class="icon" width="11" height="13" aria-hidden="true">
+                                        <use xlink:href="svg-symbols.svg#play"></use>
+                                    </svg>
+                                </button>
+                                <picture>
+                                    <source type="image/webp" srcset="static/img/general/promo-image.webp">
+                                        <img src="static/img/general/promo-image.png" srcset="static/img/general/promo-image@2x.png 2x" aria-hidden="true" alt="">
+                                </picture>
+                            </div><a class="promo__button button button--primary button--has-arrow js-scrollTo" href="#select-change">Выбрать смену</a>
+                            <div class="promo__scroll-down"><span>Скрольте вниз</span>
+                                <div class="promo__mouse">
+                                    <svg class="icon" width="22" height="54" aria-hidden="true">
+                                        <use xlink:href="svg-symbols.svg#mouse-scroll"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <main>
+            <section class="child-camp child-camp--winter" id="select-change">
+                <div class="container">
+                    <img class="child-camp__icon" src="static/img/general/snowflake-color.svg" width="26" height="30" alt="" aria-hidden="true">
+                    <h2 class="child-camp__title h3">Детский зимний лагерь 2018</h2>
+                </div>
+                <div class="child-camp__slider">
+                    <div class="container">
+                        <button class="child-camp__arrow-right nav-arrow nav-arrow--primary nav-arrow--next js-next-slider-camp" type="button" title="Следующий слайд"></button>
+                        <div class="row js-slider-camp">
+                            <div class="col-xl-3">
+                                <a class="child-card child-camp__item" href="#">
+                                    <div class="child-card__mask">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#mask-card"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="child-card__header"><span class="child-card__range-old">8-14 лет</span>
+                                        <h2 class="child-card__title">Этно лагерь</h2>
+                                    </div>
+                                    <div class="child-card__img">
+                                        <img src="static/img/content/child-winter-camp-1.jpg" srcset="static/img/content/child-winter-camp-1@2x.jpg 2x" width="271" height="274" alt="Этно лагерь" loading="lazy">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3">
+                                <a class="child-card child-camp__item" href="#">
+                                    <div class="child-card__mask">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#mask-card"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="child-card__header"><span class="child-card__range-old">8-14 лет</span>
+                                        <h2 class="child-card__title">Научный лагерь</h2>
+                                    </div>
+                                    <div class="child-card__img">
+                                        <img src="static/img/content/child-winter-camp-2.jpg" srcset="static/img/content/child-winter-camp-2@2x.jpg 2x" width="271" height="274" alt="Научный лагерь" loading="lazy">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3">
+                                <a class="child-card child-camp__item" href="#">
+                                    <div class="child-card__mask">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#mask-card"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="child-card__header"><span class="child-card__range-old">8-14 лет</span>
+                                        <h2 class="child-card__title">Музыкальный лагерь</h2>
+                                    </div>
+                                    <div class="child-card__img">
+                                        <img src="static/img/content/child-winter-camp-3.jpg" srcset="static/img/content/child-winter-camp-3@2x.jpg 2x" width="271" height="274" alt="Музыкальный лагерь" loading="lazy">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3">
+                                <a class="child-card child-camp__item" href="#">
+                                    <div class="child-card__mask">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#mask-card"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="child-card__header"><span class="child-card__range-old">8-14 лет</span>
+                                        <h2 class="child-card__title">Блогер лагерь</h2>
+                                    </div>
+                                    <div class="child-card__img">
+                                        <img src="static/img/content/child-winter-camp-4.jpg" srcset="static/img/content/child-winter-camp-4@2x.jpg 2x" width="271" height="274" alt="Блогер лагерь" loading="lazy">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3">
+                                <a class="child-card child-camp__item" href="#">
+                                    <div class="child-card__mask">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#mask-card"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="child-card__header"><span class="child-card__range-old">8-14 лет</span>
+                                        <h2 class="child-card__title">Авиа-лагерь</h2>
+                                    </div>
+                                    <div class="child-card__img">
+                                        <img src="static/img/content/child-winter-camp-5.jpg" srcset="static/img/content/child-winter-camp-5@2x.jpg 2x" width="271" height="274" alt="Авиа-лагерь" loading="lazy">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3">
+                                <a class="child-card child-camp__item" href="#">
+                                    <div class="child-card__mask">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#mask-card"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="child-card__header"><span class="child-card__range-old">8-14 лет</span>
+                                        <h2 class="child-card__title">Кино лагерь</h2>
+                                    </div>
+                                    <div class="child-card__img">
+                                        <img src="static/img/content/child-winter-camp-6.jpg" srcset="static/img/content/child-winter-camp-6@2x.jpg 2x" width="271" height="274" alt="Кино лагерь" loading="lazy">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3">
+                                <a class="child-card child-camp__item" href="#">
+                                    <div class="child-card__mask">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#mask-card"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="child-card__header"><span class="child-card__range-old">8-14 лет</span>
+                                        <h2 class="child-card__title">Яхтинг лагерь</h2>
+                                    </div>
+                                    <div class="child-card__img">
+                                        <img src="static/img/content/child-winter-camp-7.jpg" srcset="static/img/content/child-winter-camp-7@2x.jpg 2x" width="271" height="274" alt="Яхтинг лагерь" loading="lazy">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-3">
+                                <a class="child-card child-camp__item" href="#">
+                                    <div class="child-card__mask">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#mask-card"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="child-card__header"><span class="child-card__range-old">8-14 лет</span>
+                                        <h2 class="child-card__title">Туристический  лагерь</h2>
+                                    </div>
+                                    <div class="child-card__img">
+                                        <img src="static/img/content/child-winter-camp-8.jpg" srcset="static/img/content/child-winter-camp-8@2x.jpg 2x" width="271" height="274" alt="Туристический  лагерь" loading="lazy">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="child-camp child-camp--summer">
+                <div class="container">
+                    <img class="child-camp__icon" src="static/img/general/sun-color.svg" width="30" height="30" alt="" aria-hidden="true">
+                    <h2 class="child-camp__title h3">Детский летний лагерь 2019</h2>
+                </div>
+                <div class="child-camp__slider">
+                    <div class="container">
+                        <button class="child-camp__arrow-right nav-arrow nav-arrow--primary nav-arrow--next js-next-slider-camp" type="button" title="Следующий слайд"></button>
+                        <div class="row js-slider-camp">
+                            <div class="col-xl">
+                                <a class="child-card child-camp__item" href="#">
+                                    <div class="child-card__mask">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#mask-card"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="child-card__header"><span class="child-card__range-old">8-14 лет</span>
+                                        <h2 class="child-card__title">Мото лагерь</h2>
+                                    </div>
+                                    <div class="child-card__img">
+                                        <img src="static/img/content/summer-child-1.jpg" srcset="static/img/content/summer-child-1@2x.jpg 2x" width="271" height="274" alt="Мото лагерь" loading="lazy">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl">
+                                <a class="child-card child-camp__item" href="#">
+                                    <div class="child-card__mask">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#mask-card"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="child-card__header"><span class="child-card__range-old">8-14 лет</span>
+                                        <h2 class="child-card__title">Конный лагерь</h2>
+                                    </div>
+                                    <div class="child-card__img">
+                                        <img src="static/img/content/summer-child-2.jpg" srcset="static/img/content/summer-child-2@2x.jpg 2x" width="271" height="274" alt="Конный лагерь" loading="lazy">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl">
+                                <a class="child-card child-camp__item" href="#">
+                                    <div class="child-card__mask">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#mask-card"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="child-card__header"><span class="child-card__range-old">8-14 лет</span>
+                                        <h2 class="child-card__title">Серфинг и вейкбординг</h2>
+                                    </div>
+                                    <div class="child-card__img">
+                                        <img src="static/img/content/summer-child-3.jpg" srcset="static/img/content/summer-child-3@2x.jpg 2x" width="271" height="274" alt="Серфинг и вейкбординг" loading="lazy">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl">
+                                <a class="child-card child-camp__item" href="#">
+                                    <div class="child-card__mask">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#mask-card"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="child-card__header"><span class="child-card__range-old">8-14 лет</span>
+                                        <h2 class="child-card__title">Танцевальный лагерь</h2>
+                                    </div>
+                                    <div class="child-card__img">
+                                        <img src="static/img/content/summer-child-4.jpg" srcset="static/img/content/summer-child-4@2x.jpg 2x" width="271" height="274" alt="Танцевальный лагерь" loading="lazy">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="way">
+                <div class="top-wave">
+                    <svg viewBox="0 0 1440 200" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1054.94 60.4257C808.303 60.4257 634.953 200 368.025 200C101.097 200 0 130.212 0 130.212V0.723145H1440V138.905C1440 138.905 1301.58 60.4257 1054.94 60.4257Z" fill="white" />
+                    </svg>
+                </div>
+                <div class="way__wrapper">
+                    <div class="way__inner">
+                        <div class="container">
+                            <h2 class="way__title h1 d-xl-none">Как выбрать направление для ребенка?</h2>
+                            <div class="row flex-xl-row-reverse">
+                                <div class="col-xl-6">
+                                    <div class="way__video">
+                                        <div class="video js-video">
+                                            <a class="video__link" href="https://www.youtube.com/watch?v=H1iboKia3AQ" data-id="H1iboKia3AQ">
+                                                <picture>
+                                                    <source type="image/webp" srcset="static/img/content/video-preview.webp">
+                                                        <img class="video__media" src="static/img/content/video-preview.jpg" srcset="static/img/general/video-preview@2x.jpg 2x" alt="Видео с основателем лагеря — Светлана Михайлова" width="699" height="500"
+                                                        loading="lazy">
+                                                </picture>
+                                            </a>
+                                            <button class="video__button button-play" type="button" aria-label="Запустить видео">
+                                                <svg class="icon" width="11" height="13" aria-hidden="true">
+                                                    <use xlink:href="svg-symbols.svg#play"></use>
+                                                </svg>
+                                            </button>
+                                        </div><span class="way__caption">Видео с&nbsp;основателем лагеря&nbsp;&mdash; Светлана Михайлова</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <h2 class="way__title h1 d-none d-xl-block">Как выбрать направление для ребенка?</h2>
+                                    <div class="way__description">
+                                        <p>Мы&nbsp;понимаем, что каждый ребенок уникален и&nbsp;чтобы помочь Вам выбрать направление мы&nbsp;подготовили онлайн-тест. Пройдя его&nbsp;Вы сможете определиться с&nbsp;наиболее интересными для Вас вариантами.</p>
+                                        <p>Также, Вы&nbsp;всегда можете обратиться к&nbsp;нашему менеджеру для помощи в&nbsp;выборе.</p>
+                                    </div>
+                                    <div class="way__buttons"><a class="way__get-test button button--primary button--has-arrow-right" href="#">Пройти тест</a><a class="way__ask button button--outline" href="#">Проконсультироваться</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-wave">
+                        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" fill="none" viewBox="0 0 1440 143">
+                            <path fill="#ECF8E4" fill-rule="evenodd" d="M607.48 9.85c32.54-3.6 74.15.57 108.7 7.62 33.99 7.04 102.09 33.78 144.71 51.32 109.14 46.3 192.51 63.98 277.32 71.46 33.98 3.02 70.12 5.03 148.88-3.6 78.76-8.62 152.91-36.8 152.91-36.8V.5H0v43.56s103.67 46.87 228.07 43.86c56.45-1.01 133.62-9.64 192.94-32.21 30.53-11.65 75.16-26.17 114.76-34.8 39.16-9.05 56.88-9.63 71.7-11.06z"
+                            clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            </section>
+            <section class="why-like">
+                <div class="why-like__inner">
+                    <div class="container">
+                        <div class="why-like__header">
+                            <h2 class="why-like__title h1">Почему детям у нас нравится?</h2><a class="why-like__button button button--outline button--medium" href="#">смотреть видео-отзывы детей</a>
+                        </div>
+                        <div class="why-like__list-wrapper">
+                            <div class="why-like__img d-none d-xl-block">
+                                <img src="static/img/general/why-like.png" srcset="static/img/general/why-like@2x.png 2x" width="454" height="539" alt="" aria-hidden="true" loading="lazy">
+                            </div>
+                            <ul class="why-like__list">
+                                <li class="why-like__item li why-like__item--1"><span class="why-like__circle yellow">много новых друзей</span>
+                                </li>
+                                <li class="why-like__item li why-like__item--2"><span class="why-like__circle pink">позитивные эмоции</span>
+                                </li>
+                                <li class="why-like__item li why-like__item--3"><span class="why-like__circle green">раскрыть в себе новые таланты</span>
+                                </li>
+                                <li class="why-like__item li why-like__item--4"><span class="why-like__circle yellow">попробовать  новое хобби</span>
+                                </li>
+                                <li class="why-like__item li why-like__item--5"><span class="why-like__circle green">научиться основам тайм менеджмента</span>
+                                </li>
+                                <li class="why-like__item li why-like__item--6"><span class="why-like__circle pink">членство в клубе Командор!</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wave">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" aria-hidden="true" viewBox="0 0 1440 144">
+                        <path fill="#ECF8E4" fill-rule="evenodd" d="M1138.32 133.05c-85.39-7.66-168.2-26-277.34-72.22C818.35 42.5 750.24 16.06 716.26 8.98 682.27 1.9 640.5-2.3 607.54 1.32c-14.7 1.6-32.55 2.02-72.15 10.7-39.17 9.09-83.8 23.97-114.33 35.67C361.58 70.65 284.4 79.32 228.1 80.33 103.68 82.64 0 35.84 0 35.84v107.18h1440V92.9s-74.16 28.02-152.93 37.12c-78.19 8.66-114.77 6.06-148.75 3.03z"
+                        clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </section>
+            <section class="videos-change">
+                <div class="videos-change__inner">
+                    <div class="container">
+                        <div class="videos-change__header">
+                            <div class="row justify-content-xl-between align-items-xl-end">
+                                <div class="col-xl-6">
+                                    <img class="videos-change__icon" src="static/img/general/youtube-logo.png" srcset="static/img/general/youtube-logo@2x.png 2x" width="56" height="39" alt="" aria-hidden="true">
+                                    <h2 class="videos-change__title h1"><span>Видео</span>с&nbsp;прошедших смен</h2>
+                                </div>
+                                <div class="col-xl-auto"><a class="videos-change__button button button--outline button--medium" href="#">перейти на youtube-канал</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videos-change__slider">
+                        <button class="videos-change__arrow-right nav-arrow nav-arrow--primary nav-arrow--next js-next-slider-change" type="button" title="Следующий слайд"></button>
+                        <div class="js-slider-change">
+                            <div>
+                                <div class="videos-change__item">
+                                    <div class="video js-video">
+                                        <a class="video__link" href="https://www.youtube.com/watch?v=H1iboKia3AQ" data-id="H1iboKia3AQ">
+                                            <picture>
+                                                <source type="image/webp" srcset="static/img/content/change-photo-1.webp">
+                                                    <img class="video__media" src="static/img/content/change-photo-1.jpg" srcset="static/img/content/change-photo-1@2x.jpg 2x" width="480" height="359" alt="Осенняя встреча лагеря Командор - 2018" loading="lazy">
+                                            </picture>
+                                        </a>
+                                        <button class="video__button button-play" type="button" aria-label="Запустить видео">
+                                            <svg class="icon" width="11" height="13" aria-hidden="true">
+                                                <use xlink:href="svg-symbols.svg#play"></use>
+                                            </svg>
+                                        </button>
+                                    </div><span class="videos-change__name">Осенняя встреча лагеря Командор - 2018</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="videos-change__item">
+                                    <div class="video js-video">
+                                        <a class="video__link" href="https://www.youtube.com/watch?v=H1iboKia3AQ" data-id="H1iboKia3AQ">
+                                            <picture>
+                                                <source type="image/webp" srcset="static/img/content/change-photo-2.webp">
+                                                    <img class="video__media" src="static/img/content/change-photo-2.jpg" srcset="static/img/content/change-photo-2@2x.jpg 2x" width="480" height="359" alt="Нереальный картинг. Самая большая трасса в России."
+                                                    loading="lazy">
+                                            </picture>
+                                        </a>
+                                        <button class="video__button button-play" type="button" aria-label="Запустить видео">
+                                            <svg class="icon" width="11" height="13" aria-hidden="true">
+                                                <use xlink:href="svg-symbols.svg#play"></use>
+                                            </svg>
+                                        </button>
+                                    </div><span class="videos-change__name">Нереальный картинг. Самая большая трасса в&nbsp;России.</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="videos-change__item">
+                                    <div class="video js-video">
+                                        <a class="video__link" href="https://www.youtube.com/watch?v=H1iboKia3AQ" data-id="H1iboKia3AQ">
+                                            <picture>
+                                                <source type="image/webp" srcset="static/img/content/change-photo-3.webp">
+                                                    <img class="video__media" src="static/img/content/change-photo-3.jpg" width="480" height="359" alt="Мечта любого конника. Такие должны быть каникулы." loading="lazy">
+                                            </picture>
+                                        </a>
+                                        <button class="video__button button-play" type="button" aria-label="Запустить видео">
+                                            <svg class="icon" width="11" height="13" aria-hidden="true">
+                                                <use xlink:href="svg-symbols.svg#play"></use>
+                                            </svg>
+                                        </button>
+                                    </div><span class="videos-change__name">Мечта любого конника. Такие должны быть каникулы.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <svg viewBox="0 0 1440 200" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M385.059 59.7026C631.697 59.7026 805.047 199.277 1071.98 199.277C1338.9 199.277 1440 129.489 1440 129.489V0H0V138.182C0 138.182 138.421 59.7026 385.059 59.7026Z" fill="#ECF8E4" />
+                </svg>
+            </section>
+            <section class="statistics">
+                <div class="statistics__inner">
+                    <div class="container">
+                        <h2 class="statistics__title h1">Факты о&nbsp;лагере Komandor Camp</h2>
+                        <p class="statistics__subtitle">*По&nbsp;данным на&nbsp;1&nbsp;ноября 2018 года</p>
+                        <div class="statistics__list">
+                            <div class="row" role="list">
+                                <div class="col-6 col-md-3" role="listitem">
+                                    <div class="statistics__item statistics__item--1">
+                                        <img src="static/img/general/stat-1.svg" alt="" width="51" height="61" aria-hidden="true"><span class="statistics__count">658</span><span class="statistics__name">смен<br>проведено</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3" role="listitem">
+                                    <div class="statistics__item statistics__item--2">
+                                        <img src="static/img/general/stat-2.svg" alt="" width="49" height="60" aria-hidden="true"><span class="statistics__count">14</span><span class="statistics__name">уникальных направлений</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3" role="listitem">
+                                    <div class="statistics__item statistics__item--3">
+                                        <img src="static/img/general/stat-3.svg" alt="" width="65" height="60" aria-hidden="true"><span class="statistics__count">1399</span><span class="statistics__name">пионеров</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3" role="listitem">
+                                    <div class="statistics__item statistics__item--4">
+                                        <img src="static/img/general/stat-4.svg" alt="" width="55" height="60" aria-hidden="true"><span class="statistics__count">5 детей</span><span class="statistics__name">на&nbsp;одного вожатого</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="statistics__has features">
+                            <div class="row justify-content-md-center" role="list">
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-2" role="listitem">
+                                    <div class="features__item">
+                                        <div class="features__circle">
+                                            <img src="static/img/general/fetaures-1.svg" alt="" width="50" height="56" aria-hidden="true">
+                                        </div><span class="features__name">транспорт с&nbsp;лицензией</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-2" role="listitem">
+                                    <div class="features__item">
+                                        <div class="features__circle">
+                                            <img src="static/img/general/fetaures-2.svg" alt="" width="46" height="56" aria-hidden="true">
+                                        </div><span class="features__name">охраняемая территория</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-2" role="listitem">
+                                    <div class="features__item">
+                                        <div class="features__circle">
+                                            <img src="static/img/general/fetaures-3.svg" alt="" width="50" height="56" aria-hidden="true">
+                                        </div><span class="features__name">врач на&nbsp;территории лагеря</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-2" role="listitem">
+                                    <div class="features__item">
+                                        <div class="features__circle">
+                                            <img src="static/img/general/fetaures-4.svg" alt="" width="35" height="56" aria-hidden="true">
+                                        </div><span class="features__name"> обязательные мед. справки для всех детей</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-2" role="listitem">
+                                    <div class="features__item">
+                                        <div class="features__circle">
+                                            <img src="static/img/general/fetaures-5.svg" alt="" width="56" height="56" aria-hidden="true">
+                                        </div><span class="features__name">полностью расписанный день</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-2" role="listitem">
+                                    <div class="features__item">
+                                        <div class="features__circle">
+                                            <img src="static/img/general/fetaures-6.svg" alt="" width="47" height="56" aria-hidden="true">
+                                        </div><span class="features__name">уникальная система мотивации по&nbsp;достижению целей</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-2" role="listitem">
+                                    <div class="features__item">
+                                        <div class="features__circle">
+                                            <img src="static/img/general/fetaures-7.svg" alt="" width="56" height="54" aria-hidden="true">
+                                        </div><span class="features__name">возможно вегетарианское питание</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-2" role="listitem">
+                                    <div class="features__item">
+                                        <div class="features__circle">
+                                            <img src="static/img/general/fetaures-8.svg" alt="" width="55" height="56" aria-hidden="true">
+                                        </div><span class="features__name">питание для аллергиков</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-2" role="listitem">
+                                    <div class="features__item">
+                                        <div class="features__circle">
+                                            <img src="static/img/general/fetaures-9.svg" alt="" width="42" height="56" aria-hidden="true">
+                                        </div><span class="features__name">ежедневные мастер-классы и&nbsp;мероприятия</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-2" role="listitem">
+                                    <div class="features__item">
+                                        <div class="features__circle">
+                                            <img src="static/img/general/fetaures-10.svg" alt="" width="62" height="56" aria-hidden="true">
+                                        </div><span class="features__name">Фирменная аттрибутика</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wave">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 1440 144">
+                        <path fill="#ECF8E4" fill-rule="evenodd" d="M1138.32 133.05c-85.39-7.66-168.2-26-277.34-72.22C818.35 42.5 750.24 16.06 716.26 8.98 682.27 1.9 640.5-2.3 607.54 1.32c-14.7 1.6-32.55 2.02-72.15 10.7-39.17 9.09-83.8 23.97-114.33 35.67C361.58 70.65 284.4 79.32 228.1 80.33 103.68 82.64 0 35.84 0 35.84v107.18h1440V92.9s-74.16 28.02-152.93 37.12c-78.19 8.66-114.77 6.06-148.75 3.03z"
+                        clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </section>
+            <section class="permit">
+                <div class="permit__inner">
+                    <div class="container">
+                        <div class="permit__wrapper">
+                            <h2 class="permit__title h1">Путевки для детей по направлениям</h2>
+                            <div class="row justify-content-xl-between">
+                                <div class="col-xl-6">
+                                    <article class="permit__categories">
+                                        <div class="permit__icon">
+                                            <img src="static/img/general/black-flag.svg" width="51" height="60" alt="">
+                                        </div>
+                                        <h3 class="permit__name-categories h2">Спортивные</h3>
+                                        <div class="permit__list">
+                                            <div class="row" role="list">
+                                                <div class="col-6" role="listitem">
+                                                    <a class="permit__item" href="#">
+                                                        <div class="permit__circle">
+                                                            <img src="static/img/general/direction-1.png" srcset="static/img/general/direction-1@2x.png 2x" width="46" height="48" alt="" aria-hidden="true">
+                                                        </div><span class="permit__name">Мото лагерь</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6" role="listitem">
+                                                    <a class="permit__item" href="#">
+                                                        <div class="permit__circle">
+                                                            <img src="static/img/general/direction-2.png" srcset="static/img/general/direction-2@2x.png 2x" width="44" height="34" alt="" aria-hidden="true">
+                                                        </div><span class="permit__name">Картинг лагерь</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6" role="listitem">
+                                                    <a class="permit__item" href="#">
+                                                        <div class="permit__circle">
+                                                            <img src="static/img/general/direction-3.png" srcset="static/img/general/direction-3@2x.png 2x" width="42" height="33" alt="" aria-hidden="true">
+                                                        </div><span class="permit__name">Авиа лагерь</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6" role="listitem">
+                                                    <a class="permit__item" href="#">
+                                                        <div class="permit__circle">
+                                                            <img src="static/img/general/direction-4.png" srcset="static/img/general/direction-4@2x.png 2x" width="37" height="37" alt="" aria-hidden="true">
+                                                        </div><span class="permit__name">Конный лагерь</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6" role="listitem">
+                                                    <a class="permit__item" href="#">
+                                                        <div class="permit__circle">
+                                                            <img src="static/img/general/direction-5.png" srcset="static/img/general/direction-5@2x.png 2x" width="36" height="46" alt="" aria-hidden="true">
+                                                        </div><span class="permit__name">Серфинг и&nbsp;вейкбординг лагерь</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6" role="listitem">
+                                                    <a class="permit__item" href="#">
+                                                        <div class="permit__circle">
+                                                            <img src="static/img/general/direction-6.png" srcset="static/img/general/direction-6@2x.png 2x" width="31" height="47" alt="" aria-hidden="true">
+                                                        </div><span class="permit__name">Горные лыжи и&nbsp;сноуборд лагерь</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6" role="listitem">
+                                                    <a class="permit__item" href="#">
+                                                        <div class="permit__circle">
+                                                            <img src="static/img/general/direction-7.png" srcset="static/img/general/direction-7@2x.png 2x" width="38" height="46" alt="" aria-hidden="true">
+                                                        </div><span class="permit__name">Танцевальный лагерь</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6" role="listitem">
+                                                    <a class="permit__item" href="#">
+                                                        <div class="permit__circle">
+                                                            <img src="static/img/general/direction-8.png" srcset="static/img/general/direction-8@2x.png 2x" width="31" height="47" alt="" aria-hidden="true">
+                                                        </div><span class="permit__name">Этно лагерь</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6" role="listitem">
+                                                    <a class="permit__item" href="#">
+                                                        <div class="permit__circle">
+                                                            <img src="static/img/general/direction-9.png" srcset="static/img/general/direction-9@2x.png 2x" width="38" height="41" alt="" aria-hidden="true">
+                                                        </div><span class="permit__name">Яхтинг лагерь</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-xl-5">
+                                    <article class="permit__categories">
+                                        <div class="permit__icon">
+                                            <img src="static/img/general/have-idea.svg" width="40" height="49" alt="">
+                                        </div>
+                                        <h3 class="permit__name-categories h2">Творческие</h3>
+                                        <div class="permit__list">
+                                            <div class="row" role="list">
+                                                <div class="col-6 col-xl-12" role="listitem">
+                                                    <a class="permit__item" href="#">
+                                                        <div class="permit__circle">
+                                                            <img src="static/img/general/direction-10.png" srcset="static/img/general/direction-10@2x.png 2x" width="40" height="40" alt="" aria-hidden="true">
+                                                        </div><span class="permit__name">Блогер лагерь</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 col-xl-12" role="listitem">
+                                                    <a class="permit__item" href="#">
+                                                        <div class="permit__circle">
+                                                            <img src="static/img/general/direction-11.png" srcset="static/img/general/direction-11@2x.png 2x" width="42" height="34" alt="" aria-hidden="true">
+                                                        </div><span class="permit__name">Музыкальный лагерь</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 col-xl-12" role="listitem">
+                                                    <a class="permit__item" href="#">
+                                                        <div class="permit__circle">
+                                                            <img src="static/img/general/direction-12.png" srcset="static/img/general/direction-12@2x.png 2x" width="38" height="39" alt="" aria-hidden="true">
+                                                        </div><span class="permit__name">Научный лагерь</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 col-xl-12" role="listitem">
+                                                    <a class="permit__item" href="#">
+                                                        <div class="permit__circle">
+                                                            <img src="static/img/general/direction-13.png" srcset="static/img/general/direction-13@2x.png 2x" width="39" height="36" alt="" aria-hidden="true">
+                                                        </div><span class="permit__name">Кино лагерь</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 1440 200">
+                    <path fill="#ECF8E4" fill-rule="evenodd" d="M385.06 59.7c246.64 0 419.99 139.58 686.92 139.58 266.92 0 368.02-69.8 368.02-69.8V0H0v138.18S138.42 59.7 385.06 59.7z" clip-rule="evenodd" />
+                </svg>
+            </section>
+            <div class="additional">
+                <div class="container">
+                    <div class="additional__inner">
+                        <div class="row justify-content-xl-center">
+                            <div class="col-lg-5">
+                                <section class="additional__news news">
+                                    <h2 class="news__title h1">Новости</h2>
+                                    <ul class="news__list">
+                                        <li class="news__item">
+                                            <div class="news__preview">
+                                                <img src="static/img/content/news-priview-1.jpg" srcset="static/img/content/news-priview-1@2x.jpg 2x" alt="Стартуем!" width="70" height="70">
+                                            </div>
+                                            <div class="news__body">
+                                                <h3 class="news__name">Стартуем!</h3>
+                                                <p class="news__desciption">Ура! Наконец-то каникулы и&nbsp;лагерь командор отправляется в&nbsp;путь! Подробная информация об&nbsp;отправлении смены с&nbsp;19&nbsp;октября по&nbsp;26&nbsp;октября</p>
+                                                <a class="news__show-more" href="#"
+                                                title="Перейти к статье">
+                                                    <svg class="icon" width="20" height="20" aria-hidden="true">
+                                                        <use xlink:href="svg-symbols.svg#black-arrow-right"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="news__item">
+                                            <div class="news__preview">
+                                                <img src="static/img/content/news-priview-2.jpg" srcset="static/img/content/news-priview-2@2x.jpg 2x" alt="Новый творческий лагерь" width="70" height="70">
+                                            </div>
+                                            <div class="news__body">
+                                                <h3 class="news__name">Новый творческий лагерь</h3>
+                                                <p class="news__desciption">Представляем вам новый, уже четырнадцатый вид, вид нашего лагеря! Блогер-лагерь, для самых амбициозных детей.</p>
+                                                <a class="news__show-more" href="#" title="Перейти к статье">
+                                                    <svg class="icon" width="20" height="20" aria-hidden="true">
+                                                        <use xlink:href="svg-symbols.svg#black-arrow-right"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul><a class="news__all-news button button--outline button--medium" href="#">Все новости</a>
+                                </section>
+                            </div>
+                            <div class="col-lg-6">
+                                <section class="licences">
+                                    <div class="licences__header">
+                                        <h2 class="licences__title h1">Лицензии</h2><a class="licences__all button button--outline button--medium" href="#">Все лицензии</a>
+                                    </div>
+                                    <div class="licences__slider">
+                                        <button class="licences__next-slider nav-arrow nav-arrow--primary nav-arrow--next js-next-slider-licence" type="button" title="Следующий слайд"></button>
+                                        <div class="licences__list js-licences-slider pswp">
+                                            <div>
+                                                <a class="licences__item" href="static/img/content/certificate-1@3x.jpg" data-lightbox="roadtrip">
+                                                    <img src="static/img/content/certificate-1.jpg" srcset="static/img/content/certificate-1@2x.jpg 2x" alt="Лицензия-1" width="270" height="374" loading="lazy">
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a class="licences__item" href="static/img/content/certificate-2@3x.jpg" data-lightbox="roadtrip">
+                                                    <img src="static/img/content/certificate-2.jpg" srcset="static/img/content/certificate-2@2x.jpg 2x" alt="Лицензия-2" width="270" height="374" loading="lazy">
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a class="licences__item" href="static/img/content/certificate-3@3x.jpg" data-lightbox="roadtrip">
+                                                    <img src="static/img/content/certificate-3.jpg" srcset="static/img/content/certificate-3@2x.jpg 2x" alt="Лицензия-3" width="270" height="374" loading="lazy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <section class="about">
+                            <div class="container">
+                                <div class="about__inner">
+                                    <h2 class="about__title h1">Детский лагерь для детей и&nbsp;подростков от&nbsp;5&nbsp;до&nbsp;18&nbsp;лет</h2>
+                                    <div class="row">
+                                        <div class="col-xl-5 offset-xl-1">
+                                            <div class="about__text">
+                                                <p>Детские лагеря &laquo;Отдых и&nbsp;учеба с&nbsp;радостью&raquo;</p>
+                                                <p>Образовательный проект &laquo;Отдых и&nbsp;учеба с&nbsp;радостью&raquo;&nbsp;&mdash; это научно-приключенческие программы, которые мы&nbsp;проводим на&nbsp;базе лучших детских лагерей России.</p>
+                                                <p>Мы&nbsp;даем возможность ребенку познакомиться с&nbsp;природой; показать, насколько красочен и&nbsp;разнообразен окружающий мир. За&nbsp;21&nbsp;день летней смены дети развиваются, учатся быть самостоятельными
+                                                    и&nbsp;ответственными, принимать серьезные решения, отвечать за&nbsp;свои поступки.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-5 offset-xl-1">
+                                            <div class="about__text">
+                                                <div class="about__hided-text show-more">
+                                                    <div class="show-more__btn js-expandmore" data-hideshow-prefix-class="animated"><span>Читать подробнее</span>
+                                                    </div>
+                                                    <div class="js-to_expand">
+                                                        <div class="show-more__content">
+                                                            <p>Современные дети активны, энергичны, целеустремлены. Им&nbsp;не&nbsp;интересен пассивный отдых на&nbsp;пляже. Для того чтобы у&nbsp;ребят остались яркие впечатления и&nbsp;воспоминания о&nbsp;проведенных
+                                                                каникулах, необходимо дать такую нагрузку, которая будет наполнена разнообразными интересными занятиями. Дети нуждаются в&nbsp;том, чтобы вокруг кипела жизнь, происходили захватывающие приключения,
+                                                                их&nbsp;ждали невероятные путешествия и&nbsp;каждый день был наполнен радостными открытиями.</p>
+                                                            <p>Именно поэтому наши детские лагеря насыщены научно-образовательными и&nbsp;увлекательными мероприятиями, которые осуществляются по&nbsp;ежедневному расписанию. Каждый день ребята посещают 4&nbsp;полноценнных
+                                                                занятия, а&nbsp;вечером&nbsp;&mdash; тематическое мероприятие (бал, ярмарка, вечер талантов и&nbsp;другие).</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="about__photos">
+                                        <div class="row">
+                                            <div class="col-lg">
+                                                <div class="row">
+                                                    <div class="col-6 col-lg-7 col-xl-auto">
+                                                        <div class="about__photo">
+                                                            <img src="static/img/content/about-photo-1.jpg" srcset="static/img/content/about-photo-1@2x.jpg 2x" width="375" height="352" alt="фото-1" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-lg-5 col-xl">
+                                                        <div class="about__photo about__photo--pt-1 stregth">
+                                                            <img src="static/img/content/about-photo-2.jpg" srcset="static/img/content/about-photo-2@2x.jpg 2x" width="270" height="180" alt="фото-2" loading="lazy">
+                                                        </div>
+                                                        <div class="about__photo stregth">
+                                                            <img src="static/img/content/about-photo-3.jpg" srcset="static/img/content/about-photo-3@2x.jpg 2x" width="270" height="180" alt="фото-3" loading="lazy">
+                                                        </div>
+                                                        <div class="about__photo d-none d-lg-block">
+                                                            <img src="static/img/content/about-photo-4.jpg" srcset="static/img/content/about-photo-4@2x.jpg 2x" width="270" height="180" alt="фото-4" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5">
+                                                <div class="row">
+                                                    <div class="col-6 col-lg-12">
+                                                        <div class="about__photo about__photo--pt-2 d-none d-lg-block">
+                                                            <img src="static/img/content/about-photo-5.jpg" srcset="static/img/content/about-photo-5@2x.jpg 2x" width="487" height="244" alt="фото-5" loading="lazy">
+                                                        </div>
+                                                        <div class="about__photo stregth d-lg-none">
+                                                            <img src="static/img/content/about-photo-4.jpg" srcset="static/img/content/about-photo-4@2x.jpg 2x" width="270" height="180" alt="фото-4" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-lg-12">
+                                                        <div class="about__photo">
+                                                            <img src="static/img/content/about-photo-6.jpg" srcset="static/img/content/about-photo-6@2x.jpg 2x" width="486" height="324" alt="фото-6" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!--+about()-->
+            <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="video-modal">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content modal">
+                        <button class="modal-close" type="button" title="Закрыть это окно" data-dismiss="modal"></button>
+                        <div class="js-video video">
+                            <a class="video__link" href="https://www.youtube.com/watch?v=H1iboKia3AQ" data-id="H1iboKia3AQ">
+                                <picture>
+                                    <source type="image/webp" srcset="static/img/content/change-photo-1.webp">
+                                        <img class="video__media" src="static/img/content/change-photo-1.jpg" srcset="static/img/content/change-photo-1@2x.jpg 2x" width="480" height="359" alt="Осенняя встреча лагеря Командор - 2018">
+                                </picture>
+                            </a>
+                            <button class="video__button button-play" type="button" aria-label="Запустить видео">
+                                <svg class="icon" width="11" height="13" aria-hidden="true">
+                                    <use xlink:href="svg-symbols.svg#play"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__main">
+                    <div class="row">
+                        <div class="col-xl-2 d-none d-xl-block">
+                            <div class="footer__item">
+                                <h3 class="footer__header">Программы</h3>
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a class="footer__link" href="#">Летний лагерь</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Весенний лагерь</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Зимний лагерь</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Осенний лагерь</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 d-none d-xl-block">
+                            <div class="footer__item">
+                                <h3 class="footer__header">О нас</h3>
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a class="footer__link" href="#">KomandorCamp клуб</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Наша команда</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Видео-отзывы</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Акции</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 d-none d-xl-block">
+                            <div class="footer__item">
+                                <h3 class="footer__header">Для родителей</h3>
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a class="footer__link" href="#">Правило оформления путевки</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Подобрать направление для ребенка</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Правила лагеря</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Государственная компенсация</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Полезные статьи</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 d-none d-xl-block">
+                            <div class="footer__item">
+                                <h3 class="footer__header">Контакты</h3>
+                                <address class="footer__address"><span>Адрес офиса:</span><span>г. Москва, ул. Свободы, дом 35</span></address><a class="footer__how-get footer__link" href="#">Как добраться?</a><a class="footer__link" href="mailto:info@komandorcamp.ru">info@komandorcamp.ru</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="footer__contacts"><a class="footer__tel" href="tel:+74951202159">7 (495) 120-21-59</a><span class="footer__time-work">ежедневно с 9.00 до 21.00</span>
+                            </div>
+                            <ul class="social footer__social-links">
+                                <li class="social__item">
+                                    <a class="social__link" href="#" target="_blank" title="Наш Вконтакте">
+                                        <svg class="icon" width="16" height="10" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="#" target="_blank" title="Наш Фейсбук">
+                                        <svg class="icon" width="8" height="15" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="#" target="_blank" title="Наши Инстаграм">
+                                        <svg class="icon" width="16" height="16" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="#" target="_blank" title="Наш Ютуб">
+                                        <svg class="icon" width="23" height="16" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#youtube"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__additional-info">
+                    <div class="row justify-content-xl-between">
+                        <div class="col-xl-6">
+                            <div class="footer__add-info"><a class="footer__licence footer__link" href="#">АНО КОМАНДОР&nbsp;&mdash; лицензия на&nbsp;учебную деятельность 56085895 от&nbsp;21.10.2016</a><a class="footer__link" href="#">Политика конфиденциальности</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="footer__copyright"><span>Дизайн сайта&nbsp;&mdash;&nbsp;<a class="footer__link" href="#">ДзенДизайн</a></span><span>Разработка&nbsp;&mdash;&nbsp;<a class="footer__link" href="#">Unlim Company</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="ModalLongTitle" aria-hidden="true" id="modal">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content modal">
+                    <button class="modal-close" type="button" title="Закрыть это окно" data-dismiss="modal"></button>
+                    <p class="modal__title h4" id="ModalLongTitle">Дополнительная информация</p>
+                    <div class="modal__content">
+                        <p>Стратегический рыночный план пока плохо специфицирует департамент маркетинга и&nbsp;продаж, отвоевывая рыночный сегмент. Пул лояльных изданий индуцирует пак-шот. Баннерная реклама программирует конвергентный побочный PR-эффект.
+                            Еще Траут показал, что раскрутка детерминирует обществвенный социальный статус. Позиционирование на&nbsp;рынке, в&nbsp;рамках сегодняшних воззрений, конструктивно. Охват аудитории детерминирует конструктивный медиабизнес, не&nbsp;считаясь
+                            с&nbsp;затратами.</p>
+                        <img src="static/img/content/modal-image.jpg" srcset="static/img/content/modal-image@2x.jpg 2x" alt="фото" width="300" height="176">
+                        <p>Согласно предыдущему, управление брендом усиливает медиамикс. Узнавание бренда допускает комплексный анализ ситуации. Эффективность действий, на&nbsp;первый взгляд, программирует PR. Оценка эффективности кампании наиболее полно
+                            нейтрализует сублимированный портрет потребителя. Сегмент рынка, не&nbsp;меняя концепции, изложенной выше, тормозит медийный канал.</p>
+                    </div>
+                    <button class="modal__btn-close button button--primary" type="button" title="Закрыть это" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+        <script src="static/js/separate-js/svg4everybody.min.js"></script>
+        <script>
+            svg4everybody();
+        </script>
+        <script src="static/js/main.js"></script>
+    </body>
+
+</html>

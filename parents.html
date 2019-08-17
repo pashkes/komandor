@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default title</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="HandheldFriendly" content="true">
+        <link href="static/css/main.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+
+    <body class="page-content">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="header__logo" href="#">
+                        <img src="static/img/general/logo.svg" width="120" height="36" alt="Логотип Командор">
+                    </a>
+                    <button class="header__burger js-show-menu" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="menu" aria-label="Открыть меню"></button>
+                    <div class="header__body" id="menu">
+                        <nav class="header__navigation">
+                            <div class="header__wrapper">
+                                <button class="header__close js-close-menu" type="button" aria-label="закрыть"></button>
+                                <ul class="header__menu">
+                                    <li class="header__item header__item--season header__item--summer"><a class="header__link" href="#"><span>Лето</span></a>
+                                        <ul class="header__submenu">
+                                            <li><a class="header__sublink" href="#">Горнолыжный. Сочи</a>
+                                            </li>
+                                            <li><a class="header__sublink" href="#">Конный лагерь г. Сочи</a>
+                                            </li>
+                                            <li><a class="header__sublink" href="#">Горнолыжный. Рязань</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__item header__item--season header__item--authumn"><a class="header__link" href="#"><span>Осень</span></a>
+                                    </li>
+                                    <li class="header__item header__item--season header__item--winter"><a class="header__link" href="#"><span>Зима</span></a>
+                                    </li>
+                                    <li class="header__item header__item--season header__item--spring"><a class="header__link" href="#"><span>Весна</span></a>
+                                    </li>
+                                    <li class="header__item"><a class="header__link" href="#"><span>О нас</span></a>
+                                    </li>
+                                    <li class="header__item"><a class="header__link" href="#"><span>Для родителей</span></a>
+                                    </li>
+                                    <li class="header__item"><a class="header__link" href="#"><span>Контакты</span></a>
+                                    </li>
+                                </ul>
+                                <div class="header__user-bar">
+                                    <div class="header__contacts"><a class="header__number" href="tel:+74951202159">7 (495) 120-21-59</a><a class="header__callback-link border-link border-link--green" href="tel:+74951202159">Перезвонить Вам?</a>
+                                    </div>
+                                    <button class="header__book button button--outline-primary button--large" type="button">Забронировать</button>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content overflow-hidden">
+            <div class="container">
+                <div class="content__header">
+                    <ul class="breadcrumb breadcrumb--green">
+                        <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Родителям</a>
+                        </li>
+                        <li class="breadcrumb__item">Выбрать направление для ребенка</li>
+                    </ul>
+                    <h1 class="content__title h1">Как правильно выбрать программу для ребенка?</h1>
+                    <p class="content__subtitle">Мы&nbsp;понимаем, что это важный шаг, особенно если ребенок едет впервые. Поэтому мы&nbsp;предлагаем 3&nbsp;решения для этого вопроса.</p>
+                    <div class="content__read-full"><a class="border-link border-link--green" href="#">Читать статью полностью</a>
+                    </div>
+                </div>
+                <div class="content__body">
+                    <div class="direction">
+                        <div class="direction__selection">
+                            <div class="row">
+                                <div class="col-lg-6 col-xl-5">
+                                    <div class="direction__item">
+                                        <h2 class="direction__name"><span class="direction__number">1&nbsp;</span>Онлайн-тестирование</h2>
+                                        <p class="direction__desc">
+                                            Мы&nbsp;понимаем, что каждый ребенок уникален и&nbsp;чтобы помочь Вам выбрать направление мы&nbsp;подготовили онлайн-тест.
+                                        </p><a class="direction__btn direction__go-test button button--primary button--has-arrow js-scrollTo" href="#test">Пройти тест за 3 минуты</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-4 offset-xl-2">
+                                    <form class="direction__item direction__item--help" id="helping">
+                                        <h2 class="direction__name"><span class="direction__number">2&nbsp;</span>Помощь специалиста</h2>
+                                        <p class="direction__desc">Мы&nbsp;перезвоним Вам и&nbsp;обсудим возможные варианты по&nbsp;телефону</p>
+                                        <div class="direction__fields">
+                                            <label class="label" for="helping-name">Ваше имя</label>
+                                            <input class="direction__field field" id="helping-name">
+                                            <label class="label required" for="field-tel">Номер телефона</label>
+                                            <input class="direction__field field" type="tel" placeholder="+7(___)___ -__-__" required id="field-tel">
+                                        </div>
+                                        <button class="direction__btn direction__callback button button--primary">Перезвоните мне</button>
+                                    </form>
+                                </div>
+                                <div class="col-lg-6 offset-xl-1">
+                                    <form class="direction__item direction__item--test" id="test">
+                                        <h2 class="direction__name"><span class="direction__number">3&nbsp;</span>Подбор по&nbsp;дате и&nbsp;возрасту ребенка</h2>
+                                        <div class="direction__selects">
+                                            <div class="direction__selects-item">
+                                                <label class="label" for="test-old">Возраст ребенка</label>
+                                                <div class="direction__select direction__select--old custom-select">
+                                                    <select class="js-custom-select" id="test-old">
+                                                        <option>8 лет</option>
+                                                        <option>9 лет</option>
+                                                        <option>10 лет</option>
+                                                        <option>11 лет</option>
+                                                        <option>12 лет</option>
+                                                        <option>13 лет</option>
+                                                        <option selected>14 лет</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="direction__selects-item">
+                                                <label class="label" for="test-dates">Желамые даты каникул</label>
+                                                <div class="direction__select direction__select--dates custom-select">
+                                                    <select class="js-custom-select" id="test-dates">
+                                                        <option>10 дек. 2018 - 10 янв. 2019</option>
+                                                        <option>10 дек. 2018 - 10 янв. 2019</option>
+                                                        <option>10 дек. 2018 - 10 янв. 2019</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="direction__btn direction__show-results button button--primary">Показать доступные лагери</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="results"><span class="results__title h4">Результат подбора:</span>
+                            <div class="offers__slider">
+                                <button class="child-camp__arrow-right nav-arrow nav-arrow--primary nav-arrow--next js-next-slider-camp" type="button" title="Следующий слайд"></button>
+                                <div class="row js-slider-camp">
+                                    <div class="col-xl-3">
+                                        <a class="child-card child-camp__item" href="#">
+                                            <div class="child-card__mask">
+                                                <svg class="icon" aria-hidden="true">
+                                                    <use xlink:href="svg-symbols.svg#mask-card"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="child-card__header"><span class="child-card__range-old">8-14 лет</span>
+                                                <h2 class="child-card__title">Этно лагерь</h2>
+                                            </div>
+                                            <div class="child-card__img">
+                                                <img src="static/img/content/child-winter-camp-1.jpg" srcset="static/img/content/child-winter-camp-1@2x.jpg 2x" width="271" height="274" alt="Этно лагерь" loading="lazy">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <a class="child-card child-camp__item" href="#">
+                                            <div class="child-card__mask">
+                                                <svg class="icon" aria-hidden="true">
+                                                    <use xlink:href="svg-symbols.svg#mask-card"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="child-card__header"><span class="child-card__range-old">8-14 лет</span>
+                                                <h2 class="child-card__title">Научный лагерь</h2>
+                                            </div>
+                                            <div class="child-card__img">
+                                                <img src="static/img/content/child-winter-camp-2.jpg" srcset="static/img/content/child-winter-camp-2@2x.jpg 2x" width="271" height="274" alt="Научный лагерь" loading="lazy">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <a class="child-card child-camp__item" href="#">
+                                            <div class="child-card__mask">
+                                                <svg class="icon" aria-hidden="true">
+                                                    <use xlink:href="svg-symbols.svg#mask-card"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="child-card__header"><span class="child-card__range-old">8-14 лет</span>
+                                                <h2 class="child-card__title">Музыкальный лагерь</h2>
+                                            </div>
+                                            <div class="child-card__img">
+                                                <img src="static/img/content/child-winter-camp-3.jpg" srcset="static/img/content/child-winter-camp-3@2x.jpg 2x" width="271" height="274" alt="Музыкальный лагерь" loading="lazy">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <a class="child-card child-camp__item" href="#">
+                                            <div class="child-card__mask">
+                                                <svg class="icon" aria-hidden="true">
+                                                    <use xlink:href="svg-symbols.svg#mask-card"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="child-card__header"><span class="child-card__range-old">8-14 лет</span>
+                                                <h2 class="child-card__title">Блогер лагерь</h2>
+                                            </div>
+                                            <div class="child-card__img">
+                                                <img src="static/img/content/child-winter-camp-4.jpg" srcset="static/img/content/child-winter-camp-4@2x.jpg 2x" width="271" height="274" alt="Блогер лагерь" loading="lazy">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="interesting"><span class="interesting__title">Вам может быть также интересно:</span>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a class="interesting__item" href="#">
+                                    <div class="interesting__img">
+                                        <picture>
+                                            <source media="(min-width: 768px)" srcset="static/img/content/interesting-1.jpg, static/img/content/interesting-1@2x.jpg 2x">
+                                                <img src="static/img/content/interesting-1-m@2x.jpg" alt="Правила оформления и оплаты" width="585" height="280">
+                                        </picture>
+                                    </div>
+                                    <h2 class="interesting__name h4">Правила оформления и&nbsp;оплаты</h2>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="interesting__item" href="#">
+                                    <div class="interesting__img">
+                                        <picture>
+                                            <source media="(min-width: 768px)" srcset="static/img/content/interesting-2.jpg, static/img/content/interesting-2@2x.jpg 2x">
+                                                <img src="static/img/content/interesting-2-m@2x.jpg" alt="Лагери для спортивных детей" width="585" height="280">
+                                        </picture>
+                                    </div>
+                                    <h2 class="interesting__name h4">Лагери для спортивных детей</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__main">
+                    <div class="row">
+                        <div class="col-xl-2 d-none d-xl-block">
+                            <div class="footer__item">
+                                <h3 class="footer__header">Программы</h3>
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a class="footer__link" href="#">Летний лагерь</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Весенний лагерь</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Зимний лагерь</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Осенний лагерь</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 d-none d-xl-block">
+                            <div class="footer__item">
+                                <h3 class="footer__header">О нас</h3>
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a class="footer__link" href="#">KomandorCamp клуб</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Наша команда</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Видео-отзывы</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Акции</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 d-none d-xl-block">
+                            <div class="footer__item">
+                                <h3 class="footer__header">Для родителей</h3>
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a class="footer__link" href="#">Правило оформления путевки</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Подобрать направление для ребенка</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Правила лагеря</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Государственная компенсация</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Полезные статьи</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 d-none d-xl-block">
+                            <div class="footer__item">
+                                <h3 class="footer__header">Контакты</h3>
+                                <address class="footer__address"><span>Адрес офиса:</span><span>г. Москва, ул. Свободы, дом 35</span></address><a class="footer__how-get footer__link" href="#">Как добраться?</a><a class="footer__link" href="mailto:info@komandorcamp.ru">info@komandorcamp.ru</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="footer__contacts"><a class="footer__tel" href="tel:+74951202159">7 (495) 120-21-59</a><span class="footer__time-work">ежедневно с 9.00 до 21.00</span>
+                            </div>
+                            <ul class="social footer__social-links">
+                                <li class="social__item">
+                                    <a class="social__link" href="#" target="_blank" title="Наш Вконтакте">
+                                        <svg class="icon" width="16" height="10" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="#" target="_blank" title="Наш Фейсбук">
+                                        <svg class="icon" width="8" height="15" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="#" target="_blank" title="Наши Инстаграм">
+                                        <svg class="icon" width="16" height="16" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="#" target="_blank" title="Наш Ютуб">
+                                        <svg class="icon" width="23" height="16" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#youtube"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__additional-info">
+                    <div class="row justify-content-xl-between">
+                        <div class="col-xl-6">
+                            <div class="footer__add-info"><a class="footer__licence footer__link" href="#">АНО КОМАНДОР&nbsp;&mdash; лицензия на&nbsp;учебную деятельность 56085895 от&nbsp;21.10.2016</a><a class="footer__link" href="#">Политика конфиденциальности</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="footer__copyright"><span>Дизайн сайта&nbsp;&mdash;&nbsp;<a class="footer__link" href="#">ДзенДизайн</a></span><span>Разработка&nbsp;&mdash;&nbsp;<a class="footer__link" href="#">Unlim Company</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="static/js/separate-js/svg4everybody.min.js"></script>
+        <script>
+            svg4everybody();
+        </script>
+        <script src="static/js/main.js"></script>
+    </body>
+
+</html>

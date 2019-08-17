@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default title</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="HandheldFriendly" content="true">
+        <link href="static/css/main.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+
+    <body class="page-content">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="header__logo" href="#">
+                        <img src="static/img/general/logo.svg" width="120" height="36" alt="Логотип Командор">
+                    </a>
+                    <button class="header__burger js-show-menu" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="menu" aria-label="Открыть меню"></button>
+                    <div class="header__body" id="menu">
+                        <nav class="header__navigation">
+                            <div class="header__wrapper">
+                                <button class="header__close js-close-menu" type="button" aria-label="закрыть"></button>
+                                <ul class="header__menu">
+                                    <li class="header__item header__item--season header__item--summer"><a class="header__link" href="#"><span>Лето</span></a>
+                                        <ul class="header__submenu">
+                                            <li><a class="header__sublink" href="#">Горнолыжный. Сочи</a>
+                                            </li>
+                                            <li><a class="header__sublink" href="#">Конный лагерь г. Сочи</a>
+                                            </li>
+                                            <li><a class="header__sublink" href="#">Горнолыжный. Рязань</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__item header__item--season header__item--authumn"><a class="header__link" href="#"><span>Осень</span></a>
+                                    </li>
+                                    <li class="header__item header__item--season header__item--winter"><a class="header__link" href="#"><span>Зима</span></a>
+                                    </li>
+                                    <li class="header__item header__item--season header__item--spring"><a class="header__link" href="#"><span>Весна</span></a>
+                                    </li>
+                                    <li class="header__item"><a class="header__link" href="#"><span>О нас</span></a>
+                                    </li>
+                                    <li class="header__item"><a class="header__link" href="#"><span>Для родителей</span></a>
+                                    </li>
+                                    <li class="header__item"><a class="header__link" href="#"><span>Контакты</span></a>
+                                    </li>
+                                </ul>
+                                <div class="header__user-bar">
+                                    <div class="header__contacts"><a class="header__number" href="tel:+74951202159">7 (495) 120-21-59</a><a class="header__callback-link border-link border-link--green" href="tel:+74951202159">Перезвонить Вам?</a>
+                                    </div>
+                                    <button class="header__book button button--outline-primary button--large" type="button">Забронировать</button>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <div class="container">
+                <div class="content__header">
+                    <ul class="breadcrumb breadcrumb--green">
+                        <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Родителям</a>
+                        </li>
+                        <li class="breadcrumb__item">Загрузка документов</li>
+                    </ul>
+                    <h1 class="content__title h1">Анкета ребенка</h1>
+                    <p class="content__subtitle">Данные нужны нам для того, чтобы вожатый лучше понимал ребенка. Просим Вас внимательно заполнить анкету. Все данные нужно заоплнять по&nbsp;ребенку, который поедет. Напротив многих полей дана подсказка для чего нам нужна эта информация.
+                        Вся сохраненная информация будет доступна только АНО Командор без права передачи третьим лицам.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <aside class="steps">
+                            <div class="steps__wrapper">
+                                <div class="steps__body">
+                                    <div class="steps__title js-expandmore" data-hideshow-prefix-class="animated"><span>Порядок оформления путевки</span>
+                                    </div>
+                                    <div class="js-to_expand is-opened">
+                                        <ul class="steps__list">
+                                            <li class="steps__item"><a class="steps__link" href="#">1. Выбор программы и смены</a>
+                                            </li>
+                                            <li class="steps__item"><a class="steps__link" href="#">2. Ознакомление с документами</a>
+                                            </li>
+                                            <li class="steps__item current"><a class="steps__link" href="#">3. Загрузка документов</a>
+                                                <ul class="steps__sublist">
+                                                    <li class="steps__subitem current"><a class="steps__sublink" href="#">Личные данные</a>
+                                                    </li>
+                                                    <li class="steps__subitem"><a class="steps__sublink" href="#">Медицинские данные</a>
+                                                    </li>
+                                                    <li class="steps__subitem"><a class="steps__sublink" href="#">Физические способности</a>
+                                                    </li>
+                                                    <li class="steps__subitem"><a class="steps__sublink" href="#">Эмоциональный портрет</a>
+                                                    </li>
+                                                    <li class="steps__subitem"><a class="steps__sublink" href="#">Предпочтения</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="steps__item"><a class="steps__link" href="#">4. Анкета ребенка</a>
+                                            </li>
+                                            <li class="steps__item"><a class="steps__link" href="#">5. Оплата 50%</a>
+                                            </li>
+                                            <li class="steps__item"><a class="steps__link" href="#">5. Сбор мед. справок</a>
+                                            </li>
+                                            <li class="steps__item"><a class="steps__link" href="#">7. Оплата 50%</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="steps__footer"><a class="steps__annul" href="#">Аннулировать бронирование</a><a class="steps__log-out" href="#">Выйти из аккаунта</a>
+                                </div>
+                            </div><span class="steps__additional-info">До&nbsp;конца оформления бронирования осталось 72&nbsp;часа</span>
+                        </aside>
+                    </div>
+                    <div class="col-lg">
+                        <form class="profile" id="profile">
+                            <fieldset class="profile__item">
+                                <legend class="profile__name">Личные данные</legend>
+                                <div class="profile__row">
+                                    <div class="profile__fio-item">
+                                        <label class="label required" for="profile-last-name">Фамилия</label>
+                                        <input class="profile__field field" value="Фролова" placeholder="Фамилия" required pattern="[А-Яа-я]{1,32}" maxlength="32" minlength="2" id="profile-last-name">
+                                    </div>
+                                    <div class="profile__fio-item">
+                                        <label class="label required" for="profile-first-name">Имя</label>
+                                        <input class="profile__field field" value="Анна5" placeholder="Имя" required pattern="[А-Яа-я]{1,32}" maxlength="32" minlength="2" id="profile-first-name">
+                                    </div>
+                                    <div class="profile__fio-item">
+                                        <label class="label" for="profile-patronymic">Отчество</label>
+                                        <input class="profile__field field" placeholder="Отчество" id="profile-patronymic">
+                                    </div>
+                                </div>
+                                <div class="profile__row profile__row--tel">
+                                    <div class="profile__col">
+                                        <label class="label required" for="field-tel">Номер телефона</label>
+                                        <input class="profile__field field" type="tel" placeholder="+7(___)___ -__-__" id="field-tel">
+                                        <div class="profile__additional-text show-more show-more--small-text">
+                                            <div class="show-more__btn js-expandmore" data-hideshow-prefix-class="animated"><span>Зачем нужна эта информация?</span>
+                                            </div>
+                                            <div class="js-to_expand">
+                                                <div class="show-more__content">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor enim fugiat, libero maxime natus nisi voluptates. Asperiores, enim, saepe.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile__row profile__row--document">
+                                    <div class="profile__document">
+                                        <div class="profile__select">
+                                            <label class="label" for="profile-doc">Документ ребенка</label>
+                                            <div class="custom-select">
+                                                <select class="js-custom-select" id="profile-doc">
+                                                    <option selected>Свидетельство о рождении</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile__document">
+                                        <label class="label" for="profile-num-doc">Номер документа</label>
+                                        <input class="profile__field field" type="text" value="05430-3400-5600-3" id="profile-num-doc">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="profile__item">
+                                <legend class="profile__name">Индивидуальный эмоциональный портрет ребенка</legend>
+                                <div class="profile__question-item"><span class="profile__question">1. Сколько раз был в&nbsp;детском лагере (с&nbsp;продолжительностью от&nbsp;7&nbsp;лет)</span>
+                                    <label class="radio-button">
+                                        <input class="radio-button__input visually-hidden" type="radio" name="was-camp"><span class="radio-button__circle"></span>Ни разу
+                                    </label>
+                                    <label class="radio-button">
+                                        <input class="radio-button__input visually-hidden" type="radio" name="was-camp" checked><span class="radio-button__circle"></span>1 раз
+                                    </label>
+                                    <label class="radio-button">
+                                        <input class="radio-button__input visually-hidden" type="radio" name="was-camp"><span class="radio-button__circle"></span>2 раза
+                                    </label>
+                                    <label class="radio-button">
+                                        <input class="radio-button__input visually-hidden" type="radio" name="was-camp"><span class="radio-button__circle"></span>3 и более раз
+                                    </label>
+                                </div>
+                                <div class="profile__question-item">
+                                    <label class="profile__question" for="profile-sports">2. Каким видом спорта занимался/занимается</label>
+                                    <div class="profile__multiselect">
+                                        <div class="custom-select">
+                                            <select class="js-custom-multi-select" multiple id="profile-sports">
+                                                <option selected>Плавание</option>
+                                                <option>Борьба</option>
+                                                <option>Бег на короткие дистанции</option>
+                                            </select>
+                                        </div>
+                                        <ul class="tags">
+                                            <li class="tags__item">Плавание
+                                                <button class="tags__remove" type="button" title="удалить тег"></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="profile__question-item"><span class="profile__question">3. Бывал&nbsp;ли ранее в&nbsp;нашем лагере</span>
+                                    <div class="profile__additional-text show-more show-more--small-text">
+                                        <div class="show-more__btn js-expandmore" data-hideshow-prefix-class="animated"><span>Зачем нужна эта информация?</span>
+                                        </div>
+                                        <div class="js-to_expand">
+                                            <div class="show-more__content">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor enim fugiat, libero maxime natus nisi voluptates. Asperiores, enim, saepe.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label class="radio-button">
+                                        <input class="radio-button__input visually-hidden" type="radio" name="was-our-camp"><span class="radio-button__circle"></span>Ни разу
+                                    </label>
+                                    <label class="radio-button">
+                                        <input class="radio-button__input visually-hidden" type="radio" name="was-our-camp" checked><span class="radio-button__circle"></span>1 раз
+                                    </label>
+                                    <label class="radio-button">
+                                        <input class="radio-button__input visually-hidden" type="radio" name="was-our-camp"><span class="radio-button__circle"></span>2 раза
+                                    </label>
+                                    <label class="radio-button">
+                                        <input class="radio-button__input visually-hidden" type="radio" name="was-our-camp"><span class="radio-button__circle"></span>3 и более раз
+                                    </label>
+                                </div>
+                                <div class="profile__question-item"><span class="profile__question">4. Есть&nbsp;ли опыт походов</span>
+                                    <div class="profile__additional-text show-more show-more--small-text">
+                                        <div class="show-more__btn js-expandmore" data-hideshow-prefix-class="animated"><span>Зачем нужна эта информация?</span>
+                                        </div>
+                                        <div class="js-to_expand">
+                                            <div class="show-more__content">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor enim fugiat, libero maxime natus nisi voluptates. Asperiores, enim, saepe.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label class="radio-button">
+                                        <input class="radio-button__input visually-hidden" type="radio" name="had-experience">
+                                        <div class="radio-button__circle"></div>Нет
+                                    </label>
+                                    <label class="radio-button">
+                                        <input class="radio-button__input visually-hidden" type="radio" name="had-experience" checked><span class="radio-button__circle"></span>Да
+                                    </label>
+                                </div>
+                                <div class="profile__question-item">
+                                    <label class="profile__question" for="profile-class">5. Класс</label>
+                                    <div class="profile__select profile__select--class">
+                                        <div class="custom-select">
+                                            <select class="js-custom-select" id="profile-class">
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option selected>7</option>
+                                                <option>8</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile__question-item">
+                                    <label class="profile__question" for="profile-post-index">6. Почтовый индекс</label>
+                                    <input class="profile__field profile__field--index field" type="number" value="101345" id="profile-post-index">
+                                </div>
+                                <div class="profile__question-item">
+                                    <label class="profile__question" for="profile-address">7. Адрес проживания</label>
+                                    <input class="profile__field profile__field--address field" type="text" value="г. Москва, ул. Ленина 35, кв. 56" id="profile-address">
+                                </div>
+                            </fieldset>
+                            <fieldset class="profile__item">
+                                <legend class="profile__name">Физические способности</legend>
+                                <div class="profile__multiselect">
+                                    <div class="custom-select">
+                                        <label class="visually-hidden" for="profile-physical-ability">Выберете ваши физические способности</label>
+                                        <select class="js-custom-multi-select" multiple id="profile-physical-ability">
+                                            <option selected>Борьба</option>
+                                            <option selected>КМС по самбо</option>
+                                            <option selected>Бег на короткие дистанции</option>
+                                        </select>
+                                    </div>
+                                    <ul class="tags">
+                                        <li class="tags__item">Борьба
+                                            <button class="tags__remove" type="button" title="удалить тег"></button>
+                                        </li>
+                                        <li class="tags__item">КМС по самбо
+                                            <button class="tags__remove" type="button" title="удалить тег"></button>
+                                        </li>
+                                        <li class="tags__item">Бег на короткие дистанции
+                                            <button class="tags__remove" type="button" title="удалить тег"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </fieldset>
+                            <div class="profile__footer">
+                                <button class="profile__submit button button--has-arrow-right button--primary">Далее</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__main">
+                    <div class="row">
+                        <div class="col-xl-2 d-none d-xl-block">
+                            <div class="footer__item">
+                                <h3 class="footer__header">Программы</h3>
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a class="footer__link" href="#">Летний лагерь</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Весенний лагерь</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Зимний лагерь</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Осенний лагерь</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 d-none d-xl-block">
+                            <div class="footer__item">
+                                <h3 class="footer__header">О нас</h3>
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a class="footer__link" href="#">KomandorCamp клуб</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Наша команда</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Видео-отзывы</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Акции</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 d-none d-xl-block">
+                            <div class="footer__item">
+                                <h3 class="footer__header">Для родителей</h3>
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a class="footer__link" href="#">Правило оформления путевки</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Подобрать направление для ребенка</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Правила лагеря</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Государственная компенсация</a>
+                                    </li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Полезные статьи</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 d-none d-xl-block">
+                            <div class="footer__item">
+                                <h3 class="footer__header">Контакты</h3>
+                                <address class="footer__address"><span>Адрес офиса:</span><span>г. Москва, ул. Свободы, дом 35</span></address><a class="footer__how-get footer__link" href="#">Как добраться?</a><a class="footer__link" href="mailto:info@komandorcamp.ru">info@komandorcamp.ru</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="footer__contacts"><a class="footer__tel" href="tel:+74951202159">7 (495) 120-21-59</a><span class="footer__time-work">ежедневно с 9.00 до 21.00</span>
+                            </div>
+                            <ul class="social footer__social-links">
+                                <li class="social__item">
+                                    <a class="social__link" href="#" target="_blank" title="Наш Вконтакте">
+                                        <svg class="icon" width="16" height="10" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="#" target="_blank" title="Наш Фейсбук">
+                                        <svg class="icon" width="8" height="15" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="#" target="_blank" title="Наши Инстаграм">
+                                        <svg class="icon" width="16" height="16" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="#" target="_blank" title="Наш Ютуб">
+                                        <svg class="icon" width="23" height="16" aria-hidden="true">
+                                            <use xlink:href="svg-symbols.svg#youtube"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__additional-info">
+                    <div class="row justify-content-xl-between">
+                        <div class="col-xl-6">
+                            <div class="footer__add-info"><a class="footer__licence footer__link" href="#">АНО КОМАНДОР&nbsp;&mdash; лицензия на&nbsp;учебную деятельность 56085895 от&nbsp;21.10.2016</a><a class="footer__link" href="#">Политика конфиденциальности</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="footer__copyright"><span>Дизайн сайта&nbsp;&mdash;&nbsp;<a class="footer__link" href="#">ДзенДизайн</a></span><span>Разработка&nbsp;&mdash;&nbsp;<a class="footer__link" href="#">Unlim Company</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="static/js/separate-js/svg4everybody.min.js"></script>
+        <script>
+            svg4everybody();
+        </script>
+        <script src="static/js/main.js"></script>
+    </body>
+
+</html>
