@@ -3,7 +3,7 @@
     `npm i`
     `npm run start`
    
-   **How to build project:**
+   **How to build the project:**
     `npm run build`
     
    You can find more detail documentation for this Markup builder follow to the [Link](https://github.com/pashkes/tars-doc/blob/master/README.md)
