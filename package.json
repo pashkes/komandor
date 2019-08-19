@@ -86,9 +86,9 @@
   "scripts": {
     "install": "node ./tars/helpers/install-additional-deps.js",
     "lint": "eslint webpack.config.js tars/*.js tars/tasks/**/*.js tars/watchers/**/*.js tars/helpers/**/*.js gulpfile.js --rule 'valid-jsdoc: [0, {}]'",
-    "start": "gulp dev --lr",
-    "build": "gulp build",
-    "deploy": "gulp build && gh-pages -d builds"
+    "start": "tars dev -l",
+    "build": "tars build -r",
+    "deploy": "npm run build && gh-pages -d builds"
   },
   "repository": {
     "type": "git",
