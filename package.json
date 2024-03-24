@@ -81,7 +81,7 @@
     "through2": "^2.0.3",
     "uglifyjs-webpack-plugin": "2.0.1",
     "webpack": "^4.21.0",
-    "webpack-dev-middleware": "^3.4.0",
+    "webpack-dev-middleware": "^5.3.4",
     "webpack-hot-middleware": "^2.24.3"
   },
   "optionalDependencies": {
